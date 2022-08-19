@@ -28,7 +28,7 @@ class _CategoryBoxesState extends State<CategoryBoxes> {
         child: Padding(
           padding: EdgeInsets.only(right: 10.w),
           child: Container(
-            height: 48.h,
+            height: 40.h,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12),
               color: isSelected? Color(0xff4A80F0): Color(0xff1C2031),

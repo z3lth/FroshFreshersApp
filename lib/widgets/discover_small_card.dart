@@ -18,17 +18,17 @@ class DiscoverSmallCard extends StatelessWidget {
   final Function()? onTap;
   const DiscoverSmallCard(
       {Key? key,
-        this.title,
-        this.subtitle,
-        this.gradientStartColor,
-        this.gradientEndColor,
-        this.height,
-        this.width,
-        this.vectorBottom,
-        this.vectorTop,
-        this.borderRadius,
-        this.icon,
-        this.onTap})
+      this.title,
+      this.subtitle,
+      this.gradientStartColor,
+      this.gradientEndColor,
+      this.height,
+      this.width,
+      this.vectorBottom,
+      this.vectorTop,
+      this.borderRadius,
+      this.icon,
+      this.onTap})
       : super(key: key);
 
   @override

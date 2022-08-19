@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:meditation/charts_page.dart';
 import 'package:meditation/discover_page.dart';
+import 'package:meditation/faq.dart';
 import 'package:meditation/icons.dart';
 import 'package:meditation/widgets/profile_page.dart';
 import 'package:meditation/widgets/svg_asset.dart';
+import 'package:meditation/widgets/about_us.dart';
+
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -17,7 +20,7 @@ class _HomePageState extends State<HomePage> {
   static const List<Widget> _widgetOptions = <Widget>[
     DiscoverPage(),
     ChartsPage(),
-    ProfilePage()
+    AboutusPage(),
   ];
 
   void _onItemTapped(int index) {
@@ -29,9 +32,18 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Image(
+          image: AssetImage('assets/images/tietlogo3.png'),
+          alignment: Alignment.topCenter,
+          // height: 100,width: 100,
+        ),
+        backgroundColor: Color(0xff1C2031),
+      ) ,
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
+
       bottomNavigationBar: Theme(
         data: ThemeData(
           highlightColor: Colors.transparent,
@@ -46,7 +58,7 @@ class _HomePageState extends State<HomePage> {
             BottomNavigationBarItem(
               icon: SvgAsset(assetName: AssetName.discover),
               label: '',
-              tooltip: 'Discover',
+              tooltip: 'Main',
               activeIcon: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
@@ -64,7 +76,7 @@ class _HomePageState extends State<HomePage> {
             BottomNavigationBarItem(
               icon: SvgAsset(assetName: AssetName.chart),
               label: '',
-              tooltip: 'Charts',
+              tooltip: 'Maps',
               activeIcon: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
@@ -84,7 +96,7 @@ class _HomePageState extends State<HomePage> {
             BottomNavigationBarItem(
               icon: SvgAsset(assetName: AssetName.profile),
               label: '',
-              tooltip: 'Profile',
+              tooltip: 'About Us',
               activeIcon: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),

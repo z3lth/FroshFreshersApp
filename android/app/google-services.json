@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "934367480818",
+    "project_id": "frosh-app-4c8bd",
+    "storage_bucket": "frosh-app-4c8bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934367480818:android:11c7f5bcefb78887fa396b",
+        "android_client_info": {
+          "package_name": "com.example.frosh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "934367480818-a3lg89er7lq7ngn0ln2v8jfsp6g9l05q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTYNxqWJNvwwBo9Wec_2GlApN22HXV-9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "934367480818-a3lg89er7lq7ngn0ln2v8jfsp6g9l05q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

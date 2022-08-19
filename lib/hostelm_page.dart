@@ -62,7 +62,7 @@ Widget buildProfileImage()=>Container(
  child: Column(
    children: [
      Text(
-       'HOSTEL M',
+       'HOSTEL C',
 
 
            textAlign: TextAlign.center,

@@ -31,35 +31,35 @@ class _ProfilePageState extends State<ProfilePage> {
       DefaultTabController(
           length: 2,
           child: Scaffold(
-              appBar: AppBar(
-                backgroundColor: Color(0xff283159),
-                shadowColor: Colors.black,
+            appBar: AppBar(
+              backgroundColor: Color(0xffadc178),
+              shadowColor: Colors.black,
 
 
-                title: Text('HOSTELS',
-                 style: TextStyle(
+              title: Text('HOSTELS',
+                style: TextStyle(
 
-                     color: Colors.white,
-                     fontSize: 30.w,
+                    color: Colors.white,
+                    fontSize: 30.w,
 
-                     fontWeight: FontWeight.bold
+                    fontWeight: FontWeight.bold
 
                 ),),
-                bottom: TabBar(
-                  tabs: [
-                    Tab(text: 'Boys Hostel'),
-                    Tab(text: 'Girls  Hostel'),
-                  ],
-                ),
+              bottom: TabBar(
+                tabs: [
+                  Tab(text: 'Boys Hostel'),
+                  Tab(text: 'Girls  Hostel'),
+                ],
               ),
-                  body: TabBarView(
+            ),
+            body: TabBarView(
               children: [
                 BoyshostelPage(),
-        GirlshostelPage(),
+                GirlshostelPage(),
 
 
-            ],
-          ),
+              ],
+            ),
           )
       );
 }

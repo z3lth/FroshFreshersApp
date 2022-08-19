@@ -129,7 +129,7 @@ class _DetailPageState extends State<DetailPage> {
                 ),
                 SizedBox(height: 46.h),
                 Padding(
-                  padding: EdgeInsets.only(left: 28.w, right: 28.w, bottom: 80.h),
+                  padding: EdgeInsets.only(left: 28.w, right: 28.w, bottom: 20.h),
                   child: Text(
                     "Meditation is a practice where an individual uses a technique – such as mindfulness, or focusing their mind on a particular object, thought or activity – to train attention and awareness, and achieve a mentally clear and emotionally calm and stable state. Scholars have found meditation difficult to define, as practices vary both between traditions and within them.",
                     style: TextStyle(
