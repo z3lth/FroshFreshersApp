@@ -31,6 +31,8 @@ dependencies:
   dio: ^4.0.4
   flutter_dotenv: ^5.0.2
   localstorage: ^4.0.0+1
+  google_fonts: ^3.0.1
+
 
 dev_dependencies:
   flutter_launcher_icons: ^0.10.0
