@@ -11,7 +11,7 @@ import 'package:meditation/hostelj_page.dart';
 import 'package:meditation/hostelm_page.dart';
 import 'package:meditation/widgets/category_boxes.dart';
 import 'package:meditation/icons.dart';
-import 'package:meditation/widgets/discover_card.dart';
+import 'package:meditation/widgets/discover_card1.dart';
 import 'package:meditation/widgets/discover_small_card.dart';
 import 'package:meditation/widgets/svg_asset.dart';
 //import 'package:url_launcher/url_launcher.dart';
@@ -81,7 +81,7 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                 children: [
                   SizedBox(width: 35.w,),
                   InkWell(
-                    child: DiscoverCard(
+                    child: DiscoverCard1(
 
                       onTap:() {
                         Navigator.push(context, MaterialPageRoute(builder:(context)=>HostelcPage()));
@@ -139,7 +139,7 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                 children: [
                   SizedBox(width: 35.w,),
                   InkWell(
-                    child: DiscoverCard(
+                    child: DiscoverCard1(
 
                       onTap:() {
                         Navigator.push(context, MaterialPageRoute(builder:(context)=>HosteljPage()));
@@ -164,7 +164,7 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                 children: [
                   SizedBox(width: 35.w,),
                   InkWell(
-                    child: DiscoverCard(
+                    child: DiscoverCard1(
 
                       // onTap:() {
                       //   Navigator.push(context, MaterialPageRoute(builder:(context)=>HostelcPage()));
@@ -188,7 +188,7 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   SizedBox(width: 35.w,),
-                  DiscoverCard(
+                  DiscoverCard1(
 
                     //  onTap: ()async{
                     //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -216,7 +216,7 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                 children: [
                   SizedBox(width: 35.w,),
                   InkWell(
-                    child: DiscoverCard(
+                    child: DiscoverCard1(
 
                       //  onTap: ()async{
                       //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -245,7 +245,7 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                 children: [
                   SizedBox(width: 35.w,),
                   InkWell(
-                    child: DiscoverCard(
+                    child: DiscoverCard1(
 
                       onTap:() {
                         Navigator.push(context, MaterialPageRoute(builder:(context)=>HostelmPage()));
@@ -269,7 +269,7 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   SizedBox(width: 35.w,),
-                  DiscoverCard(
+                  DiscoverCard1(
 
                     //  onTap: ()async{
                     //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -296,7 +296,7 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
             //     scrollDirection: Axis.horizontal,
             //     children: [
             //       SizedBox(width: 35.w,),
-            //       DiscoverCard(
+            //       DiscoverCard1(
             //
             //         //  onTap: ()async{
             //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -323,7 +323,7 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
             //     scrollDirection: Axis.horizontal,
             //     children: [
             //       SizedBox(width: 35.w,),
-            //       DiscoverCard(
+            //       DiscoverCard1(
             //
             //         //  onTap: ()async{
             //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -350,7 +350,7 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
             //     scrollDirection: Axis.horizontal,
             //     children: [
             //       SizedBox(width: 35.w,),
-            //       DiscoverCard(
+            //       DiscoverCard1(
             //
             //         //  onTap: ()async{
             //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -377,7 +377,7 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
             //     scrollDirection: Axis.horizontal,
             //     children: [
             //       SizedBox(width: 35.w,),
-            //       DiscoverCard(
+            //       DiscoverCard1(
             //
             //         //  onTap: ()async{
             //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -404,7 +404,7 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
             //     scrollDirection: Axis.horizontal,
             //     children: [
             //       SizedBox(width: 35.w,),
-            //       DiscoverCard(
+            //       DiscoverCard1(
             //
             //         //  onTap: ()async{
             //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -431,7 +431,7 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
             //     scrollDirection: Axis.horizontal,
             //     children: [
             //       SizedBox(width: 35.w,),
-            //       DiscoverCard(
+            //       DiscoverCard1(
             //
             //         //  onTap: ()async{
             //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -458,7 +458,7 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
             //     scrollDirection: Axis.horizontal,
             //     children: [
             //       SizedBox(width: 35.w,),
-            //       DiscoverCard(
+            //       DiscoverCard1(
             //
             //         //  onTap: ()async{
             //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -485,7 +485,7 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
             //     scrollDirection: Axis.horizontal,
             //     children: [
             //       SizedBox(width: 35.w,),
-            //       DiscoverCard(
+            //       DiscoverCard1(
             //
             //         //  onTap: ()async{
             //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');

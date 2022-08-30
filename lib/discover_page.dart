@@ -137,7 +137,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                   DiscoverCard(
                     tag: "sleepMeditation",
                     onTap: onSleepMeditationTapped,
-                    title: "Latest News",
+                    title: "",
 
 
                   ),
@@ -176,6 +176,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                     title: "Starter Kit",
                     gradientStartColor: Color(0xff13DEA0),
                     gradientEndColor: Color(0xff06B782),
+                    
                   ),
                   DiscoverSmallCard(
                     onTap: (){Navigator.push(context, MaterialPageRoute(builder:(context)=>StudyPage()));

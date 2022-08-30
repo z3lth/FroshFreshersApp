@@ -43,8 +43,9 @@ class _SocitiesPageState extends State<SocitiesPage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
+
                       Text("Clubs & Socities",
-                          //textAlign:TextAlign.center,
+
                           style: TextStyle(
 
                               color: Colors.white,

@@ -3,18 +3,31 @@ class DataModel {
   final String imageName;
   final String price;
   DataModel(
-    this.title,
-    this.imageName,
-    this.price,
-  );
+      this.title,
+      this.imageName,
+      this.price,
+      );
 }
 
 List<DataModel> dataList = [
-  DataModel("Ishnoor Kohli", "assets/images/Core/1.JPG", "COE"),
-  DataModel("Aditi Pethia", "assets/images/Core/2.JPG", "BioTech"),
-  DataModel("Kunwarpreet Luthra", "assets/images/Core/3.jpg", "MTX"),
-  DataModel("Sudiksha Raheja", "assets/images/Core/4.JPG", "COE"),
-  DataModel("Vishal Singh", "assets/images/Core/5.jpg", "COE"),
 
+  DataModel("Vishal Singh", "https://i.imgur.com/hAFRmZn.jpg", "COE"),
+  //DataModel("Vishal Singh", "", "COE"),
+  DataModel("Ishnoor Kohli", "https://i.imgur.com/5Of6vrf.jpg", "COE"),
+  DataModel("Aditi Pethia", "https://i.imgur.com/rw6pmBo.jpg", "BioTech"),
+  DataModel("Kunwarpreet Luthra", "https://i.imgur.com/M1Ektay.jpg", "MTX"),
+  DataModel("Sudiksha Raheja", "https://i.imgur.com/jRktB1Z.jpg", "COE"),
+  //DataModel("Vishal Singh", "", "COE"),
+  DataModel("Ishnoor Kohli", "https://i.imgur.com/5Of6vrf.jpg", "COE"),
+  DataModel("Aditi Pethia", "https://i.imgur.com/rw6pmBo.jpg", "BioTech"),
+  DataModel("Kunwarpreet Luthra", "https://i.imgur.com/M1Ektay.jpg", "MTX"),
+  DataModel("Sudiksha Raheja", "https://i.imgur.com/jRktB1Z.jpg", "COE"),
+  // DataModel("Vishal Singh", "", "COE"),
+  // DataModel("Vishal Singh", "", "COE"),
+  // DataModel("Vishal Singh", "", "COE"),
+  // DataModel("Vishal Singh", "", "COE"),
+  DataModel("Ishnoor Kohli", "https://i.imgur.com/5Of6vrf.jpg", "COE"),
+  DataModel("Aditi Pethia", "https://i.imgur.com/rw6pmBo.jpg", "BioTech"),
+  DataModel("Kunwarpreet Luthra", "https://i.imgur.com/M1Ektay.jpg", "MTX"),
 
 ];

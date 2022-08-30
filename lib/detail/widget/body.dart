@@ -23,15 +23,16 @@ class _BodyDeState extends State<BodyDe> {
 
   void _addToBag({
     required String model,
-    required double price,
+    required String branch,
     required String imgAddress,
     required numOfShoe,
   }) {
     final addedShoe = BagModels(
       model: model,
-      price: price,
+      branch: branch,
       imgAddress: imgAddress,
       numOfShoe: numOfShoe,
+      price: nameAndPrice(),
     );
     setState(() {
       bagModels.add(addedShoe);
@@ -206,7 +207,7 @@ class _BodyDeState extends State<BodyDe> {
         onPressed: () {
           _addToBag(
             model: widget.model.model,
-            price: widget.model.price,
+            branch: widget.model.branch,
             imgAddress: widget.model.imgAddress,
             numOfShoe: 1,
           );
@@ -419,7 +420,7 @@ class _BodyDeState extends State<BodyDe> {
           ),
           Expanded(child: Container()),
           Text(
-            '\$${widget.model.price.toStringAsFixed(2)}',
+            '\$${widget.model.branch}',
             style: TextStyle(
               fontSize: 21,
               fontWeight: FontWeight.bold,

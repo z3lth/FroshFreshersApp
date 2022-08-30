@@ -6,7 +6,7 @@ import 'package:meditation/detail_page.dart';
 import 'package:meditation/jaggi_page.dart';
 import 'package:meditation/widgets/category_boxes.dart';
 import 'package:meditation/icons.dart';
-import 'package:meditation/widgets/discover_card1.dart';
+import 'package:meditation/widgets/discover_card.dart';
 import 'package:meditation/widgets/discover_small_card.dart';
 import 'package:meditation/widgets/svg_asset.dart';
 //import 'package:url_launcher/url_launcher.dart';
@@ -76,7 +76,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                 children: [
                   SizedBox(width: 35.w,),
                   InkWell(
-                    child: DiscoverCard1(
+                    child: DiscoverCard(
 
                       onTap:() {
                         Navigator.push(context, MaterialPageRoute(builder:(context)=>JaggiPage()));
@@ -129,7 +129,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   SizedBox(width: 35.w,),
-                  DiscoverCard1(
+                  DiscoverCard(
 
                     //  onTap: ()async{
                     //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -156,7 +156,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   SizedBox(width: 35.w,),
-                  DiscoverCard1(
+                  DiscoverCard(
 
                     //  onTap: ()async{
                     //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -183,7 +183,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   SizedBox(width: 35.w,),
-                  DiscoverCard1(
+                  DiscoverCard(
 
                     //  onTap: ()async{
                     //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -210,7 +210,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   SizedBox(width: 35.w,),
-                  DiscoverCard1(
+                  DiscoverCard(
 
                     //  onTap: ()async{
                     //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -237,7 +237,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   SizedBox(width: 35.w,),
-                  DiscoverCard1(
+                  DiscoverCard(
 
                     //  onTap: ()async{
                     //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -264,7 +264,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   SizedBox(width: 35.w,),
-                  DiscoverCard1(
+                  DiscoverCard(
 
                     //  onTap: ()async{
                     //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -291,7 +291,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
             //     scrollDirection: Axis.horizontal,
             //     children: [
             //       SizedBox(width: 35.w,),
-            //       DiscoverCard1(
+            //       DiscoverCard(
             //
             //         //  onTap: ()async{
             //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -318,7 +318,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
             //     scrollDirection: Axis.horizontal,
             //     children: [
             //       SizedBox(width: 35.w,),
-            //       DiscoverCard1(
+            //       DiscoverCard(
             //
             //         //  onTap: ()async{
             //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -345,7 +345,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
             //     scrollDirection: Axis.horizontal,
             //     children: [
             //       SizedBox(width: 35.w,),
-            //       DiscoverCard1(
+            //       DiscoverCard(
             //
             //         //  onTap: ()async{
             //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -372,7 +372,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
             //     scrollDirection: Axis.horizontal,
             //     children: [
             //       SizedBox(width: 35.w,),
-            //       DiscoverCard1(
+            //       DiscoverCard(
             //
             //         //  onTap: ()async{
             //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -399,7 +399,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
             //     scrollDirection: Axis.horizontal,
             //     children: [
             //       SizedBox(width: 35.w,),
-            //       DiscoverCard1(
+            //       DiscoverCard(
             //
             //         //  onTap: ()async{
             //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -426,7 +426,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
             //     scrollDirection: Axis.horizontal,
             //     children: [
             //       SizedBox(width: 35.w,),
-            //       DiscoverCard1(
+            //       DiscoverCard(
             //
             //         //  onTap: ()async{
             //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -453,7 +453,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
             //     scrollDirection: Axis.horizontal,
             //     children: [
             //       SizedBox(width: 35.w,),
-            //       DiscoverCard1(
+            //       DiscoverCard(
             //
             //         //  onTap: ()async{
             //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -480,7 +480,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
             //     scrollDirection: Axis.horizontal,
             //     children: [
             //       SizedBox(width: 35.w,),
-            //       DiscoverCard1(
+            //       DiscoverCard(
             //
             //         //  onTap: ()async{
             //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');

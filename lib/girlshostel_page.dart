@@ -3,6 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:meditation/detail_page.dart';
+import 'package:meditation/hostela_page.dart';
+import 'package:meditation/hostele_page.dart';
+import 'package:meditation/hostelg_page.dart';
+import 'package:meditation/hosteli_page.dart';
+import 'package:meditation/hostelk_page.dart';
+import 'package:meditation/hosteln_page.dart';
+import 'package:meditation/hostelpg_page.dart';
+import 'package:meditation/hostelq_page.dart';
 import 'package:meditation/widgets/category_boxes.dart';
 import 'package:meditation/icons.dart';
 import 'package:meditation/widgets/discover_card1.dart';
@@ -23,7 +31,7 @@ class _GirlshostelPageState extends State<GirlshostelPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffd0f4de),
+      backgroundColor: Color(0xff121421 ),
       body: SafeArea(
         child: ListView(
           physics: BouncingScrollPhysics(),
@@ -32,18 +40,18 @@ class _GirlshostelPageState extends State<GirlshostelPage> {
               padding: EdgeInsets.only(
                 left: 70.w,
                 right: 50.w,
-                top: 16.h,
+                top: 36.h,
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  // Text("HOSTELS",
-                  //     //textAlign:TextAlign.center,
-                  //     style: TextStyle(
-                  //
-                  //         color: Colors.white,
-                  //         fontSize: 30.w,
-                  //         fontWeight: FontWeight.bold)),
+                  Text(" GIRLS HOSTELS",
+                      //textAlign:TextAlign.center,
+                      style: TextStyle(
+
+                          color: Colors.white,
+                          fontSize: 26.w,
+                          fontWeight: FontWeight.bold)),
                   // InkWell(
                   //   borderRadius: BorderRadius.circular(360),
                   //   onTap: onSearchIconTapped,
@@ -63,7 +71,7 @@ class _GirlshostelPageState extends State<GirlshostelPage> {
               ),
             ),
             SizedBox(
-              height: 10.h,
+              height: 16.h,
             ),
 
             SizedBox(
@@ -74,19 +82,17 @@ class _GirlshostelPageState extends State<GirlshostelPage> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   SizedBox(width: 35.w,),
-                  DiscoverCard1(
+                  InkWell(
+                    child: DiscoverCard1(
 
-                    //  onTap: ()async{
-                    //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-                    //
-                    //   if (!await launchUrl(_url)) {
-                    //     throw 'Could not launch $_url';
-                    //    }
-                    // },
-                    title: "Hostel E",
-                    subtitle: "EStablished 1980",
-                    gradientStartColor: Color(0xffFC67A7),
-                    gradientEndColor: Color(0xffF6815B),
+                      onTap:() {
+                        Navigator.push(context, MaterialPageRoute(builder:(context)=>HostelePage()));
+                      },
+                      title: "Hostel E",
+                      subtitle: "EStablished 1980",
+                      gradientStartColor: Color(0xffFC67A7),
+                      gradientEndColor: Color(0xffF6815B),
+                    ),
                   ),
                 ],
               ),
@@ -132,13 +138,9 @@ class _GirlshostelPageState extends State<GirlshostelPage> {
                   SizedBox(width: 35.w,),
                   DiscoverCard1(
 
-                    //  onTap: ()async{
-                    //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-                    //
-                    //   if (!await launchUrl(_url)) {
-                    //     throw 'Could not launch $_url';
-                    //    }
-                    // },
+                    onTap:() {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>HostelgPage()));
+                    },
                     title: "Hostel G",
                     subtitle: "EStablished 1980",
                     gradientStartColor: Color(0xff13DEA0),
@@ -159,13 +161,9 @@ class _GirlshostelPageState extends State<GirlshostelPage> {
                   SizedBox(width: 35.w,),
                   DiscoverCard1(
 
-                    //  onTap: ()async{
-                    //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-                    //
-                    //   if (!await launchUrl(_url)) {
-                    //     throw 'Could not launch $_url';
-                    //    }
-                    // },
+                    onTap:() {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>HosteliPage()));
+                    },
                     title: "Hostel I",
                     subtitle: "EStablished 2020",
                     gradientStartColor: Color(0xffFC67A7),
@@ -186,13 +184,9 @@ class _GirlshostelPageState extends State<GirlshostelPage> {
                   SizedBox(width: 35.w,),
                   DiscoverCard1(
 
-                    //  onTap: ()async{
-                    //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-                    //
-                    //   if (!await launchUrl(_url)) {
-                    //     throw 'Could not launch $_url';
-                    //    }
-                    // },
+                    onTap:() {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>HostelpgPage()));
+                    },
                     title: "Hostel PG ",
                     subtitle: "EStablished 1980",
                     gradientStartColor: Color(0xffFFD541),
@@ -213,13 +207,9 @@ class _GirlshostelPageState extends State<GirlshostelPage> {
                   SizedBox(width: 35.w,),
                   DiscoverCard1(
 
-                    //  onTap: ()async{
-                    //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-                    //
-                    //   if (!await launchUrl(_url)) {
-                    //     throw 'Could not launch $_url';
-                    //    }
-                    // },
+                    onTap:() {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>HostelnPage()));
+                    },
                     title: "Hostel N",
                     subtitle: "EStablished 1980",
                     gradientStartColor: Color(0xffFC67A7),
@@ -238,19 +228,17 @@ class _GirlshostelPageState extends State<GirlshostelPage> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   SizedBox(width: 35.w,),
-                  DiscoverCard1(
+                  InkWell(
+                    child: DiscoverCard1(
 
-                    //  onTap: ()async{
-                    //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-                    //
-                    //   if (!await launchUrl(_url)) {
-                    //     throw 'Could not launch $_url';
-                    //    }
-                    // },
-                    title: "Hostel A",
-                    subtitle: "EStablished 1980",
-                    gradientStartColor: Color(0xff13DEA0),
-                    gradientEndColor: Color(0xff06B782),
+                      onTap:() {
+                        Navigator.push(context, MaterialPageRoute(builder:(context)=>HostelaPage()));
+                      },
+                      title: "Hostel A",
+                      subtitle: "EStablished 1980",
+                      gradientStartColor: Color(0xff13DEA0),
+                      gradientEndColor: Color(0xff06B782),
+                    ),
                   ),
                 ],
               ),
@@ -267,13 +255,9 @@ class _GirlshostelPageState extends State<GirlshostelPage> {
                   SizedBox(width: 35.w,),
                   DiscoverCard1(
 
-                    //  onTap: ()async{
-                    //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-                    //
-                    //   if (!await launchUrl(_url)) {
-                    //     throw 'Could not launch $_url';
-                    //    }
-                    // },
+                    onTap:() {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>HostelqPage()));
+                    },
                     title: "Hostel Q",
                     subtitle: "EStablished 1980",
                     gradientStartColor: Color(0xffFC67A7),

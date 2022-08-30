@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:meditation/detail_page.dart';
+import 'package:meditation/widgets/acadblock.dart';
 import 'package:meditation/widgets/category_boxes.dart';
 import 'package:meditation/icons.dart';
 import 'package:meditation/widgets/discover_card2.dart';
+import 'package:meditation/widgets/discover_card5.dart';
 import 'package:meditation/widgets/discover_small_card.dart';
 import 'package:meditation/widgets/svg_asset.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -135,12 +137,41 @@ class _StudyPageState extends State<StudyPage> {
                     ),
                   ),
 
+
                 ],
 
               ),
-            )
+            ),
+            SizedBox(
+              height: 16.h,
+            ),
+            SizedBox(
+              height: 150.w,
+
+              child: ListView(
+                physics: BouncingScrollPhysics(),
+                scrollDirection: Axis.horizontal,
+                children: [
+                  SizedBox(width: 35.w,),
+                  DiscoverCard5(
+
+                    onTap: (){Navigator.push(context, MaterialPageRoute(builder:(context)=>acadPage()));
+
+                    },
+                    title: "Academic "
+                        "Block",
+                    //subtitle: "How to read timetable?",
+                    gradientStartColor: Color(0xffFC67A7),
+                    gradientEndColor: Color(0xffF6815B),
+                  ),
+                ],
+              ),
+            ),
+
           ],
+
         ),
+
       ),
     );
   }

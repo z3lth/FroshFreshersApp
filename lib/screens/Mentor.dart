@@ -37,18 +37,23 @@ class _MentorState extends State<Mentor> {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
     return Scaffold(
-
+        backgroundColor: Color(0xff121421),
+        appBar: AppBar(
+          title: Image.asset('assets/images/tietlogo3.png'),
+          backgroundColor: Color(0xff1C2031),
+          shadowColor: Colors.black,
+        ) ,
         body: SafeArea(
             child: ListView(
               physics: BouncingScrollPhysics(),
 
               children: [
 
-                Text("Mentor",
+                Text("Mentors",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        color: Colors.black87,
+                        color: Colors.white,
                         fontSize: 30)),
 
 
@@ -163,15 +168,15 @@ class _MentorState extends State<Mentor> {
                 SizedBox(
                   height: 5,
                 ),
-                lastCategoriesWidget26(width, height),
-                SizedBox(
-                  height: 5,
-                ),
-                lastCategoriesWidget27(width, height),
-                SizedBox(
-                  height: 5,
-                ),
-              ],
+                // lastCategoriesWidget15(width, height),
+                // SizedBox(
+                //   height: 5,
+                // ),
+                // lastCategoriesWidget27(width, height),
+                // SizedBox(
+                //   height: 5,
+                ],
+
             )
         )
     );
@@ -191,43 +196,44 @@ class _MentorState extends State<Mentor> {
             Models model = snkModels[index];
 
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
+
               child: Container(
+                // color: Colors.blue,
                 margin: EdgeInsets.all(10),
                 width: width / 2.24,
                 height: height / 4.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                  color: Color.fromRGBO(141, 147, 171, 1),
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 26,
-                      left: 25,
+                      top: 15,
+                      left: 15,
                       child: FadeAnimation(
                         delay: 1.5,
                         //child: RotationTransition(
                         //turns: AlwaysStoppedAnimation(-15 / 360),
                         child: Container(
-                          width: width / 3,
-                          height: height / 9,
-                          child: Image(
+                          width: width /2.7,
+                          height: height / 7.5,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
+                            child: Image(
                             image: AssetImage(model.imgAddress),
+                              fit: BoxFit.fill,
+
+
+                           ),
                           ),
                         ),
                       ),
 
                     ),
+
                     Positioned(
-                      top: 124,
+                      top: 135,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2,
@@ -247,7 +253,7 @@ class _MentorState extends State<Mentor> {
                       ),
                     ),
                     Positioned(
-                      top: 145,
+                      top: 150,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2.2,
@@ -256,7 +262,7 @@ class _MentorState extends State<Mentor> {
                           height: height / 42,
                           child: FittedBox(
                             child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
+                              "${model.branch}",
                               style: TextStyle(
                                 color: darkTextColor,
                                 fontWeight: FontWeight.w500,
@@ -284,43 +290,40 @@ class _MentorState extends State<Mentor> {
             Models model = snk1Models[index];
 
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
+
               child: Container(
                 margin: EdgeInsets.all(10),
                 width: width / 2.24,
                 height: height / 4.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                  color: Color.fromRGBO(141, 147, 171, 1),
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 26,
-                      left: 25,
+                      top: 15,
+                      left: 15,
                       child: FadeAnimation(
                         delay: 1.5,
                         // child: RotationTransition(
                         //   turns: AlwaysStoppedAnimation(-15 / 360),
                         child: Container(
-                          width: width / 3,
-                          height: height / 9,
-                          child: Image(
+                          width: width / 2.7,
+                          height: height / 7.5,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
+                           child: Image(
                             image: AssetImage(model.imgAddress),
+                            fit: BoxFit.fill,
+                          ),
                           ),
                         ),
                       ),
 
                     ),
                     Positioned(
-                      top: 124,
+                      top: 135,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2,
@@ -340,7 +343,7 @@ class _MentorState extends State<Mentor> {
                       ),
                     ),
                     Positioned(
-                      top: 145,
+                      top: 150,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2.2,
@@ -349,7 +352,7 @@ class _MentorState extends State<Mentor> {
                           height: height / 42,
                           child: FittedBox(
                             child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
+                              "${model.branch}",
                               style: TextStyle(
                                 color: darkTextColor,
                                 fontWeight: FontWeight.w500,
@@ -377,43 +380,40 @@ class _MentorState extends State<Mentor> {
             Models model = snk2Models[index];
 
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
+
               child: Container(
                 margin: EdgeInsets.all(10),
                 width: width / 2.24,
                 height: height / 4.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                  color: Color.fromRGBO(141, 147, 171, 1),
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 26,
-                      left: 25,
+                      top: 15,
+                      left: 15,
                       child: FadeAnimation(
                         delay: 1.5,
                         // child: RotationTransition(
                         //   turns: AlwaysStoppedAnimation(-15 / 360),
                         child: Container(
-                          width: width / 3,
-                          height: height / 9,
+                          width: width / 2.7,
+                          height: height / 7.5,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
                           child: Image(
                             image: AssetImage(model.imgAddress),
+                            fit: BoxFit.fill,
                           ),
+                        ),
                         ),
                       ),
 
                     ),
                     Positioned(
-                      top: 124,
+                      top: 135,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2,
@@ -433,7 +433,7 @@ class _MentorState extends State<Mentor> {
                       ),
                     ),
                     Positioned(
-                      top: 145,
+                      top: 150,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2.2,
@@ -442,7 +442,7 @@ class _MentorState extends State<Mentor> {
                           height: height / 42,
                           child: FittedBox(
                             child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
+                              "${model.branch}",
                               style: TextStyle(
                                 color: darkTextColor,
                                 fontWeight: FontWeight.w500,
@@ -469,43 +469,41 @@ class _MentorState extends State<Mentor> {
             Models model = snk3Models[index];
 
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
+
+
               child: Container(
                 margin: EdgeInsets.all(10),
                 width: width / 2.24,
                 height: height / 4.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                  color: Color.fromRGBO(141, 147, 171, 1),
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 26,
-                      left: 25,
+                      top: 15,
+                      left: 15,
                       child: FadeAnimation(
                         delay: 1.5,
                         // child: RotationTransition(
                         //   turns: AlwaysStoppedAnimation(-15 / 360),
                         child: Container(
-                          width: width / 3,
-                          height: height / 9,
+                          width: width / 2.7,
+                          height: height / 7.5,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
                           child: Image(
                             image: AssetImage(model.imgAddress),
+                            fit: BoxFit.fill,
                           ),
+                        ),
                         ),
 
                       ),
                     ),
                     Positioned(
-                      top: 124,
+                      top: 135,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2,
@@ -525,7 +523,7 @@ class _MentorState extends State<Mentor> {
                       ),
                     ),
                     Positioned(
-                      top: 145,
+                      top: 150,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2.2,
@@ -534,7 +532,7 @@ class _MentorState extends State<Mentor> {
                           height: height / 42,
                           child: FittedBox(
                             child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
+                              "${model.branch}",
                               style: TextStyle(
                                 color: darkTextColor,
                                 fontWeight: FontWeight.w500,
@@ -561,43 +559,40 @@ class _MentorState extends State<Mentor> {
             Models model = snk4Models[index];
 
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
+
               child: Container(
                 margin: EdgeInsets.all(10),
                 width: width / 2.24,
                 height: height / 4.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                  color: Color.fromRGBO(141, 147, 171, 1),
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 26,
-                      left: 25,
+                      top: 15,
+                      left: 15,
                       child: FadeAnimation(
                         delay: 1.5,
                         // child: RotationTransition(
                         //   turns: AlwaysStoppedAnimation(-15 / 360),
                         child: Container(
-                          width: width / 3,
-                          height: height / 9,
+                          width: width / 2.7,
+                          height: height / 7.5,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
                           child: Image(
                             image: AssetImage(model.imgAddress),
+                            fit: BoxFit.fill,
                           ),
+                        ),
                         ),
 
                       ),
                     ),
                     Positioned(
-                      top: 124,
+                      top: 135,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2,
@@ -617,7 +612,7 @@ class _MentorState extends State<Mentor> {
                       ),
                     ),
                     Positioned(
-                      top: 145,
+                      top: 150,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2.2,
@@ -626,7 +621,7 @@ class _MentorState extends State<Mentor> {
                           height: height / 42,
                           child: FittedBox(
                             child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
+                              "${model.branch}",
                               style: TextStyle(
                                 color: darkTextColor,
                                 fontWeight: FontWeight.w500,
@@ -653,43 +648,40 @@ class _MentorState extends State<Mentor> {
             Models model = snk5Models[index];
 
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
+
               child: Container(
                 margin: EdgeInsets.all(10),
                 width: width / 2.24,
                 height: height / 4.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                  color: Color.fromRGBO(141, 147, 171, 1),
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 26,
-                      left: 25,
+                      top: 15,
+                      left: 15,
                       child: FadeAnimation(
                         delay: 1.5,
                         // child: RotationTransition(
                         //   turns: AlwaysStoppedAnimation(-15 / 360),
                         child: Container(
-                          width: width / 3,
-                          height: height / 9,
+                          width: width / 2.7,
+                          height: height / 7.5,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
                           child: Image(
                             image: AssetImage(model.imgAddress),
+                            fit: BoxFit.fill,
                           ),
+                        ),
                         ),
                       ),
 
                     ),
                     Positioned(
-                      top: 124,
+                      top: 135,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2,
@@ -709,7 +701,7 @@ class _MentorState extends State<Mentor> {
                       ),
                     ),
                     Positioned(
-                      top: 145,
+                      top: 150,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2.2,
@@ -718,7 +710,7 @@ class _MentorState extends State<Mentor> {
                           height: height / 42,
                           child: FittedBox(
                             child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
+                              "${model.branch}",
                               style: TextStyle(
                                 color: darkTextColor,
                                 fontWeight: FontWeight.w500,
@@ -745,43 +737,40 @@ class _MentorState extends State<Mentor> {
             Models model = snk6Models[index];
 
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
+
               child: Container(
                 margin: EdgeInsets.all(10),
                 width: width / 2.24,
                 height: height / 4.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                  color: Color.fromRGBO(141, 147, 171, 1),
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 26,
-                      left: 25,
+                      top: 15,
+                      left: 15,
                       child: FadeAnimation(
                         delay: 1.5,
                         // child: RotationTransition(
                         //   turns: AlwaysStoppedAnimation(-15 / 360),
                         child: Container(
-                          width: width / 3,
-                          height: height / 9,
+                          width: width / 2.7,
+                          height: height / 7.5,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
                           child: Image(
                             image: AssetImage(model.imgAddress),
+                            fit: BoxFit.fill,
                           ),
+                        ),
                         ),
                       ),
 
                     ),
                     Positioned(
-                      top: 124,
+                      top: 135,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2,
@@ -801,7 +790,7 @@ class _MentorState extends State<Mentor> {
                       ),
                     ),
                     Positioned(
-                      top: 145,
+                      top: 150,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2.2,
@@ -810,7 +799,7 @@ class _MentorState extends State<Mentor> {
                           height: height / 42,
                           child: FittedBox(
                             child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
+                              "${model.branch}",
                               style: TextStyle(
                                 color: darkTextColor,
                                 fontWeight: FontWeight.w500,
@@ -837,43 +826,40 @@ class _MentorState extends State<Mentor> {
             Models model = snk7Models[index];
 
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
+
               child: Container(
                 margin: EdgeInsets.all(10),
                 width: width / 2.24,
                 height: height / 4.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                  color: Color.fromRGBO(141, 147, 171, 1),
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 26,
-                      left: 25,
+                      top: 15,
+                      left: 15,
                       child: FadeAnimation(
                         delay: 1.5,
                         // child: RotationTransition(
                         //   turns: AlwaysStoppedAnimation(-15 / 360),
                         child: Container(
-                          width: width / 3,
-                          height: height / 9,
+                          width: width / 2.7,
+                          height: height / 7.5,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
                           child: Image(
                             image: AssetImage(model.imgAddress),
+                              fit: BoxFit.fill,
                           ),
+                        ),
                         ),
                       ),
                     ),
 
                     Positioned(
-                      top: 124,
+                      top: 135,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2,
@@ -893,7 +879,7 @@ class _MentorState extends State<Mentor> {
                       ),
                     ),
                     Positioned(
-                      top: 145,
+                      top: 150,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2.2,
@@ -902,7 +888,7 @@ class _MentorState extends State<Mentor> {
                           height: height / 42,
                           child: FittedBox(
                             child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
+                              "${model.branch}",
                               style: TextStyle(
                                 color: darkTextColor,
                                 fontWeight: FontWeight.w500,
@@ -929,43 +915,38 @@ class _MentorState extends State<Mentor> {
             Models model = snk8Models[index];
 
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
+
               child: Container(
                 margin: EdgeInsets.all(10),
                 width: width / 2.24,
                 height: height / 4.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                  color: Color.fromRGBO(141, 147, 171, 1),
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 26,
-                      left: 25,
+                      top: 15,
+                      left: 15,
                       child: FadeAnimation(
                         delay: 1.5,
-                        child: RotationTransition(
-                          turns: AlwaysStoppedAnimation(-15 / 360),
+
                           child: Container(
-                            width: width / 3,
-                            height: height / 9,
+                            width: width / 2.7,
+                            height: height / 7.5,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
                             child: Image(
                               image: AssetImage(model.imgAddress),
+                              fit: BoxFit.fill,
                             ),
                           ),
-                        ),
+                          ),
                       ),
                     ),
                     Positioned(
-                      top: 124,
+                      top: 135,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2,
@@ -985,7 +966,7 @@ class _MentorState extends State<Mentor> {
                       ),
                     ),
                     Positioned(
-                      top: 145,
+                      top: 150,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2.2,
@@ -994,7 +975,7 @@ class _MentorState extends State<Mentor> {
                           height: height / 42,
                           child: FittedBox(
                             child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
+                              "${model.branch}",
                               style: TextStyle(
                                 color: darkTextColor,
                                 fontWeight: FontWeight.w500,
@@ -1021,43 +1002,38 @@ class _MentorState extends State<Mentor> {
             Models model = snk9Models[index];
 
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
+
               child: Container(
                 margin: EdgeInsets.all(10),
                 width: width / 2.24,
                 height: height / 4.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                  color: Color.fromRGBO(141, 147, 171, 1),
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 26,
-                      left: 25,
+                      top: 15,
+                      left: 15,
                       child: FadeAnimation(
                         delay: 1.5,
-                        child: RotationTransition(
-                          turns: AlwaysStoppedAnimation(-15 / 360),
+
                           child: Container(
-                            width: width / 3,
-                            height: height / 9,
+                            width: width / 2.7,
+                            height: height / 7.5,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
                             child: Image(
                               image: AssetImage(model.imgAddress),
+                              fit: BoxFit.fill,
                             ),
                           ),
-                        ),
+                          ),
                       ),
                     ),
                     Positioned(
-                      top: 124,
+                      top: 135,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2,
@@ -1077,7 +1053,7 @@ class _MentorState extends State<Mentor> {
                       ),
                     ),
                     Positioned(
-                      top: 145,
+                      top: 150,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2.2,
@@ -1086,7 +1062,7 @@ class _MentorState extends State<Mentor> {
                           height: height / 42,
                           child: FittedBox(
                             child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
+                              "${model.branch}",
                               style: TextStyle(
                                 color: darkTextColor,
                                 fontWeight: FontWeight.w500,
@@ -1113,43 +1089,39 @@ class _MentorState extends State<Mentor> {
             Models model = snk10Models[index];
 
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
+
               child: Container(
                 margin: EdgeInsets.all(10),
                 width: width / 2.24,
                 height: height / 4.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                  color: Color.fromRGBO(141, 147, 171, 1),
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 26,
-                      left: 25,
+                      top: 15,
+                      left: 15,
                       child: FadeAnimation(
                         delay: 1.5,
-                        child: RotationTransition(
-                          turns: AlwaysStoppedAnimation(-15 / 360),
+
                           child: Container(
-                            width: width / 3,
-                            height: height / 9,
+                            width: width / 2.7,
+                            height: height / 7.5,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
                             child: Image(
                               image: AssetImage(model.imgAddress),
+                              fit: BoxFit.fill,
                             ),
                           ),
-                        ),
+                          ),
+
                       ),
                     ),
                     Positioned(
-                      top: 124,
+                      top: 135,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2,
@@ -1169,7 +1141,7 @@ class _MentorState extends State<Mentor> {
                       ),
                     ),
                     Positioned(
-                      top: 145,
+                      top: 150,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2.2,
@@ -1178,7 +1150,7 @@ class _MentorState extends State<Mentor> {
                           height: height / 42,
                           child: FittedBox(
                             child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
+                              "${model.branch}",
                               style: TextStyle(
                                 color: darkTextColor,
                                 fontWeight: FontWeight.w500,
@@ -1205,43 +1177,38 @@ class _MentorState extends State<Mentor> {
             Models model = snk11Models[index];
 
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
+
               child: Container(
                 margin: EdgeInsets.all(10),
                 width: width / 2.24,
                 height: height / 4.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                  color: Color.fromRGBO(141, 147, 171, 1),
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 26,
-                      left: 25,
+                      top: 15,
+                      left: 15,
                       child: FadeAnimation(
                         delay: 1.5,
-                        child: RotationTransition(
-                          turns: AlwaysStoppedAnimation(-15 / 360),
+
                           child: Container(
-                            width: width / 3,
-                            height: height / 9,
+                            width: width / 2.7,
+                            height: height / 7.5,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
                             child: Image(
                               image: AssetImage(model.imgAddress),
+                              fit: BoxFit.fill,
                             ),
                           ),
-                        ),
+                          ),
                       ),
                     ),
                     Positioned(
-                      top: 124,
+                      top: 135,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2,
@@ -1261,7 +1228,7 @@ class _MentorState extends State<Mentor> {
                       ),
                     ),
                     Positioned(
-                      top: 145,
+                      top: 150,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2.2,
@@ -1270,7 +1237,7 @@ class _MentorState extends State<Mentor> {
                           height: height / 42,
                           child: FittedBox(
                             child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
+                              "${model.branch}",
                               style: TextStyle(
                                 color: darkTextColor,
                                 fontWeight: FontWeight.w500,
@@ -1297,43 +1264,43 @@ class _MentorState extends State<Mentor> {
             Models model = snk12Models[index];
 
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
+
               child: Container(
                 margin: EdgeInsets.all(10),
                 width: width / 2.24,
                 height: height / 4.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                  color: Color.fromRGBO(141, 147, 171, 1),
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 26,
-                      left: 25,
+                      top: 15,
+                      left: 15,
                       child: FadeAnimation(
                         delay: 1.5,
-                        child: RotationTransition(
-                          turns: AlwaysStoppedAnimation(-15 / 360),
+
                           child: Container(
-                            width: width / 3,
-                            height: height / 9,
+                            width: width / 2.7,
+                            height: height / 7.5,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
                             child: Image(
+
                               image: AssetImage(model.imgAddress),
+                              fit: BoxFit.fill,
+
+
+
                             ),
                           ),
-                        ),
+                          ),
+
                       ),
                     ),
                     Positioned(
-                      top: 124,
+                      top: 135,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2,
@@ -1353,7 +1320,7 @@ class _MentorState extends State<Mentor> {
                       ),
                     ),
                     Positioned(
-                      top: 145,
+                      top: 150,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2.2,
@@ -1362,7 +1329,7 @@ class _MentorState extends State<Mentor> {
                           height: height / 42,
                           child: FittedBox(
                             child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
+                              "${model.branch}",
                               style: TextStyle(
                                 color: darkTextColor,
                                 fontWeight: FontWeight.w500,
@@ -1390,43 +1357,39 @@ class _MentorState extends State<Mentor> {
             Models model = snk13Models[index];
 
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
+
               child: Container(
                 margin: EdgeInsets.all(10),
                 width: width / 2.24,
                 height: height / 4.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                  color: Color.fromRGBO(141, 147, 171, 1),
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 26,
-                      left: 25,
+                      top: 15,
+                      left: 15,
                       child: FadeAnimation(
                         delay: 1.5,
-                        child: RotationTransition(
-                          turns: AlwaysStoppedAnimation(-15 / 360),
+
                           child: Container(
-                            width: width / 3,
-                            height: height / 9,
+                            width: width / 2.7,
+                            height: height / 7.5,
+                            child:ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
                             child: Image(
                               image: AssetImage(model.imgAddress),
+                              fit: BoxFit.fill,
                             ),
                           ),
-                        ),
+                          ),
+
                       ),
                     ),
                     Positioned(
-                      top: 124,
+                      top: 135,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2,
@@ -1446,7 +1409,7 @@ class _MentorState extends State<Mentor> {
                       ),
                     ),
                     Positioned(
-                      top: 145,
+                      top: 150,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2.2,
@@ -1455,7 +1418,7 @@ class _MentorState extends State<Mentor> {
                           height: height / 42,
                           child: FittedBox(
                             child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
+                              "${model.branch}",
                               style: TextStyle(
                                 color: darkTextColor,
                                 fontWeight: FontWeight.w500,
@@ -1483,43 +1446,41 @@ class _MentorState extends State<Mentor> {
             Models model = snk14Models[index];
 
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
+
               child: Container(
                 margin: EdgeInsets.all(10),
                 width: width / 2.24,
                 height: height / 4.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                  color: Color.fromRGBO(141, 147, 171, 1),
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 26,
-                      left: 25,
+                      top: 15,
+                      left: 15,
                       child: FadeAnimation(
                         delay: 1.5,
-                        child: RotationTransition(
-                          turns: AlwaysStoppedAnimation(-15 / 360),
+
                           child: Container(
-                            width: width / 3,
-                            height: height / 9,
+                            width: width / 2.7,
+                            height: height / 7.5,
+                            child:ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
                             child: Image(
+                              height: 100,
+                              width: width/5,
                               image: AssetImage(model.imgAddress),
+                              fit: BoxFit.fill,
                             ),
                           ),
-                        ),
+                          ),
+
                       ),
                     ),
                     Positioned(
-                      top: 124,
+                      top: 135,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2,
@@ -1539,7 +1500,7 @@ class _MentorState extends State<Mentor> {
                       ),
                     ),
                     Positioned(
-                      top: 145,
+                      top: 150,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2.2,
@@ -1548,7 +1509,7 @@ class _MentorState extends State<Mentor> {
                           height: height / 42,
                           child: FittedBox(
                             child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
+                              "${model.branch}",
                               style: TextStyle(
                                 color: darkTextColor,
                                 fontWeight: FontWeight.w500,
@@ -1576,43 +1537,39 @@ class _MentorState extends State<Mentor> {
             Models model = snk15Models[index];
 
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
+
               child: Container(
                 margin: EdgeInsets.all(10),
                 width: width / 2.24,
                 height: height / 4.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                  color: Color.fromRGBO(141, 147, 171, 1),
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 26,
-                      left: 25,
+                      top: 15,
+                      left: 15,
                       child: FadeAnimation(
                         delay: 1.5,
-                        child: RotationTransition(
-                          turns: AlwaysStoppedAnimation(-15 / 360),
+
                           child: Container(
-                            width: width / 3,
-                            height: height / 9,
+                            width: width / 2.7,
+                            height: height / 7.5,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
                             child: Image(
                               image: AssetImage(model.imgAddress),
+                              fit: BoxFit.fill,
                             ),
                           ),
-                        ),
+                          ),
+
                       ),
                     ),
                     Positioned(
-                      top: 124,
+                      top: 135,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2,
@@ -1632,7 +1589,7 @@ class _MentorState extends State<Mentor> {
                       ),
                     ),
                     Positioned(
-                      top: 145,
+                      top: 150,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2.2,
@@ -1641,7 +1598,7 @@ class _MentorState extends State<Mentor> {
                           height: height / 42,
                           child: FittedBox(
                             child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
+                              "${model.branch}",
                               style: TextStyle(
                                 color: darkTextColor,
                                 fontWeight: FontWeight.w500,
@@ -1669,43 +1626,39 @@ class _MentorState extends State<Mentor> {
             Models model = snk16Models[index];
 
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
+
               child: Container(
                 margin: EdgeInsets.all(10),
                 width: width / 2.24,
                 height: height / 4.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                  color: Color.fromRGBO(141, 147, 171, 1),
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 26,
-                      left: 25,
+                      top: 15,
+                      left: 15,
                       child: FadeAnimation(
                         delay: 1.5,
-                        child: RotationTransition(
-                          turns: AlwaysStoppedAnimation(-15 / 360),
+
                           child: Container(
-                            width: width / 3,
-                            height: height / 9,
+                            width: width / 2.7,
+                            height: height / 7.5,
+                            child:ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
                             child: Image(
                               image: AssetImage(model.imgAddress),
+                              fit: BoxFit.fill,
                             ),
                           ),
-                        ),
+                          ),
+
                       ),
                     ),
                     Positioned(
-                      top: 124,
+                      top: 135,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2,
@@ -1725,7 +1678,7 @@ class _MentorState extends State<Mentor> {
                       ),
                     ),
                     Positioned(
-                      top: 145,
+                      top: 150,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2.2,
@@ -1734,7 +1687,7 @@ class _MentorState extends State<Mentor> {
                           height: height / 42,
                           child: FittedBox(
                             child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
+                              "${model.branch}",
                               style: TextStyle(
                                 color: darkTextColor,
                                 fontWeight: FontWeight.w500,
@@ -1761,43 +1714,39 @@ class _MentorState extends State<Mentor> {
             Models model = snk22Models[index];
 
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
+
               child: Container(
                 margin: EdgeInsets.all(10),
                 width: width / 2.24,
                 height: height / 4.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                  color: Color.fromRGBO(141, 147, 171, 1),
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 26,
-                      left: 25,
+                      top: 15,
+                      left: 15,
                       child: FadeAnimation(
                         delay: 1.5,
-                        child: RotationTransition(
-                          turns: AlwaysStoppedAnimation(-15 / 360),
+
                           child: Container(
-                            width: width / 3,
-                            height: height / 9,
+                            width: width / 2.7,
+                            height: height / 7.5,
+                            child:ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
                             child: Image(
                               image: AssetImage(model.imgAddress),
+                              fit: BoxFit.fill,
                             ),
                           ),
-                        ),
+                          ),
+
                       ),
                     ),
                     Positioned(
-                      top: 124,
+                      top: 135,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2,
@@ -1817,7 +1766,7 @@ class _MentorState extends State<Mentor> {
                       ),
                     ),
                     Positioned(
-                      top: 145,
+                      top: 150,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2.2,
@@ -1826,7 +1775,7 @@ class _MentorState extends State<Mentor> {
                           height: height / 42,
                           child: FittedBox(
                             child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
+                              "${model.branch}",
                               style: TextStyle(
                                 color: darkTextColor,
                                 fontWeight: FontWeight.w500,
@@ -1853,43 +1802,39 @@ class _MentorState extends State<Mentor> {
             Models model = snk17Models[index];
 
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
+
               child: Container(
                 margin: EdgeInsets.all(10),
                 width: width / 2.24,
                 height: height / 4.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                  color: Color.fromRGBO(141, 147, 171, 1),
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 26,
-                      left: 25,
+                      top: 15,
+                      left: 15,
                       child: FadeAnimation(
                         delay: 1.5,
-                        child: RotationTransition(
-                          turns: AlwaysStoppedAnimation(-15 / 360),
+
                           child: Container(
-                            width: width / 3,
-                            height: height / 9,
+                            width: width / 2.7,
+                            height: height / 7.5,
+                            child:ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
                             child: Image(
                               image: AssetImage(model.imgAddress),
+                              fit: BoxFit.fill,
                             ),
                           ),
-                        ),
+                          ),
+
                       ),
                     ),
                     Positioned(
-                      top: 124,
+                      top: 135,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2,
@@ -1909,7 +1854,7 @@ class _MentorState extends State<Mentor> {
                       ),
                     ),
                     Positioned(
-                      top: 145,
+                      top: 150,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2.2,
@@ -1918,7 +1863,7 @@ class _MentorState extends State<Mentor> {
                           height: height / 42,
                           child: FittedBox(
                             child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
+                              "${model.branch}",
                               style: TextStyle(
                                 color: darkTextColor,
                                 fontWeight: FontWeight.w500,
@@ -1945,43 +1890,39 @@ class _MentorState extends State<Mentor> {
             Models model = snk18Models[index];
 
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
+
               child: Container(
                 margin: EdgeInsets.all(10),
                 width: width / 2.24,
                 height: height / 4.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                  color: Color.fromRGBO(141, 147, 171, 1),
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 26,
-                      left: 25,
+                      top: 15,
+                      left: 15,
                       child: FadeAnimation(
                         delay: 1.5,
-                        child: RotationTransition(
-                          turns: AlwaysStoppedAnimation(-15 / 360),
+
                           child: Container(
-                            width: width / 3,
-                            height: height / 9,
+                            width: width / 2.7,
+                            height: height / 7.5,
+                            child:ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
                             child: Image(
                               image: AssetImage(model.imgAddress),
+                              fit: BoxFit.fill,
                             ),
                           ),
-                        ),
+                          ),
+
                       ),
                     ),
                     Positioned(
-                      top: 124,
+                      top: 135,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2,
@@ -2001,7 +1942,7 @@ class _MentorState extends State<Mentor> {
                       ),
                     ),
                     Positioned(
-                      top: 145,
+                      top: 150,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2.2,
@@ -2010,7 +1951,7 @@ class _MentorState extends State<Mentor> {
                           height: height / 42,
                           child: FittedBox(
                             child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
+                              "${model.branch}",
                               style: TextStyle(
                                 color: darkTextColor,
                                 fontWeight: FontWeight.w500,
@@ -2037,43 +1978,39 @@ class _MentorState extends State<Mentor> {
             Models model = snk19Models[index];
 
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
+
               child: Container(
                 margin: EdgeInsets.all(10),
                 width: width / 2.24,
                 height: height / 4.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                  color: Color.fromRGBO(141, 147, 171, 1),
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 26,
-                      left: 25,
+                      top: 15,
+                      left: 15,
                       child: FadeAnimation(
                         delay: 1.5,
-                        child: RotationTransition(
-                          turns: AlwaysStoppedAnimation(-15 / 360),
+
                           child: Container(
-                            width: width / 3,
-                            height: height / 9,
+                            width: width / 2.7,
+                            height: height / 7.5,
+                            child:ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
                             child: Image(
                               image: AssetImage(model.imgAddress),
+                              fit: BoxFit.fill,
                             ),
                           ),
-                        ),
+                          ),
+
                       ),
                     ),
                     Positioned(
-                      top: 124,
+                      top: 135,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2,
@@ -2093,7 +2030,7 @@ class _MentorState extends State<Mentor> {
                       ),
                     ),
                     Positioned(
-                      top: 145,
+                      top: 150,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2.2,
@@ -2102,7 +2039,7 @@ class _MentorState extends State<Mentor> {
                           height: height / 42,
                           child: FittedBox(
                             child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
+                              "${model.branch}",
                               style: TextStyle(
                                 color: darkTextColor,
                                 fontWeight: FontWeight.w500,
@@ -2129,43 +2066,39 @@ class _MentorState extends State<Mentor> {
             Models model = snk20Models[index];
 
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
+
               child: Container(
                 margin: EdgeInsets.all(10),
                 width: width / 2.24,
                 height: height / 4.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                  color: Color.fromRGBO(141, 147, 171, 1),
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 26,
-                      left: 25,
+                      top: 15,
+                      left: 15,
                       child: FadeAnimation(
                         delay: 1.5,
-                        child: RotationTransition(
-                          turns: AlwaysStoppedAnimation(-15 / 360),
+
                           child: Container(
-                            width: width / 3,
-                            height: height / 9,
+                            width: width / 2.7,
+                            height: height / 7.5,
+                            child:ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
                             child: Image(
                               image: AssetImage(model.imgAddress),
+                              fit: BoxFit.fill,
                             ),
                           ),
-                        ),
+                          ),
+
                       ),
                     ),
                     Positioned(
-                      top: 124,
+                      top: 135,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2,
@@ -2185,7 +2118,7 @@ class _MentorState extends State<Mentor> {
                       ),
                     ),
                     Positioned(
-                      top: 145,
+                      top: 150,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2.2,
@@ -2194,7 +2127,7 @@ class _MentorState extends State<Mentor> {
                           height: height / 42,
                           child: FittedBox(
                             child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
+                              "${model.branch}",
                               style: TextStyle(
                                 color: darkTextColor,
                                 fontWeight: FontWeight.w500,
@@ -2221,43 +2154,39 @@ class _MentorState extends State<Mentor> {
             Models model = snk21Models[index];
 
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
+
               child: Container(
                 margin: EdgeInsets.all(10),
                 width: width / 2.24,
                 height: height / 4.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                  color: Color.fromRGBO(141, 147, 171, 1),
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 26,
-                      left: 25,
+                      top: 15,
+                      left: 15,
                       child: FadeAnimation(
                         delay: 1.5,
-                        child: RotationTransition(
-                          turns: AlwaysStoppedAnimation(-15 / 360),
+
                           child: Container(
-                            width: width / 3,
-                            height: height / 9,
+                            width: width / 2.7,
+                            height: height / 7.5,
+                            child:ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
                             child: Image(
                               image: AssetImage(model.imgAddress),
+                              fit: BoxFit.fill,
                             ),
                           ),
-                        ),
+                          ),
+
                       ),
                     ),
                     Positioned(
-                      top: 124,
+                      top: 135,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2,
@@ -2277,7 +2206,7 @@ class _MentorState extends State<Mentor> {
                       ),
                     ),
                     Positioned(
-                      top: 145,
+                      top: 150,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2.2,
@@ -2286,7 +2215,7 @@ class _MentorState extends State<Mentor> {
                           height: height / 42,
                           child: FittedBox(
                             child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
+                              "${model.branch}",
                               style: TextStyle(
                                 color: darkTextColor,
                                 fontWeight: FontWeight.w500,
@@ -2313,43 +2242,40 @@ class _MentorState extends State<Mentor> {
             Models model = snk23Models[index];
 
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
+
               child: Container(
                 margin: EdgeInsets.all(10),
                 width: width / 2.24,
                 height: height / 4.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                  color: Color.fromRGBO(141, 147, 171, 1),
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 26,
-                      left: 25,
+                      top: 15,
+                      left: 15,
                       child: FadeAnimation(
                         delay: 1.5,
-                        child: RotationTransition(
-                          turns: AlwaysStoppedAnimation(-15 / 360),
+
                           child: Container(
-                            width: width / 3,
-                            height: height / 9,
+
+                            width: width / 2.7,
+                            height: height / 7.5,
+                            child:ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
                             child: Image(
                               image: AssetImage(model.imgAddress),
+                              fit: BoxFit.fill,
                             ),
                           ),
-                        ),
+                          ),
+
                       ),
                     ),
                     Positioned(
-                      top: 124,
+                      top: 135,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2,
@@ -2369,7 +2295,7 @@ class _MentorState extends State<Mentor> {
                       ),
                     ),
                     Positioned(
-                      top: 145,
+                      top: 150,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2.2,
@@ -2378,7 +2304,7 @@ class _MentorState extends State<Mentor> {
                           height: height / 42,
                           child: FittedBox(
                             child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
+                              "${model.branch}",
                               style: TextStyle(
                                 color: darkTextColor,
                                 fontWeight: FontWeight.w500,
@@ -2405,43 +2331,38 @@ class _MentorState extends State<Mentor> {
             Models model = snk24Models[index];
 
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
+
               child: Container(
                 margin: EdgeInsets.all(10),
                 width: width / 2.24,
                 height: height / 4.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                  color: Color.fromRGBO(141, 147, 171, 1),
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 26,
-                      left: 25,
+                      top: 15,
+                      left: 15,
                       child: FadeAnimation(
                         delay: 1.5,
-                        child: RotationTransition(
-                          turns: AlwaysStoppedAnimation(-15 / 360),
+
                           child: Container(
-                            width: width / 3,
-                            height: height / 9,
+                            width: width / 2.7,
+                            height: height / 7.5,
+                            child:ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
                             child: Image(
                               image: AssetImage(model.imgAddress),
+                              fit: BoxFit.fill,
                             ),
                           ),
-                        ),
+                          ),
                       ),
                     ),
                     Positioned(
-                      top: 124,
+                      top: 135,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2,
@@ -2461,7 +2382,7 @@ class _MentorState extends State<Mentor> {
                       ),
                     ),
                     Positioned(
-                      top: 145,
+                      top: 150,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2.2,
@@ -2470,7 +2391,7 @@ class _MentorState extends State<Mentor> {
                           height: height / 42,
                           child: FittedBox(
                             child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
+                              "${model.branch}",
                               style: TextStyle(
                                 color: darkTextColor,
                                 fontWeight: FontWeight.w500,
@@ -2497,227 +2418,42 @@ class _MentorState extends State<Mentor> {
             Models model = snk25Models[index];
 
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
-              child: Container(
-                margin: EdgeInsets.all(10),
-                width: width / 2.24,
-                height: height / 4.3,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
-                ),
-                child: Stack(
-                  children: [
-                    Positioned(
-                      top: 26,
-                      left: 25,
-                      child: FadeAnimation(
-                        delay: 1.5,
-                        child: RotationTransition(
-                          turns: AlwaysStoppedAnimation(-15 / 360),
-                          child: Container(
-                            width: width / 3,
-                            height: height / 9,
-                            child: Image(
-                              image: AssetImage(model.imgAddress),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    Positioned(
-                      top: 124,
-                      left: 45,
-                      child: FadeAnimation(
-                        delay: 2,
-                        child: Container(
-                          width: width / 4,
-                          height: height / 42,
-                          child: FittedBox(
-                            child: Text(
-                              "${model.name} ${model.model}",
-                              style: TextStyle(
-                                color: darkTextColor,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    Positioned(
-                      top: 145,
-                      left: 45,
-                      child: FadeAnimation(
-                        delay: 2.2,
-                        child: Container(
-                          width: width / 4,
-                          height: height / 42,
-                          child: FittedBox(
-                            child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
-                              style: TextStyle(
-                                color: darkTextColor,
-                                fontWeight: FontWeight.w500,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    )
-                  ],
-                ),
-              ),
-            );
-          }),
-    );
-  } lastCategoriesWidget26(width, height) {
-    return Container(
-      width: width,
-      height: height/4,
-      child: ListView.builder(
-          itemCount:2,
-          scrollDirection: Axis.horizontal,
-          itemBuilder: (ctx, index) {
-            Models model = snk26Models[index];
 
-            return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
               child: Container(
                 margin: EdgeInsets.all(10),
                 width: width / 2.24,
                 height: height / 4.3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                  color: Color.fromRGBO(141, 147, 171, 1),
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 26,
-                      left: 25,
+                      top: 15,
+                      left: 15,
                       child: FadeAnimation(
                         delay: 1.5,
-                        child: RotationTransition(
-                          turns: AlwaysStoppedAnimation(-15 / 360),
-                          child: Container(
-                            width: width / 3,
-                            height: height / 9,
-                            child: Image(
-                              image: AssetImage(model.imgAddress),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    Positioned(
-                      top: 124,
-                      left: 45,
-                      child: FadeAnimation(
-                        delay: 2,
-                        child: Container(
-                          width: width / 4,
-                          height: height / 42,
-                          child: FittedBox(
-                            child: Text(
-                              "${model.name} ${model.model}",
-                              style: TextStyle(
-                                color: darkTextColor,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    Positioned(
-                      top: 145,
-                      left: 45,
-                      child: FadeAnimation(
-                        delay: 2.2,
-                        child: Container(
-                          width: width / 4,
-                          height: height / 42,
-                          child: FittedBox(
-                            child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
-                              style: TextStyle(
-                                color: darkTextColor,
-                                fontWeight: FontWeight.w500,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    )
-                  ],
-                ),
-              ),
-            );
-          }),
-    );
-  } lastCategoriesWidget27(width, height) {
-    return Container(
-      width: width,
-      height: height/4,
-      child: ListView.builder(
-          itemCount:2,
-          scrollDirection: Axis.horizontal,
-          itemBuilder: (ctx, index) {
-            Models model = snk27Models[index];
 
-            return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (ctx) => DetailScreen(model: model),
-                  ),
-                );
-              },
-              child: Container(
-                margin: EdgeInsets.all(10),
-                width: width / 2.24,
-                height: height / 4.3,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
-                ),
-                child: Stack(
-                  children: [
-                    Positioned(
-                      top: 26,
-                      left: 25,
-                      child: FadeAnimation(
-                        delay: 1.5,
-                        child: RotationTransition(
-                          turns: AlwaysStoppedAnimation(-15 / 360),
                           child: Container(
-                            width: width / 3,
-                            height: height / 9,
+                            width: width / 2.7,
+                            height: height / 7.5,
+
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
+
                             child: Image(
                               image: AssetImage(model.imgAddress),
+                              fit: BoxFit.fill,
+
+                            ),
                             ),
                           ),
-                        ),
+
                       ),
                     ),
                     Positioned(
-                      top: 124,
+                      top: 135,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2,
@@ -2737,7 +2473,7 @@ class _MentorState extends State<Mentor> {
                       ),
                     ),
                     Positioned(
-                      top: 145,
+                      top: 150,
                       left: 45,
                       child: FadeAnimation(
                         delay: 2.2,
@@ -2746,7 +2482,7 @@ class _MentorState extends State<Mentor> {
                           height: height / 42,
                           child: FittedBox(
                             child: Text(
-                              "\$${model.price.toStringAsFixed(2)}",
+                              "${model.branch}",
                               style: TextStyle(
                                 color: darkTextColor,
                                 fontWeight: FontWeight.w500,
@@ -2763,8 +2499,4 @@ class _MentorState extends State<Mentor> {
           }),
     );
   }
-
-
-
-
 }

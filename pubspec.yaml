@@ -23,6 +23,14 @@ dependencies:
   simple_animations: ^4.0.1
   supercharged: ^2.1.1
   font_awesome_flutter: ^9.2.0
+  mapbox_gl: ^0.15.0
+  flutter_native_splash: ^2.0.2
+  cached_network_image: ^3.2.0
+  shared_preferences: ^2.0.15
+  location: ^4.3.0
+  dio: ^4.0.4
+  flutter_dotenv: ^5.0.2
+  localstorage: ^4.0.0+1
 
 dev_dependencies:
   flutter_launcher_icons: ^0.10.0
@@ -36,6 +44,8 @@ flutter:
   uses-material-design: true
   assets:
     - assets/icons/
+    - assets/icon/
+    - assets/image/
     - assets/pics/
     - assets/pics/bgabout.png
     - assets/images/
@@ -44,4 +54,18 @@ flutter:
     - assets/3dobjects/Hostelc/
     - assets/3dobjects/Hostele/
     - assets/images/loading.json
+    - assets/3dobjects/hostelglb/
+    - assets/3dobjects/Hostela/
+    - assets/3dobjects/Hostelj/
+    - assets/3dobjects/Hostelh/
+    - assets/3dobjects/Hostelb/
+    - assets/3dobjects/Hostelg/
+    - assets/3dobjects/Hosteli/
+    - assets/3dobjects/Hostelk/
+    - assets/3dobjects/Hostell/
+    - assets/3dobjects/Hostelm/
+    - assets/3dobjects/Hosteln/
+    - assets/3dobjects/Hostelo/
+    - assets/3dobjects/Hostelq/
+    - assets/3dobjects/Hostelpg/
 

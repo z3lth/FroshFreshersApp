@@ -33,6 +33,12 @@ class _FacultyState extends State<Faculty> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xff121421),
+      appBar: AppBar(
+        title: Image.asset('assets/images/tietlogo3.png'),
+        backgroundColor: Color(0xff1C2031),
+        shadowColor: Colors.black,
+      ) ,
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 40),
         child: Column(
@@ -43,7 +49,7 @@ class _FacultyState extends State<Faculty> {
                 child: Text("Faculty",
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        color: Colors.black87,
+                        color: Colors.white,
                         fontSize: 30)),
               ),
             ),
@@ -121,7 +127,7 @@ class _FacultyState extends State<Faculty> {
           child: Text(
             data.title,
             style: const TextStyle(
-                color: Colors.black45,
+                color: Colors.white,
                 fontSize: 25,
                 fontWeight: FontWeight.bold),
           ),
@@ -131,7 +137,7 @@ class _FacultyState extends State<Faculty> {
           child: Text(
             "${data.price}",
             style: const TextStyle(
-                color: Colors.black87,
+                color: Colors.white,
                 fontSize: 16,
                 fontWeight: FontWeight.bold),
           ),
