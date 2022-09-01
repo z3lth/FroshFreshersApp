@@ -130,13 +130,13 @@ class EchoesPage extends StatelessWidget {
                                 height: 35,
                               ),
                               TextButton(onPressed: ()async{
-                                final Uri _url = Uri.parse('https://www.instagram.com/echoes.tiet/');
+                                final Uri _url = Uri.parse('https://www.instagram.com/froshtiet/');
 
                                 if (!await launchUrl(_url)) {
                                   throw 'Could not launch $_url';
                                 }
                               }, child:
-                              Text('/echoestiet',
+                              Text('/froshtiet',
                                 style: GoogleFonts.poppins(
                                   textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
                                 ),
@@ -147,7 +147,7 @@ class EchoesPage extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               //
-                              Image.asset('assets/pics/web.png',
+                              Image.asset('assets/pics/youtube.png',
                                 width: 35,
                                 height: 35,
                               ),
@@ -158,7 +158,7 @@ class EchoesPage extends StatelessWidget {
                                   throw 'Could not launch $_url';
                                 }
                               }, child:
-                              Text('/echoestiet',
+                              Text('/froshtiet',
                                 style: GoogleFonts.poppins(
                                   textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
                                 ),
