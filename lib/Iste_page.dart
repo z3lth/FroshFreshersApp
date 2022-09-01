@@ -15,8 +15,8 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../frostedglass.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class GdscPage extends StatelessWidget {
-  const GdscPage({Key? key}) : super(key: key);
+class IstePage extends StatelessWidget {
+  const IstePage({Key? key}) : super(key: key);
 
 //   @override
 //   Widget build(BuildContext context) {
@@ -39,10 +39,10 @@ class GdscPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('GOOGLE DEVELOPER STUDENT CLUB',
+        title: Text('ISTE',
           textAlign:TextAlign.center,
           style: GoogleFonts.poppins(
-            textStyle: TextStyle(color: Colors.white, letterSpacing: .4, fontSize: 15.0,
+            textStyle: TextStyle(color: Colors.white, letterSpacing: .5,
                 fontWeight: FontWeight.w700),
           ),
         ),
@@ -87,9 +87,9 @@ class GdscPage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children:[
                         // YAHA PAR NETWORK IMAGE DALEGI
-                        Image.asset('assets/pics/DSC.png',
-                            width: 300,
-                            height: 150,
+                        Image.asset('assets/pics/Iste.png',
+                            width: 400,
+                            height: 200,
                             fit:BoxFit.fill
                         ),
                         SizedBox(height: 10.h),
@@ -102,10 +102,10 @@ class GdscPage extends StatelessWidget {
                         //   //   'facebook.com/froshtiet         ',
                         //   style: TextStyle(color: Colors.white54, fontSize: 30.0,fontFamily: 'Roboto',fontWeight: FontWeight.bold,), textAlign: TextAlign.center,)
 
-                        Text('The Google Developer Student Club at Thapar Institute of Engineering & Technology is a  community where students can grow their knowledge in a peer-to-peer learning environment and put theory to practise by building projects that solve community problems.',
+                        Text('ISTE is the leading national non-profit organization devoted to the overall development of our Technical Education System. We, at ISTE, contribute to the production of top-quality professional engineers by organizing workshops and events for the students to hone their skills. Some of our leading events include Colloquium, hackathons and several technical workshops.  ',
 
                           style: GoogleFonts.poppins(
-                            textStyle: TextStyle(color: Colors.white, letterSpacing: .5,fontSize: 15.0,),
+                            textStyle: TextStyle(color: Colors.white, letterSpacing: .5,fontSize: 14.0,),
                           ),
                         ),
                         Text('',
@@ -113,7 +113,7 @@ class GdscPage extends StatelessWidget {
 
                           style: TextStyle(color: Colors.white, fontSize: 20.0,), textAlign: TextAlign.center,),
 
-                        SizedBox(height: 10.h),
+                        SizedBox(height: 7.h),
                         Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
@@ -131,13 +131,13 @@ class GdscPage extends StatelessWidget {
                                 height: 35,
                               ),
                               TextButton(onPressed: ()async{
-                                final Uri _url = Uri.parse('https://www.instagram.com/dsc.tiet/');
+                                final Uri _url = Uri.parse('https://www.instagram.com/iste_tiet/?hl=en');
 
                                 if (!await launchUrl(_url)) {
                                   throw 'Could not launch $_url';
                                 }
                               }, child:
-                              Text('/dsciet',
+                              Text('/istetiet',
                                 style: GoogleFonts.poppins(
                                   textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
                                 ),
@@ -153,13 +153,13 @@ class GdscPage extends StatelessWidget {
                                 height: 35,
                               ),
                               TextButton(onPressed: ()async{
-                                final Uri _url = Uri.parse('https://dsctiet.tech');
+                                final Uri _url = Uri.parse('http://www.istetiet.in/');
 
                                 if (!await launchUrl(_url)) {
                                   throw 'Could not launch $_url';
                                 }
                               }, child:
-                              Text('/dsctiet',
+                              Text('/istetiet',
                                 style: GoogleFonts.poppins(
                                   textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
                                 ),

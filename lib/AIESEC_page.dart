@@ -76,7 +76,7 @@ class AiesecPage extends StatelessWidget {
               // theWidth is the width of the frostedglass
                 theWidth: 350.0,
                 // theHeight is the height of the frostedglass
-                theHeight: 500.0,
+                theHeight: 600.0,
                 // theChild is the child of the frostedglass
 
 
@@ -86,7 +86,7 @@ class AiesecPage extends StatelessWidget {
 
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children:[
-                        Image.asset('assets/pics/Aip black logo.png',
+                        Image.asset('assets/pics/AiP.png',
                             width: 400,
                             height: 100,
                             fit:BoxFit.fill
@@ -104,7 +104,7 @@ class AiesecPage extends StatelessWidget {
                         Text('AIESEC in Patiala is a not for profit organisation which helps the youth unlock their leadership potential through unique experiences and challenges. Our main agenda is to carry out exchange programs that let participants intern or volunteer with our partner countries like Egypt, Turkey and Brazil where they get one-of-kind experience and activate the leader in them.  ',
 
                           style: GoogleFonts.poppins(
-                            textStyle: TextStyle(color: Colors.white, letterSpacing: .5,fontSize: 20.0,),
+                            textStyle: TextStyle(color: Colors.white, letterSpacing: .5,fontSize: 17.0,),
                           ),
                         ),
                         Text('',
@@ -113,47 +113,47 @@ class AiesecPage extends StatelessWidget {
                           style: TextStyle(color: Colors.white, fontSize: 20.0,), textAlign: TextAlign.center,),
 
                         SizedBox(height: 10.h),
-                        // Row(
-                        //     mainAxisAlignment: MainAxisAlignment.center,
-                        //     children: [
-                        //       // InkWell(
-                        //       //     onTap: () async{
-                        //       //       final Uri _url = Uri.parse('https://www.instagram.com/froshtiet/');
-                        //       //
-                        //       //       if (!await launchUrl(_url)) {
-                        //       //         throw 'Could not launch $_url';
-                        //       //       }
-                        //       //     },
-                        //       //   child:
-                        //       Image.asset('assets/pics/instagram.png',
-                        //         width: 35,
-                        //         height: 35,
-                        //       ),
-                        //       TextButton(onPressed: ()async{
-                        //         final Uri _url = Uri.parse('https://www.instagram.com/froshtiet/');
-                        //
-                        //         if (!await launchUrl(_url)) {
-                        //           throw 'Could not launch $_url';
-                        //         }
-                        //       }, child:
-                        //       Text('/froshtiet',style: TextStyle(color: Colors.white54, fontSize: 20.0,), textAlign: TextAlign.center, ),)]),
-                        //
-                        // Row(
-                        //     mainAxisAlignment: MainAxisAlignment.center,
-                        //     children: [
-                        //       //
-                        //       Image.asset('assets/pics/youtube.png',
-                        //         width: 35,
-                        //         height: 35,
-                        //       ),
-                        //       TextButton(onPressed: ()async{
-                        //         final Uri _url = Uri.parse('https://www.youtube.com/c/FroshTIET');
-                        //
-                        //         if (!await launchUrl(_url)) {
-                        //           throw 'Could not launch $_url';
-                        //         }
-                        //       }, child:
-                        //       Text('/froshtiet',style: TextStyle(color: Colors.white54, fontSize: 20.0,), textAlign: TextAlign.center, ),)]),
+                        Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              // InkWell(
+                              //     onTap: () async{
+                              //       final Uri _url = Uri.parse('https://www.instagram.com/froshtiet/');
+                              //
+                              //       if (!await launchUrl(_url)) {
+                              //         throw 'Could not launch $_url';
+                              //       }
+                              //     },
+                              //   child:
+                              Image.asset('assets/pics/instagram.png',
+                                width: 35,
+                                height: 35,
+                              ),
+                              TextButton(onPressed: ()async{
+                                final Uri _url = Uri.parse('https://instagram.com/ebpatiala?igshid=YmMyMTA2M2Y=');
+
+                                if (!await launchUrl(_url)) {
+                                  throw 'Could not launch $_url';
+                                }
+                              }, child:
+                              Text('/aiesectiet',style: TextStyle(color: Colors.white54, fontSize: 20.0,), textAlign: TextAlign.center, ),)]),
+
+                        Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              //
+                              Image.asset('assets/pics/web.png',
+                                width: 35,
+                                height: 35,
+                              ),
+                              TextButton(onPressed: ()async{
+                                final Uri _url = Uri.parse('https://www.aiesec.in/');
+
+                                if (!await launchUrl(_url)) {
+                                  throw 'Could not launch $_url';
+                                }
+                              }, child:
+                              Text('/aieseciet',style: TextStyle(color: Colors.white54, fontSize: 20.0,), textAlign: TextAlign.center, ),)]),
 
                         // Row(
                         //     mainAxisAlignment: MainAxisAlignment.center,
@@ -196,52 +196,52 @@ class AiesecPage extends StatelessWidget {
                 )
             ),
           ),
-            Divider(
-              color: Colors.white,
-              thickness: 3,
-
-
-            ),
-            Row(
-              children: [
-                Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      //
-                      Image.asset('assets/pics/instagram.png',
-                        width: 30,
-                        height: 35,
-                      ),
-                      TextButton(onPressed: ()async{
-                        final Uri _url = Uri.parse('https://www.instagram.com/backslashtiet/');
-
-                        if (!await launchUrl(_url)) {
-                          throw 'Could not launch $_url';
-                        }
-                      }, child:
-                      Text('/backslashtiet',style: TextStyle(color: Colors.white54, fontSize: 23.0,), textAlign: TextAlign.justify, ),)]),
-
-                Spacer(),
-
-
-                Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      //
-                      Image.asset('assets/pics/web.png',
-                        width: 30,
-                        height: 35,
-                      ),
-                      TextButton(onPressed: ()async{
-                        final Uri _url = Uri.parse('http://backslashdb.in/');
-
-                        if (!await launchUrl(_url)) {
-                          throw 'Could not launch $_url';
-                        }
-                      }, child:
-                      Text('/backslashiet',style: TextStyle(color: Colors.white54, fontSize: 23.0,), textAlign: TextAlign.start, ),)]),
-              ],
-            ),
+            // Divider(
+            //   color: Colors.white,
+            //   thickness: 3,
+            //
+            //
+            // ),
+            // Row(
+            //   children: [
+            //     Row(
+            //         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            //         children: [
+            //           //
+            //           Image.asset('assets/pics/instagram.png',
+            //             width: 30,
+            //             height: 35,
+            //           ),
+            //           TextButton(onPressed: ()async{
+            //             final Uri _url = Uri.parse('https://www.instagram.com/backslashtiet/');
+            //
+            //             if (!await launchUrl(_url)) {
+            //               throw 'Could not launch $_url';
+            //             }
+            //           }, child:
+            //           Text('/backslashtiet',style: TextStyle(color: Colors.white54, fontSize: 23.0,), textAlign: TextAlign.justify, ),)]),
+            //
+            //     Spacer(),
+            //
+            //
+            //     Row(
+            //         mainAxisAlignment: MainAxisAlignment.end,
+            //         children: [
+            //           //
+            //           Image.asset('assets/pics/web.png',
+            //             width: 30,
+            //             height: 35,
+            //           ),
+            //           TextButton(onPressed: ()async{
+            //             final Uri _url = Uri.parse('http://backslashdb.in/');
+            //
+            //             if (!await launchUrl(_url)) {
+            //               throw 'Could not launch $_url';
+            //             }
+            //           }, child:
+            //           Text('/backslashiet',style: TextStyle(color: Colors.white54, fontSize: 23.0,), textAlign: TextAlign.start, ),)]),
+            //   ],
+            // ),
           ],
         ),
       ),

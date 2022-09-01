@@ -15,8 +15,8 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../frostedglass.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class GdscPage extends StatelessWidget {
-  const GdscPage({Key? key}) : super(key: key);
+class IetePage extends StatelessWidget {
+  const IetePage({Key? key}) : super(key: key);
 
 //   @override
 //   Widget build(BuildContext context) {
@@ -39,10 +39,10 @@ class GdscPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('GOOGLE DEVELOPER STUDENT CLUB',
+        title: Text('IETE',
           textAlign:TextAlign.center,
           style: GoogleFonts.poppins(
-            textStyle: TextStyle(color: Colors.white, letterSpacing: .4, fontSize: 15.0,
+            textStyle: TextStyle(color: Colors.white, letterSpacing: .5,
                 fontWeight: FontWeight.w700),
           ),
         ),
@@ -76,7 +76,7 @@ class GdscPage extends StatelessWidget {
               // theWidth is the width of the frostedglass
                 theWidth: 350.0,
                 // theHeight is the height of the frostedglass
-                theHeight: 600.0,
+                theHeight: 620.0,
                 // theChild is the child of the frostedglass
 
 
@@ -86,26 +86,25 @@ class GdscPage extends StatelessWidget {
 
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children:[
-                        // YAHA PAR NETWORK IMAGE DALEGI
-                        Image.asset('assets/pics/DSC.png',
-                            width: 300,
-                            height: 150,
+                        Image.asset('assets/pics/iete.png',
+                            width: 200,
+                            height: 200,
                             fit:BoxFit.fill
                         ),
                         SizedBox(height: 10.h),
 
                         // Text(
                         //   'About Us                                                                                           ',
-                        //   //'FROSH comprises of various events for the fresher class of Thapar Institute of Engineering and Technology to ease their new surroundings.                                                                  '
-                        //   //  'instagram.com/froshtiet/                                 '
-                        //   //   'linkedin.com/company/frosh-tiet                           '
-                        //   //   'facebook.com/froshtiet         ',
+                        //   //'Iete comprises of various events for the fresher class of Thapar Institute of Engineering and Technology to ease their new surroundings.                                                                  '
+                        //   //  'instagram.com/Ietetiet/                                 '
+                        //   //   'linkedin.com/company/Iete-tiet                           '
+                        //   //   'facebook.com/Ietetiet         ',
                         //   style: TextStyle(color: Colors.white54, fontSize: 30.0,fontFamily: 'Roboto',fontWeight: FontWeight.bold,), textAlign: TextAlign.center,)
 
-                        Text('The Google Developer Student Club at Thapar Institute of Engineering & Technology is a  community where students can grow their knowledge in a peer-to-peer learning environment and put theory to practise by building projects that solve community problems.',
+                        Text('IETE Students Forum, TIET is the official student chapter of the Institution of Electronics and Telecommunication Engineers at Thapar University. It promotes exploration among students and enhancing ones intangibles along with their technical skills. The Forum conducts regular workshops, events and competitions for its Members and fosters the message of "learning by doing" at Thapar University. ',
 
                           style: GoogleFonts.poppins(
-                            textStyle: TextStyle(color: Colors.white, letterSpacing: .5,fontSize: 15.0,),
+                            textStyle: TextStyle(color: Colors.white, letterSpacing: .5,fontSize: 14.0,),
                           ),
                         ),
                         Text('',
@@ -113,13 +112,13 @@ class GdscPage extends StatelessWidget {
 
                           style: TextStyle(color: Colors.white, fontSize: 20.0,), textAlign: TextAlign.center,),
 
-                        SizedBox(height: 10.h),
+                        SizedBox(height: 8.h),
                         Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               // InkWell(
                               //     onTap: () async{
-                              //       final Uri _url = Uri.parse('https://www.instagram.com/froshtiet/');
+                              //       final Uri _url = Uri.parse('https://www.instagram.com/Ietetiet/');
                               //
                               //       if (!await launchUrl(_url)) {
                               //         throw 'Could not launch $_url';
@@ -131,13 +130,13 @@ class GdscPage extends StatelessWidget {
                                 height: 35,
                               ),
                               TextButton(onPressed: ()async{
-                                final Uri _url = Uri.parse('https://www.instagram.com/dsc.tiet/');
+                                final Uri _url = Uri.parse('https://www.instagram.com/iete_thapar/');
 
                                 if (!await launchUrl(_url)) {
                                   throw 'Could not launch $_url';
                                 }
                               }, child:
-                              Text('/dsciet',
+                              Text('/Ietetiet',
                                 style: GoogleFonts.poppins(
                                   textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
                                 ),
@@ -153,13 +152,13 @@ class GdscPage extends StatelessWidget {
                                 height: 35,
                               ),
                               TextButton(onPressed: ()async{
-                                final Uri _url = Uri.parse('https://dsctiet.tech');
+                                final Uri _url = Uri.parse('http://iete-thapar.tech');
 
                                 if (!await launchUrl(_url)) {
                                   throw 'Could not launch $_url';
                                 }
                               }, child:
-                              Text('/dsctiet',
+                              Text('/Ietetiet',
                                 style: GoogleFonts.poppins(
                                   textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
                                 ),
@@ -177,13 +176,13 @@ class GdscPage extends StatelessWidget {
                         //         height: 35,
                         //       ),
                         //       TextButton(onPressed: ()async{
-                        //         final Uri _url = Uri.parse('https://www.linkedin.com/company/frosh-tiet');
+                        //         final Uri _url = Uri.parse('https://www.linkedin.com/company/Iete-tiet');
                         //
                         //         if (!await launchUrl(_url)) {
                         //           throw 'Could not launch $_url';
                         //         }
                         //       }, child:
-                        //       Text('/froshtiet',style: TextStyle(color: Colors.white54, fontSize: 25.0,), textAlign: TextAlign.center, ),)]),
+                        //       Text('/Ietetiet',style: TextStyle(color: Colors.white54, fontSize: 25.0,), textAlign: TextAlign.center, ),)]),
 
                         SizedBox(height: 10.h),
 

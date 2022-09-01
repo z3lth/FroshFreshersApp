@@ -15,8 +15,8 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../frostedglass.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class GdscPage extends StatelessWidget {
-  const GdscPage({Key? key}) : super(key: key);
+class LitsocPage extends StatelessWidget {
+  const LitsocPage({Key? key}) : super(key: key);
 
 //   @override
 //   Widget build(BuildContext context) {
@@ -39,10 +39,10 @@ class GdscPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('GOOGLE DEVELOPER STUDENT CLUB',
+        title: Text('Litsoc',
           textAlign:TextAlign.center,
           style: GoogleFonts.poppins(
-            textStyle: TextStyle(color: Colors.white, letterSpacing: .4, fontSize: 15.0,
+            textStyle: TextStyle(color: Colors.white, letterSpacing: .5,
                 fontWeight: FontWeight.w700),
           ),
         ),
@@ -86,9 +86,8 @@ class GdscPage extends StatelessWidget {
 
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children:[
-                        // YAHA PAR NETWORK IMAGE DALEGI
-                        Image.asset('assets/pics/DSC.png',
-                            width: 300,
+                        Image.asset('assets/pics/litsoc.png',
+                            width: 150,
                             height: 150,
                             fit:BoxFit.fill
                         ),
@@ -96,13 +95,13 @@ class GdscPage extends StatelessWidget {
 
                         // Text(
                         //   'About Us                                                                                           ',
-                        //   //'FROSH comprises of various events for the fresher class of Thapar Institute of Engineering and Technology to ease their new surroundings.                                                                  '
-                        //   //  'instagram.com/froshtiet/                                 '
-                        //   //   'linkedin.com/company/frosh-tiet                           '
-                        //   //   'facebook.com/froshtiet         ',
+                        //   //'Litsoc comprises of various events for the fresher class of Thapar Institute of Engineering and Technology to ease their new surroundings.                                                                  '
+                        //   //  'instagram.com/Litsoctiet/                                 '
+                        //   //   'linkedin.com/company/Litsoc-tiet                           '
+                        //   //   'facebook.com/Litsoctiet         ',
                         //   style: TextStyle(color: Colors.white54, fontSize: 30.0,fontFamily: 'Roboto',fontWeight: FontWeight.bold,), textAlign: TextAlign.center,)
 
-                        Text('The Google Developer Student Club at Thapar Institute of Engineering & Technology is a  community where students can grow their knowledge in a peer-to-peer learning environment and put theory to practise by building projects that solve community problems.',
+                        Text('Thapar Literary Society is about all things literature. Eight sub-societies make us: Muse(English Book Club), Anubhooti(Hindi Literature), Punjabi Sahitya Sabha(Punjabi Literature), Debating Society, Thapar Quizzing Club, Theater Society, Poetry Society and Cineastes(Cinema Society). ',
 
                           style: GoogleFonts.poppins(
                             textStyle: TextStyle(color: Colors.white, letterSpacing: .5,fontSize: 15.0,),
@@ -119,7 +118,7 @@ class GdscPage extends StatelessWidget {
                             children: [
                               // InkWell(
                               //     onTap: () async{
-                              //       final Uri _url = Uri.parse('https://www.instagram.com/froshtiet/');
+                              //       final Uri _url = Uri.parse('https://www.instagram.com/Litsoctiet/');
                               //
                               //       if (!await launchUrl(_url)) {
                               //         throw 'Could not launch $_url';
@@ -131,13 +130,13 @@ class GdscPage extends StatelessWidget {
                                 height: 35,
                               ),
                               TextButton(onPressed: ()async{
-                                final Uri _url = Uri.parse('https://www.instagram.com/dsc.tiet/');
+                                final Uri _url = Uri.parse('https://www.instagram.com/litsoc.thapar/');
 
                                 if (!await launchUrl(_url)) {
                                   throw 'Could not launch $_url';
                                 }
                               }, child:
-                              Text('/dsciet',
+                              Text('/Litsoctiet',
                                 style: GoogleFonts.poppins(
                                   textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
                                 ),
@@ -153,13 +152,13 @@ class GdscPage extends StatelessWidget {
                                 height: 35,
                               ),
                               TextButton(onPressed: ()async{
-                                final Uri _url = Uri.parse('https://dsctiet.tech');
+                                final Uri _url = Uri.parse('https://litsoctiet.contactin.bio/');
 
                                 if (!await launchUrl(_url)) {
                                   throw 'Could not launch $_url';
                                 }
                               }, child:
-                              Text('/dsctiet',
+                              Text('/Litsoctiet',
                                 style: GoogleFonts.poppins(
                                   textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
                                 ),
@@ -177,13 +176,13 @@ class GdscPage extends StatelessWidget {
                         //         height: 35,
                         //       ),
                         //       TextButton(onPressed: ()async{
-                        //         final Uri _url = Uri.parse('https://www.linkedin.com/company/frosh-tiet');
+                        //         final Uri _url = Uri.parse('https://www.linkedin.com/company/Litsoc-tiet');
                         //
                         //         if (!await launchUrl(_url)) {
                         //           throw 'Could not launch $_url';
                         //         }
                         //       }, child:
-                        //       Text('/froshtiet',style: TextStyle(color: Colors.white54, fontSize: 25.0,), textAlign: TextAlign.center, ),)]),
+                        //       Text('/Litsoctiet',style: TextStyle(color: Colors.white54, fontSize: 25.0,), textAlign: TextAlign.center, ),)]),
 
                         SizedBox(height: 10.h),
 

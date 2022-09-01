@@ -15,8 +15,8 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../frostedglass.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class GdscPage extends StatelessWidget {
-  const GdscPage({Key? key}) : super(key: key);
+class MarkfinPage extends StatelessWidget {
+  const MarkfinPage({Key? key}) : super(key: key);
 
 //   @override
 //   Widget build(BuildContext context) {
@@ -39,10 +39,10 @@ class GdscPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('GOOGLE DEVELOPER STUDENT CLUB',
+        title: Text('MARKFIN',
           textAlign:TextAlign.center,
           style: GoogleFonts.poppins(
-            textStyle: TextStyle(color: Colors.white, letterSpacing: .4, fontSize: 15.0,
+            textStyle: TextStyle(color: Colors.white, letterSpacing: .5,
                 fontWeight: FontWeight.w700),
           ),
         ),
@@ -86,10 +86,9 @@ class GdscPage extends StatelessWidget {
 
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children:[
-                        // YAHA PAR NETWORK IMAGE DALEGI
-                        Image.asset('assets/pics/DSC.png',
-                            width: 300,
-                            height: 150,
+                        Image.asset('assets/pics/marfin.png',
+                            width: 250,
+                            height: 250,
                             fit:BoxFit.fill
                         ),
                         SizedBox(height: 10.h),
@@ -102,7 +101,7 @@ class GdscPage extends StatelessWidget {
                         //   //   'facebook.com/froshtiet         ',
                         //   style: TextStyle(color: Colors.white54, fontSize: 30.0,fontFamily: 'Roboto',fontWeight: FontWeight.bold,), textAlign: TextAlign.center,)
 
-                        Text('The Google Developer Student Club at Thapar Institute of Engineering & Technology is a  community where students can grow their knowledge in a peer-to-peer learning environment and put theory to practise by building projects that solve community problems.',
+                        Text('To enrich your financial proficiency, finesse your investment aptitude, the marketing, finance and investment society, MARKFIN glistens as the ultimate flag-bearer. Hone your skills and bask under the wisdom of your seniors',
 
                           style: GoogleFonts.poppins(
                             textStyle: TextStyle(color: Colors.white, letterSpacing: .5,fontSize: 15.0,),
@@ -131,42 +130,42 @@ class GdscPage extends StatelessWidget {
                                 height: 35,
                               ),
                               TextButton(onPressed: ()async{
-                                final Uri _url = Uri.parse('https://www.instagram.com/dsc.tiet/');
+                                final Uri _url = Uri.parse('https://instagram.com/markfin.tiet?igshid=YmMyMTA2M2Y=');
 
                                 if (!await launchUrl(_url)) {
                                   throw 'Could not launch $_url';
                                 }
                               }, child:
-                              Text('/dsciet',
+                              Text('/markfintiet',
                                 style: GoogleFonts.poppins(
                                   textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
                                 ),
                               ),
                               )]),
 
-                        Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              //
-                              Image.asset('assets/pics/web.png',
-                                width: 35,
-                                height: 35,
-                              ),
-                              TextButton(onPressed: ()async{
-                                final Uri _url = Uri.parse('https://dsctiet.tech');
-
-                                if (!await launchUrl(_url)) {
-                                  throw 'Could not launch $_url';
-                                }
-                              }, child:
-                              Text('/dsctiet',
-                                style: GoogleFonts.poppins(
-                                  textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
-                                ),
-                              ),
-                              )
-                            ]
-                        ),
+                        // Row(
+                        //     mainAxisAlignment: MainAxisAlignment.center,
+                        //     children: [
+                        //       //
+                        //       Image.asset('assets/pics/web.png',
+                        //         width: 35,
+                        //         height: 35,
+                        //       ),
+                        //       TextButton(onPressed: ()async{
+                        //         final Uri _url = Uri.parse('http://echoes-tiet.com/');
+                        //
+                        //         if (!await launchUrl(_url)) {
+                        //           throw 'Could not launch $_url';
+                        //         }
+                        //       }, child:
+                        //       Text('/markfintiet',
+                        //         style: GoogleFonts.poppins(
+                        //           textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
+                        //         ),
+                        //       ),
+                        //       )
+                        //     ]
+                        // ),
 
                         // Row(
                         //     mainAxisAlignment: MainAxisAlignment.center,

@@ -86,6 +86,7 @@ class EchoesPage extends StatelessWidget {
 
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children:[
+                        // YAHA PAR NETWORK IMAGE DALEGI
                         Image.asset('assets/pics/echoesc.png',
                             width: 400,
                             height: 100,
@@ -147,12 +148,12 @@ class EchoesPage extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               //
-                              Image.asset('assets/pics/youtube.png',
+                              Image.asset('assets/pics/web.png',
                                 width: 35,
                                 height: 35,
                               ),
                               TextButton(onPressed: ()async{
-                                final Uri _url = Uri.parse('https://www.youtube.com/c/FroshTIET');
+                                final Uri _url = Uri.parse('http://echoes-tiet.com/');
 
                                 if (!await launchUrl(_url)) {
                                   throw 'Could not launch $_url';
