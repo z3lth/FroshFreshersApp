@@ -314,7 +314,7 @@ final List<Models> snk17Models = [
     name: "Pratinav",
     model: "Batra",
     branch: "ENC",
-    imgAddress: " ",
+    imgAddress: "https://i.imgur.com/XIWFlt4.jpg",
     modelColor: Color(0xffDE0106),
   ),
   Models(
