@@ -80,14 +80,14 @@ final List<Models> snk3Models = [
     name: "Amber",
     model: "Abbas",
     branch: "CSBS",
-    imgAddress: "assets/images/amber.jpg",
+    imgAddress: "https://i.imgur.com/IYltV7C.jpg",
     modelColor: Color(0xff3F7943),
   ),
   Models(
     name: "Ananya",
     model: "Varshneya",
     branch: "ELE",
-    imgAddress: "assets/images/Priyanshi Gupta.png",
+    imgAddress: "https://i.imgur.com/4S0xqWj.png",
     modelColor: Color(0xffDE0106),
   ),
 ];
@@ -446,134 +446,6 @@ final List<Models> snk21Models = [
     branch: "CIE",
     imgAddress: "https://i.imgur.com/15JDoou.jpg",
     modelColor: Color(0xff3F7943),
-  ),
-];
-
-void addToBag() {}
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////* MY BAG SCREEN MODELS *///////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-class BagModels {
-  String model;
-  double price;
-  String imgAddress;
-  int numOfShoe = 0;
-  BagModels({
-    required this.model,
-    required this.price,
-    required this.imgAddress,
-    required this.numOfShoe, required branch,
-  });
-}
-
-List<BagModels> bagModels = [];
-
-
-class MyStatus {
-  String emoji;
-  String txt;
-  Color selectColor;
-  Color unSelectColor;
-
-  MyStatus({
-    required this.emoji,
-    required this.txt,
-    required this.selectColor,
-    required this.unSelectColor,
-  });
-}
-
-List<MyStatus> statusList = [
-  MyStatus(
-    emoji: '😴',
-    txt: "Away",
-    selectColor: Color(0xff121212),
-    unSelectColor: Color(0xffbfbfbf),
-  ),
-  MyStatus(
-    emoji: '💻',
-    txt: "At Work",
-    selectColor: Color(0xff05a35c),
-    unSelectColor: Color(0xffCEEBD9),
-  ),
-  MyStatus(
-    emoji: '🎮',
-    txt: "Gaming",
-    selectColor: Color(0xffFFD237),
-    unSelectColor: Color(0xffFDDFBB),
-  ),
-  MyStatus(
-    emoji: '🤫',
-    txt: "Busy",
-    selectColor: Color(0xffba3a3a),
-    unSelectColor: Color(0xffdb9797),
-  ),
-];
-
-
-
-void addToBag() {}
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////* MY BAG SCREEN MODELS *///////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-class BagModels {
-  String model;
-  double price;
-  String imgAddress;
-  int numOfShoe = 0;
-  BagModels({
-    required this.model,
-    required this.price,
-    required this.imgAddress,
-    required this.numOfShoe, required branch,
-  });
-}
-
-List<BagModels> bagModels = [];
-
-
-class MyStatus {
-  String emoji;
-  String txt;
-  Color selectColor;
-  Color unSelectColor;
-
-  MyStatus({
-    required this.emoji,
-    required this.txt,
-    required this.selectColor,
-    required this.unSelectColor,
-  });
-}
-
-List<MyStatus> statusList = [
-  MyStatus(
-    emoji: '😴',
-    txt: "Away",
-    selectColor: Color(0xff121212),
-    unSelectColor: Color(0xffbfbfbf),
-  ),
-  MyStatus(
-    emoji: '💻',
-    txt: "At Work",
-    selectColor: Color(0xff05a35c),
-    unSelectColor: Color(0xffCEEBD9),
-  ),
-  MyStatus(
-    emoji: '🎮',
-    txt: "Gaming",
-    selectColor: Color(0xffFFD237),
-    unSelectColor: Color(0xffFDDFBB),
-  ),
-  MyStatus(
-    emoji: '🤫',
-    txt: "Busy",
-    selectColor: Color(0xffba3a3a),
-    unSelectColor: Color(0xffdb9797),
   ),
 ];
 
