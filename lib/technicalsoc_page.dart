@@ -2,6 +2,16 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:meditation/SocietyPages/ACM_page.dart';
+import 'package:meditation/SocietyPages/GDSC.dart';
+import 'package:meditation/SocietyPages/BackSlash_page.dart';
+import 'package:meditation/SocietyPages/Iete_page.dart';
+import 'package:meditation/SocietyPages/Iste_page.dart';
+import 'package:meditation/SocietyPages/MLSC_page.dart';
+import 'package:meditation/SocietyPages/Owasp_page.dart';
+import 'package:meditation/SocietyPages/Robotics_Page.dart';
+import 'package:meditation/SocietyPages/ccs_page.dart';
+import 'package:meditation/SocietyPages/linux_page.dart';
 
 import 'package:meditation/detail_page.dart';
 import 'package:meditation/girlshostel_page.dart';
@@ -73,7 +83,7 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
             ),
 
             SizedBox(
-              height: 200.w,
+              height: 121.w,
 
               child: ListView(
                 physics: BouncingScrollPhysics(),
@@ -84,14 +94,12 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                     child: DiscoverCard1(
 
                       onTap:() {
-                        Navigator.push(context, MaterialPageRoute(builder:(context)=>HostelcPage()));
+                        Navigator.push(context, MaterialPageRoute(builder:(context)=>OwaspPage()));
                       },
                       title: "OWASP",
-                      subtitle: "380 "
-                          "rooms aaa"
-                          "aaa"
-                          "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-                          "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                      subtitle: ""
+
+                      ,
                       gradientStartColor: Color(0xffFC67A7),
                       gradientEndColor: Color(0xffF6815B),
                     ),
@@ -142,10 +150,10 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                     child: DiscoverCard1(
 
                       onTap:() {
-                        Navigator.push(context, MaterialPageRoute(builder:(context)=>HosteljPage()));
+                        Navigator.push(context, MaterialPageRoute(builder:(context)=>GdscPage()));
                       },
-                      title: "Google Devolper Student Clubs",
-                      subtitle: "EStablished 1980",
+                      title: "Google Developer Student Clubs",
+                      subtitle: "GDSC",
                       gradientStartColor: Color(0xff13DEA0),
                       gradientEndColor: Color(0xff06B782),
                     ),
@@ -166,10 +174,10 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                   InkWell(
                     child: DiscoverCard1(
 
-                      // onTap:() {
-                      //   Navigator.push(context, MaterialPageRoute(builder:(context)=>HostelcPage()));
-                      // },
-                      title: "Microsoft Learn Student Chapter",
+                      onTap:() {
+                        Navigator.push(context, MaterialPageRoute(builder:(context)=>BackslashPage()));
+                      },
+                      title: "BackSlash",
                       subtitle: "EStablished 2020",
                       gradientStartColor: Color(0xffFC67A7),
                       gradientEndColor: Color(0xffF6815B),
@@ -190,15 +198,11 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                   SizedBox(width: 35.w,),
                   DiscoverCard1(
 
-                    //  onTap: ()async{
-                    //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-                    //
-                    //   if (!await launchUrl(_url)) {
-                    //     throw 'Could not launch $_url';
-                    //    }
-                    // },
+                    onTap:() {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>AcmPage()));
+                    },
                     title: "Thapar ACM Student Chapter ",
-                    subtitle: "EStablished 1980",
+                    subtitle: "Association for Computing Machinery",
                     gradientStartColor: Color(0xffFFD541),
                     gradientEndColor: Color(0xffF0B31A),
                   ),
@@ -218,15 +222,11 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                   InkWell(
                     child: DiscoverCard1(
 
-                      //  onTap: ()async{
-                      //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-                      //
-                      //   if (!await launchUrl(_url)) {
-                      //     throw 'Could not launch $_url';
-                      //    }
-                      // },
+                      onTap:() {
+                        Navigator.push(context, MaterialPageRoute(builder:(context)=>IstePage()));
+                      },
                       title: "ISTE",
-                      subtitle: "EStablished 1980",
+                      subtitle: "Indian Society for technical Education",
                       gradientStartColor: Color(0xffFC67A7),
                       gradientEndColor: Color(0xffF6815B),
                     ),
@@ -248,10 +248,10 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                     child: DiscoverCard1(
 
                       onTap:() {
-                        Navigator.push(context, MaterialPageRoute(builder:(context)=>HostelmPage()));
+                        Navigator.push(context, MaterialPageRoute(builder:(context)=>CcsPage()));
                       },
                       title: "CCS",
-                      subtitle: "EStablished 1980",
+                      subtitle: "Creative Computing Society",
                       gradientStartColor: Color(0xff13DEA0),
                       gradientEndColor: Color(0xff06B782),
                     ),
@@ -271,102 +271,86 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                   SizedBox(width: 35.w,),
                   DiscoverCard1(
 
-                    //  onTap: ()async{
-                    //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-                    //
-                    //   if (!await launchUrl(_url)) {
-                    //     throw 'Could not launch $_url';
-                    //    }
-                    // },
-                    title: "Hostel O",
-                    subtitle: "EStablished 1980",
+                    onTap:() {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>IetePage()));
+                    },
+                    title: "IETE",
+                    subtitle: "Institution of Electronics and Telecommunication Engineers",
                     gradientStartColor: Color(0xffFC67A7),
                     gradientEndColor: Color(0xffF6815B),
                   ),
                 ],
               ),
             ),
-            // SizedBox(height: 10.h),
-            //
-            // SizedBox(
-            //   height: 121.w,
-            //
-            //   child: ListView(
-            //     physics: BouncingScrollPhysics(),
-            //     scrollDirection: Axis.horizontal,
-            //     children: [
-            //       SizedBox(width: 35.w,),
-            //       DiscoverCard1(
-            //
-            //         //  onTap: ()async{
-            //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-            //         //
-            //         //   if (!await launchUrl(_url)) {
-            //         //     throw 'Could not launch $_url';
-            //         //    }
-            //         // },
-            //         title: "Hostel J",
-            //         subtitle: "EStablished 1980",
-            //         gradientStartColor: Color(0xffFFD541),
-            //         gradientEndColor: Color(0xffF0B31A),
-            //       ),
-            //     ],
-            //   ),
-            // ),
-            // SizedBox(height: 10.h),
-            //
-            // SizedBox(
-            //   height: 121.w,
-            //
-            //   child: ListView(
-            //     physics: BouncingScrollPhysics(),
-            //     scrollDirection: Axis.horizontal,
-            //     children: [
-            //       SizedBox(width: 35.w,),
-            //       DiscoverCard1(
-            //
-            //         //  onTap: ()async{
-            //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-            //         //
-            //         //   if (!await launchUrl(_url)) {
-            //         //     throw 'Could not launch $_url';
-            //         //    }
-            //         // },
-            //         title: "Hostel K",
-            //         subtitle: "EStablished 1980",
-            //         gradientStartColor: Color(0xffFC67A7),
-            //         gradientEndColor: Color(0xffF6815B),
-            //       ),
-            //     ],
-            //   ),
-            // ),
-            // SizedBox(height: 10.h),
-            //
-            // SizedBox(
-            //   height: 121.w,
-            //
-            //   child: ListView(
-            //     physics: BouncingScrollPhysics(),
-            //     scrollDirection: Axis.horizontal,
-            //     children: [
-            //       SizedBox(width: 35.w,),
-            //       DiscoverCard1(
-            //
-            //         //  onTap: ()async{
-            //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-            //         //
-            //         //   if (!await launchUrl(_url)) {
-            //         //     throw 'Could not launch $_url';
-            //         //    }
-            //         // },
-            //         title: "Hostel L",
-            //         subtitle: "EStablished 1980",
-            //         gradientStartColor: Color(0xff13DEA0),
-            //         gradientEndColor: Color(0xff06B782),
-            //       ),
-            //     ],
-            //   ),
-            // ),
+            SizedBox(height: 10.h),
+
+            SizedBox(
+              height: 121.w,
+
+              child: ListView(
+                physics: BouncingScrollPhysics(),
+                scrollDirection: Axis.horizontal,
+                children: [
+                  SizedBox(width: 35.w,),
+                  DiscoverCard1(
+
+                    onTap:() {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>MlscPage()));
+                    },
+                    title: "MLSC",
+                    subtitle: "Microsoft Learn Student Chapter",
+                    gradientStartColor: Color(0xffFFD541),
+                    gradientEndColor: Color(0xffF0B31A),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 10.h),
+
+            SizedBox(
+              height: 121.w,
+
+              child: ListView(
+                physics: BouncingScrollPhysics(),
+                scrollDirection: Axis.horizontal,
+                children: [
+                  SizedBox(width: 35.w,),
+                  DiscoverCard1(
+
+                    onTap:() {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>RoboticsPage()));
+                    },
+                    title: "M.A.R.S",
+                    subtitle: "Mechatronics and Robotics Society",
+                    gradientStartColor: Color(0xffFC67A7),
+                    gradientEndColor: Color(0xffF6815B),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 10.h),
+
+            SizedBox(
+              height: 121.w,
+
+              child: ListView(
+                physics: BouncingScrollPhysics(),
+                scrollDirection: Axis.horizontal,
+                children: [
+                  SizedBox(width: 35.w,),
+                  DiscoverCard1(
+
+                    onTap:() {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>LinuxPage()));
+                    },
+                    title: "Linux",
+                    subtitle: "LuG",
+                    gradientStartColor: Color(0xff13DEA0),
+                    gradientEndColor: Color(0xff06B782),
+                  ),
+                ],
+              ),
+            ),
             // SizedBox(height: 10.h),
             //
             // SizedBox(
