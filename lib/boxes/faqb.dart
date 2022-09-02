@@ -48,7 +48,7 @@ class FAQB extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
       image: DecorationImage(
-      image: NetworkImage('https://i.imgur.com/7q8oOcd.png'),
+      image: NetworkImage('https://i.imgur.com/rJnidcn.jpg'),
       fit: BoxFit.fill,
       ),
       ),
