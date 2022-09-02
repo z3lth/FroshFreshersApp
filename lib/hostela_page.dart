@@ -4,19 +4,19 @@ import 'package:flutter/services.dart';
 import 'package:flutter_cube/flutter_cube.dart';
 import 'package:google_fonts/google_fonts.dart';
 void main() => runApp(MaterialApp(
-  home: HosteljPage(),
+  home: HostelaPage(),
 ));
 
 
-class HosteljPage extends StatefulWidget {
+class HostelaPage extends StatefulWidget {
   @override
-  _HosteljPageState createState() => _HosteljPageState();
+  _HostelaPageState createState() => _HostelaPageState();
 }
-class _HosteljPageState extends State<HosteljPage>
+class _HostelaPageState extends State<HostelaPage>
 {
   late Object jet;
   void initState() {
-    jet = Object(fileName: "assets/3dobjects/Hostelj/JHostel.obj");
+    jet = Object(fileName: "assets/3dobjects/Hostela/Hostel_A.obj");
     jet.position.setValues(50, 50, 50);
 
     jet.rotation.setValues(90, 0, 90);
@@ -62,7 +62,7 @@ Widget buildProfileImage()=>Container(
   child: Column(
     children: [
       Text(
-        'HOSTEL J',
+        'HOSTEL A',
 
 
         textAlign: TextAlign.center,
@@ -71,55 +71,43 @@ Widget buildProfileImage()=>Container(
         ),
       ),
       Text(
-        'Warden: Dr. Munish Kansal',
+        'Warden: Dr. Shailendra Tiwari',
         textAlign: TextAlign.center,
         style: GoogleFonts.poppins(
           textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
         ),
       ),
-      Text('Contact No: 91156-08845 ',
+      Text('Contact No.: 0175-2393171',
         textAlign: TextAlign.center,
         style: GoogleFonts.poppins(
           textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
         ),
       ),
-     /* Text(' 8288008173 (M)',
-        textAlign: TextAlign.center,
-        style: GoogleFonts.poppins(
-          textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
-        ),
-      ),*/
-      Text('Email id:-wardenj@thapar.edu',
+      Text(' 8288008171',
         textAlign: TextAlign.center,
         style: GoogleFonts.poppins(
           textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
         ),
       ),
-      Text('Caretaker: Mr Raj Kumar',
+      Text('Email id:-wardena@thapar.edu',
         textAlign: TextAlign.center,
         style: GoogleFonts.poppins(
           textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
         ),
       ),
-      Text('Contact No:  08559010110',
+      Text('Caretaker: Mr.Rajesh Kumar ',
         textAlign: TextAlign.center,
         style: GoogleFonts.poppins(
           textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
         ),
       ),
-      Text('Caretaker: Mr Maninder Singh',
+      Text('Contact No.:  +91-9115608801',
         textAlign: TextAlign.center,
         style: GoogleFonts.poppins(
           textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
         ),
       ),
-      Text('Contact No:  08288008178',
-        textAlign: TextAlign.center,
-        style: GoogleFonts.poppins(
-          textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
-        ),
-      ),
-      Text('(Email id:-caretaker.j@thapar.edu)',
+      Text('(Email id:-caretaker.a@thapar.edu)',
         textAlign: TextAlign.center,
         style: GoogleFonts.poppins(
           textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),

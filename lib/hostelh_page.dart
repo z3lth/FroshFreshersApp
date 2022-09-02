@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_cube/flutter_cube.dart';
-
+import 'package:google_fonts/google_fonts.dart';
 void main() => runApp(MaterialApp(
   home: HostelhPage(),
 ));
@@ -66,61 +66,50 @@ Widget buildProfileImage()=>Container(
 
 
         textAlign: TextAlign.center,
-        style: TextStyle(
-            color: Colors.white,
-            fontSize: 40
+        style: GoogleFonts.poppins(
+          textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
         ),
       ),
       Text(
         'Warden: Dr. Madhup Kumar Mittal',
         textAlign: TextAlign.center,
-        style: TextStyle(
-            color: Colors.white,
-            fontSize: 20
+        style: GoogleFonts.poppins(
+          textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
         ),
       ),
-      Text('Contact No.: 0175-2393173(H)',
+      Text(
+        'Caretaker: Dr. Amandeep Rishi',
         textAlign: TextAlign.center,
-        style: TextStyle(
-            color: Colors.white,
-            fontSize: 20
+        style: GoogleFonts.poppins(
+          textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
         ),
       ),
-      Text(' 8288008173 (M)',
+      Text('Contact No.: 9115608833',
         textAlign: TextAlign.center,
-        style: TextStyle(
-            color: Colors.white,
-            fontSize: 20
+        style: GoogleFonts.poppins(
+          textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
         ),
       ),
-      Text('Email id:-wardenc@thapar.edu',
+      Text('Reception Contact: 0175-2393173',
         textAlign: TextAlign.center,
-        style: TextStyle(
-            color: Colors.white,
-            fontSize: 20
+        style: GoogleFonts.poppins(
+          textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
         ),
       ),
-      Text('Caretaker: mr Amandeep Rishi',
+      Text('Reception Contact: 9115611518 ',
         textAlign: TextAlign.center,
-        style: TextStyle(
-            color: Colors.white,
-            fontSize: 20
+        style: GoogleFonts.poppins(
+          textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
         ),
       ),
-      Text('Contact No.:  +91-9115608803',
+      Text('Email id:-wardenh@thapar.edu',
         textAlign: TextAlign.center,
-        style: TextStyle(
-            color: Colors.white,
-            fontSize: 20
+        style: GoogleFonts.poppins(
+          textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
         ),
       ),
-      Text('(Email id:-caretaker.c@thapar.edu)',
-        textAlign: TextAlign.center,
-        style: TextStyle(
-            color: Colors.white,
-            fontSize: 20
-        ),
-      ),
+
+
 
     ],
   ),
