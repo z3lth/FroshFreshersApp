@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:meditation/boxes/lmsb.dart';
+import 'package:meditation/boxes/wkb.dart';
 import 'package:meditation/detail_page.dart';
 import 'package:meditation/widgets/acadblock.dart';
 import 'package:meditation/widgets/category_boxes.dart';
@@ -106,7 +108,7 @@ class _StudyPageState extends State<StudyPage> {
                 shrinkWrap: true,
                 physics: NeverScrollableScrollPhysics(),
                 children: [
-                  DiscoverSmallCard(
+                  LMSB(
                     onTap: () async{
                       final Uri _url = Uri.parse('https://lms.thapar.edu/moodle/');
 
@@ -119,7 +121,7 @@ class _StudyPageState extends State<StudyPage> {
                     gradientStartColor: Color(0xff13DEA0),
                     gradientEndColor: Color(0xff06B782),
                   ),
-                  DiscoverSmallCard(
+                  WKB(
                     onTap: () async{
                       final Uri _url = Uri.parse('https://webkiosk.thapar.edu/index.jsp?_ga=2.64570028.246148690.1658148719-281473518.1648488925');
 
