@@ -329,7 +329,7 @@ final List<Models> snk17Models = [
     name: "Rachit Bhagat",
     model: " ",
     branch: "COE",
-    imgAddress: " ",
+    imgAddress: "https://i.imgur.com/HsgI8to.jpg",
     modelColor: Color(0xffDE0106),
   ),
   Models(
