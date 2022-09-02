@@ -33,7 +33,14 @@ class _StudyPageState extends State<StudyPage> {
         backgroundColor: Color(0xff1C2031),
         shadowColor: Colors.black,
       ) ,
-      body: SafeArea(
+      body: Container(
+      constraints: BoxConstraints.expand(),
+    decoration: BoxDecoration(
+    image: DecorationImage(
+    image: AssetImage('assets/images/studymaterial.gif'),
+    fit: BoxFit.cover),
+    ),
+      child: SafeArea(
         child: ListView(
           physics: BouncingScrollPhysics(),
           children: [
@@ -175,7 +182,7 @@ class _StudyPageState extends State<StudyPage> {
         ),
 
       ),
-    );
+    ));
   }
   void onSeeAllTapped() {
   }
