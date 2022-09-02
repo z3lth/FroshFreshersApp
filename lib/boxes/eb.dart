@@ -48,7 +48,7 @@ class EB extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
       image: DecorationImage(
-      image: NetworkImage('https://i.imgur.com/34GRuLn.png'),
+      image: NetworkImage('https://i.imgur.com/TKwSFdY.jpg'),
       fit: BoxFit.fill,
       ),
       ),
