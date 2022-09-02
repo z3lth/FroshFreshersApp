@@ -2,6 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:meditation/boxes/cb.dart';
+import 'package:meditation/boxes/fb.dart';
+import 'package:meditation/boxes/mb.dart';
 import 'package:meditation/detail_page.dart';
 import 'package:meditation/screens/Core.dart';
 import 'package:meditation/screens/Faculty.dart';
@@ -63,7 +66,7 @@ class _GalleryPageState extends State<GalleryPage> {
                     child: Column(
 
                         children: [
-                          DiscoverSmallCard(
+                          FB(
                             onTap: () {
                               Navigator.push(context, MaterialPageRoute(builder: (context)=>Faculty()));
                             },
@@ -75,7 +78,7 @@ class _GalleryPageState extends State<GalleryPage> {
                           SizedBox(
                             height: 16.h,
                           ),
-                          DiscoverSmallCard(
+                          CB(
                             onTap: () {
                               Navigator.push(context, MaterialPageRoute(builder: (context)=>Core()));
 
@@ -94,7 +97,7 @@ class _GalleryPageState extends State<GalleryPage> {
                             height: 16.h,
                           ),
 
-                          DiscoverSmallCard(
+                         MB(
 
                             onTap: () {
                               Navigator.push(context, MaterialPageRoute(builder: (context)=>Mentor()));
