@@ -2,6 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:meditation/boxes/eb.dart';
+import 'package:meditation/boxes/skb.dart';
+import 'package:meditation/boxes/smb.dart';
 import 'package:meditation/detail_page.dart';
 import 'package:meditation/starterkitmain.dart';
 import 'package:meditation/studymaterial.dart';
@@ -13,7 +16,9 @@ import 'package:meditation/widgets/discover_small_card.dart';
 import 'package:meditation/widgets/profile_page1.dart';
 import 'package:meditation/widgets/svg_asset.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:animated_background/animated_background.dart';
 
+import 'boxes/faqb.dart';
 
 class DiscoverPage extends StatefulWidget {
   const DiscoverPage({
@@ -28,29 +33,25 @@ class DiscoverPage extends StatefulWidget {
 class _DiscoverPageState extends State<DiscoverPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      // appBar: AppBar(
-      //   title: Image(
-      //     image: AssetImage('assets/images/tietlogo4.png'),
-      //     alignment: Alignment.topCenter,
-      //     // height: 100,width: 100,
-      //   ),
-      // ) ,
-      backgroundColor: Color(0xff121421),
-      body: SafeArea(
+    return
+
+    Scaffold(
+
+    // backgroundColor: Color(0xff121421),
+      body:
+        Container(
+        constraints: BoxConstraints.expand(),
+    decoration: BoxDecoration(
+    image: DecorationImage(
+    image: AssetImage('assets/images/front.gif'),
+    fit: BoxFit.cover),
+    ),
+      child: SafeArea(
         child: ListView(
           physics: BouncingScrollPhysics(),
           children: [
-           //   Image(
-           //  image: AssetImage('assets/images/tietlogo4.png'),
-           //    alignment: Alignment.topCenter,
-           // // height: 100,width: 100,
-           //  ),
-            // Image(
-            //   image: AssetImage('assets/images/froshlogo.png'),
-            //   alignment: Alignment.topCenter,
-            //   height: 140,width: 140,
-            // ),
+
+
 
             Padding(
               padding: EdgeInsets.only(
@@ -58,6 +59,8 @@ class _DiscoverPageState extends State<DiscoverPage> {
                 right: 18.w,
                 top: 16.h,
               ),
+
+
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -72,56 +75,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
               ),
             ),
 
-            // Container(
-            //   height: 120.h,
-            //   child: ListView(
-            //     physics: BouncingScrollPhysics(),
-            //     scrollDirection: Axis.horizontal,
-            //     children: [
-            //       SizedBox(
-            //         width: 28.w,
-            //       ),
-            //       CategoryBoxes(
-            //         text: "Insomnia",
-            //         onPressed: (value) => print(value),
-            //       ),
-            //       CategoryBoxes(
-            //         text: "Depression",
-            //         onPressed: (value) => print(value),
-            //       ),
-            //       CategoryBoxes(
-            //         text: "Baby Sleep",
-            //         onPressed: (value) => print(value),
-            //       ),
-            //       CategoryBoxes(
-            //         text: "Insomnia",
-            //         onPressed: (value) => print(value),
-            //       ),
-            //     ],
-            //   ),
-            // ),
-            // Padding(
-            //   padding: EdgeInsets.symmetric(horizontal: 28.w),
-            //   child: Row(
-            //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            //     children: [
-            //       Text(
-            //         "Recommended",
-            //         style: TextStyle(
-            //             color: Color(0xff515979),
-            //             fontWeight: FontWeight.w500,
-            //             fontSize: 14.w),
-            //       ),
-            //       GestureDetector(
-            //           onTap: onSeeAllTapped,
-            //           child: Text("See All",
-            //               style: TextStyle(
-            //                   color: Color(0xff4A80F0),
-            //                   fontWeight: FontWeight.w500,
-            //                   fontSize: 14.w)))
-            //     ],
-            //   ),
-            // ),
+
 
             SizedBox(
               height: 10.h,
@@ -169,7 +123,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                 physics: NeverScrollableScrollPhysics(),
                 children: [
 
-                  DiscoverSmallCard(
+                  SKB(
                     onTap: (){Navigator.push(context, MaterialPageRoute(builder:(context)=>StarterPage()));
 
                     },
@@ -178,7 +132,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                     gradientEndColor: Color(0xff06B782),
                     
                   ),
-                  DiscoverSmallCard(
+                  SMB(
                     onTap: (){Navigator.push(context, MaterialPageRoute(builder:(context)=>StudyPage()));
 
                     },
@@ -191,7 +145,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                       width: 50.w,
                     ),
                   ),
-                  DiscoverSmallCard(
+                  FAQB(
                     onTap: (){Navigator.push(context, MaterialPageRoute(builder:(context)=>FAQPage()));
 
                     },
@@ -199,7 +153,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                     gradientStartColor: Color(0xffFFD541),
                     gradientEndColor: Color(0xffF0B31A),
                   ),
-                  DiscoverSmallCard(
+                  EB(
                     onTap: (){Navigator.push(context, MaterialPageRoute(builder:(context)=>ProfilePage1()));
 
                     },
@@ -217,7 +171,8 @@ class _DiscoverPageState extends State<DiscoverPage> {
           ],
         ),
       ),
-    );
+    ));
+
   }
 
 
