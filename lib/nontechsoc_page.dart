@@ -2,6 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:meditation/SocietyPages/AIESEC_page.dart';
+import 'package:meditation/SocietyPages/Echoes_page.dart';
+import 'package:meditation/SocietyPages/IICHE_page.dart';
+import 'package:meditation/SocietyPages/LitSoc_page.dart';
+import 'package:meditation/SocietyPages/Mudra_page.dart';
+import 'package:meditation/SocietyPages/NOX_page.dart';
+import 'package:meditation/SocietyPages/TNT_page.dart';
+import 'package:meditation/SocietyPages/ThaparToastmasters_page.dart';
 
 import 'package:meditation/detail_page.dart';
 import 'package:meditation/girlshostel_page.dart';
@@ -84,10 +92,10 @@ class _NontechsocPageState extends State<NontechsocPage> {
                     child: DiscoverCard1(
 
                       onTap:() {
-                        Navigator.push(context, MaterialPageRoute(builder:(context)=>HostelcPage()));
+                        Navigator.push(context, MaterialPageRoute(builder:(context)=>TntPage()));
                       },
                       title: "Thapar Nautanki Club",
-                      subtitle: "380 rooms",
+                      subtitle: "TNT",
                       gradientStartColor: Color(0xffFC67A7),
                       gradientEndColor: Color(0xffF6815B),
                     ),
@@ -138,7 +146,7 @@ class _NontechsocPageState extends State<NontechsocPage> {
                     child: DiscoverCard1(
 
                       onTap:() {
-                        Navigator.push(context, MaterialPageRoute(builder:(context)=>HosteljPage()));
+                        Navigator.push(context, MaterialPageRoute(builder:(context)=>EchoesPage()));
                       },
                       title: "Echoes",
                       subtitle: "EStablished 1980",
@@ -162,9 +170,9 @@ class _NontechsocPageState extends State<NontechsocPage> {
                   InkWell(
                     child: DiscoverCard1(
 
-                      // onTap:() {
-                      //   Navigator.push(context, MaterialPageRoute(builder:(context)=>HostelcPage()));
-                      // },
+                      onTap:() {
+                        Navigator.push(context, MaterialPageRoute(builder:(context)=>LitsocPage()));
+                      },
                       title: "Thapar Literally Socitey",
                       subtitle: "EStablished 2020",
                       gradientStartColor: Color(0xffFC67A7),
@@ -186,15 +194,11 @@ class _NontechsocPageState extends State<NontechsocPage> {
                   SizedBox(width: 35.w,),
                   DiscoverCard1(
 
-                    //  onTap: ()async{
-                    //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-                    //
-                    //   if (!await launchUrl(_url)) {
-                    //     throw 'Could not launch $_url';
-                    //    }
-                    // },
+                    onTap:() {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>ToastmastersPage()));
+                    },
                     title: "ToastMasters ",
-                    subtitle: "EStablished 1980",
+                    subtitle: "",
                     gradientStartColor: Color(0xffFFD541),
                     gradientEndColor: Color(0xffF0B31A),
                   ),
@@ -214,15 +218,11 @@ class _NontechsocPageState extends State<NontechsocPage> {
                   InkWell(
                     child: DiscoverCard1(
 
-                      //  onTap: ()async{
-                      //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-                      //
-                      //   if (!await launchUrl(_url)) {
-                      //     throw 'Could not launch $_url';
-                      //    }
-                      // },
+                      onTap:() {
+                        Navigator.push(context, MaterialPageRoute(builder:(context)=>AiesecPage()));
+                      },
                       title: "AIESEC",
-                      subtitle: "EStablished 1980",
+                      subtitle: "Aiesec in Patiala",
                       gradientStartColor: Color(0xffFC67A7),
                       gradientEndColor: Color(0xffF6815B),
                     ),
@@ -244,9 +244,9 @@ class _NontechsocPageState extends State<NontechsocPage> {
                     child: DiscoverCard1(
 
                       onTap:() {
-                        Navigator.push(context, MaterialPageRoute(builder:(context)=>HostelmPage()));
+                        Navigator.push(context, MaterialPageRoute(builder:(context)=>IichePage()));
                       },
-                      title: "Hostel M",
+                      title: "IICHE",
                       subtitle: "EStablished 1980",
                       gradientStartColor: Color(0xff13DEA0),
                       gradientEndColor: Color(0xff06B782),
@@ -267,48 +267,40 @@ class _NontechsocPageState extends State<NontechsocPage> {
                   SizedBox(width: 35.w,),
                   DiscoverCard1(
 
-                    //  onTap: ()async{
-                    //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-                    //
-                    //   if (!await launchUrl(_url)) {
-                    //     throw 'Could not launch $_url';
-                    //    }
-                    // },
-                    title: "Hostel O",
-                    subtitle: "EStablished 1980",
+                    onTap:() {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>MudraPage()));
+                    },
+                    title: "Mudra",
+                    subtitle: "",
                     gradientStartColor: Color(0xffFC67A7),
                     gradientEndColor: Color(0xffF6815B),
                   ),
                 ],
               ),
             ),
-            // SizedBox(height: 10.h),
-            //
-            // SizedBox(
-            //   height: 121.w,
-            //
-            //   child: ListView(
-            //     physics: BouncingScrollPhysics(),
-            //     scrollDirection: Axis.horizontal,
-            //     children: [
-            //       SizedBox(width: 35.w,),
-            //       DiscoverCard1(
-            //
-            //         //  onTap: ()async{
-            //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-            //         //
-            //         //   if (!await launchUrl(_url)) {
-            //         //     throw 'Could not launch $_url';
-            //         //    }
-            //         // },
-            //         title: "Hostel J",
-            //         subtitle: "EStablished 1980",
-            //         gradientStartColor: Color(0xffFFD541),
-            //         gradientEndColor: Color(0xffF0B31A),
-            //       ),
-            //     ],
-            //   ),
-            // ),
+            SizedBox(height: 10.h),
+
+            SizedBox(
+              height: 121.w,
+
+              child: ListView(
+                physics: BouncingScrollPhysics(),
+                scrollDirection: Axis.horizontal,
+                children: [
+                  SizedBox(width: 35.w,),
+                  DiscoverCard1(
+
+                    onTap:() {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>NOXPage()));
+                    },
+                    title: "NOX",
+                    subtitle: "Dance Society",
+                    gradientStartColor: Color(0xffFFD541),
+                    gradientEndColor: Color(0xffF0B31A),
+                  ),
+                ],
+              ),
+            ),
             // SizedBox(height: 10.h),
             //
             // SizedBox(
