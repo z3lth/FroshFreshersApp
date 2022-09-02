@@ -4,6 +4,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:meditation/boxes/csb.dart';
+import 'package:meditation/boxes/ntsb.dart';
+import 'package:meditation/boxes/tsb.dart';
 import 'package:meditation/culturalsoc_page.dart';
 import 'package:meditation/detail_page.dart';
 import 'package:meditation/nontechsoc_page.dart';
@@ -16,36 +19,40 @@ import 'package:meditation/widgets/discover_small_card.dart';
 import 'package:meditation/widgets/svg_asset.dart';
 
 
-class SocitiesPage extends StatefulWidget {
-  const SocitiesPage({
+class SocietiesPage extends StatefulWidget {
+  const SocietiesPage({
     Key? key,
   }) : super(key: key);
 
   @override
-  State<SocitiesPage> createState() => _SocitiesPageState();
+  State<SocietiesPage> createState() => _SocietiesPageState();
 }
 
-class _SocitiesPageState extends State<SocitiesPage> {
+class _SocietiesPageState extends State<SocietiesPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Color(0xff121421),
+        appBar: AppBar(
+          title: Image.asset('assets/images/tietlogo3.png'),
+          backgroundColor: Color(0xff1C2031),
+          shadowColor: Colors.black,
+        ) ,
         body: SafeArea(
           child: ListView(
               physics: BouncingScrollPhysics(),
               children: [
                 Padding(
                   padding: EdgeInsets.only(
-                    left: 60.w,
+                    left: 25.w,
                     right: 50.w,
                     top: 36.h,
                   ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-
-                      Text("Clubs & Socities",
-
+                      Text("Clubs & Societies",
+                          //textAlign:TextAlign.center,
                           style: TextStyle(
 
                               color: Colors.white,
@@ -78,11 +85,11 @@ class _SocitiesPageState extends State<SocitiesPage> {
                       //shrinkWrap: true,
                       // physics: NeverScrollableScrollPhysics(),
                         children: [
-                          DiscoverSmallCard(
+                          NTSB(
                             onTap: () {
                               Navigator.push(context, MaterialPageRoute(builder: (context)=>NontechsocPage()));
                             },
-                            title: "Non-Tech Socities",
+                            title: "Non-Tech Societies",
 
                             gradientStartColor: Color(0xff13DEA0),
                             gradientEndColor: Color(0xff06B782),
@@ -90,31 +97,36 @@ class _SocitiesPageState extends State<SocitiesPage> {
                           SizedBox(
                             height: 16.h,
                           ),
-                          DiscoverSmallCard(
+                          TSB(
                             onTap: () {
                               Navigator.push(context, MaterialPageRoute(builder: (context)=>TechnicalsocPage()));
 
                             },
-                            title: "Tech Socities",
-                            gradientStartColor: Color(0xffFFD541),
-                            gradientEndColor: Color(0xffF0B31A),
-                            icon:    SvgAsset(
-                              assetName: AssetName.tape,
-                              height: 24.w,
-                              width: 24.w,
-                            ),
+
+                            title: "Tech Societies",
+
+                            gradientStartColor: Color(0xff13DEA0),
+                            gradientEndColor: Color(0xff06B782),
+
+
+                            // icon: SvgAsset(
+                            //   assetName: AssetName.tape,
+                            //   height: 24.w,
+                            //   width: 24.w,
+                            // ),
+
                           ),
 
                           SizedBox(
                             height: 16.h,
                           ),
 
-                          DiscoverSmallCard(
+                          CSB(
 
                             onTap: () {
                               Navigator.push(context, MaterialPageRoute(builder: (context)=>CulturalSocPage()));
                             },
-                            title: "Cultural Socities",
+                            title: "Cultural Societies",
                             gradientStartColor: Color(0xff13DEA0),
                             gradientEndColor: Color(0xff06B782),
                             icon:    SvgAsset(
