@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:meditation/icons.dart';
 import 'package:meditation/widgets/svg_asset.dart';
 
@@ -42,15 +43,15 @@ class DiscoverCard3 extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
             image: DecorationImage(
               // Import image in pubspec.yaml first
-              image: AssetImage('assets/images/ourteam.jpg'),
+              image: NetworkImage('https://i.imgur.com/yTWvYaI.jpg'),
               colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.5), BlendMode.dstATop),
               // BoxFit.cover scales up the image until it completely covers the screen
               fit: BoxFit.cover,
             ),
           ),
           child: Container(
-            height: 75,
-            width: 150,
+            height: 100,
+            width: 200,
             child: Stack(
               children: [
                 // vectorBottom ??
@@ -85,11 +86,13 @@ class DiscoverCard3 extends StatelessWidget {
                               child: Text(
                                 title!,
                                 textAlign: TextAlign.center,
-                                style: TextStyle(
+                                style: GoogleFonts.poppins(
+                                textStyle: TextStyle(
 
-                                    fontSize: 24.w,
+                                    fontSize: 28.w,
                                     fontWeight: FontWeight.bold,
                                     color: Colors.white),
+                              ),
                               ),
                             ),
                           ),
