@@ -2,17 +2,20 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:meditation/boxes/cabb.dart';
+// import 'package:meditation/boxes/csb.dart';
+import 'package:meditation/boxes/hb.dart';
+import 'package:meditation/boxes/la5b.dart';
 import 'package:meditation/detail_page.dart';
-import 'package:meditation/discover_page.dart';
+// import 'package:meditation/discover_page.dart';
 import 'package:meditation/lifeafter5_page.dart';
-import 'package:meditation/socities_page.dart';
-import 'package:meditation/widgets/category_boxes.dart';
+// import 'package:meditation/widgets/category_boxes.dart';
 import 'package:meditation/icons.dart';
-import 'package:meditation/widgets/discover_card.dart';
+// import 'package:meditation/widgets/discover_card.dart';
 import 'package:meditation/widgets/discover_small_card.dart';
 import 'package:meditation/widgets/profile_page.dart';
 import 'package:meditation/widgets/svg_asset.dart';
-//import 'package:url_launcher/url_launcher.dart';
+import 'package:meditation/societies_page.dart';
 
 class StarterPage extends StatefulWidget {
   const StarterPage({
@@ -28,7 +31,7 @@ class _StarterPageState extends State<StarterPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Color(0xff121421),
-        appBar: AppBar(
+      appBar: AppBar(
           title: Image.asset('assets/images/tietlogo3.png'),
           backgroundColor: Color(0xff1C2031),
           shadowColor: Colors.black,
@@ -80,7 +83,7 @@ class _StarterPageState extends State<StarterPage> {
                       //shrinkWrap: true,
                       // physics: NeverScrollableScrollPhysics(),
                         children: [
-                          DiscoverSmallCard(
+                         HB(
                             onTap: (){Navigator.push(context, MaterialPageRoute(builder:(context)=>ProfilePage()));
 
                             },
@@ -92,7 +95,7 @@ class _StarterPageState extends State<StarterPage> {
                           SizedBox(
                             height: 16.h,
                           ),
-                          DiscoverSmallCard(
+                          LA5B(
                             onTap: () {
                               Navigator.push(context, MaterialPageRoute(builder: (context)=>Lifeafter5Page()));
 
@@ -111,14 +114,15 @@ class _StarterPageState extends State<StarterPage> {
                             height: 16.h,
                           ),
 
-                          DiscoverSmallCard(
+                          Clubs(
 
                             onTap: () {
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>SocitiesPage()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>SocietiesPage()));
+
                             },
-                            title: "Clubs & Socities",
-                            gradientStartColor: Color(0xff13DEA0),
-                            gradientEndColor: Color(0xff06B782),
+                            title: "Clubs & Societies",
+                            gradientStartColor: Color(0xffFFD541),
+                            gradientEndColor: Color(0xffF0B31A),
                             icon:    SvgAsset(
                               assetName: AssetName.tape,
                               height: 24.w,
