@@ -49,7 +49,7 @@ class SKB extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
       image: DecorationImage(
-      image: NetworkImage('https://i.imgur.com/QACInbJ.png'),
+       image: AssetImage('assets/images/starter kit button.png'),
       fit: BoxFit.fill,
       ),
       ),
