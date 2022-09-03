@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:meditation/boxes/oat.dart';
 import 'package:meditation/detail_page.dart';
 import 'package:meditation/jaggi_page.dart';
 import 'package:meditation/widgets/category_boxes.dart';
@@ -9,6 +10,13 @@ import 'package:meditation/icons.dart';
 import 'package:meditation/widgets/discover_card.dart';
 import 'package:meditation/widgets/discover_small_card.dart';
 import 'package:meditation/widgets/svg_asset.dart';
+
+import 'boxes/aahar.dart';
+import 'boxes/cos.dart';
+import 'boxes/gblock.dart';
+import 'boxes/jaggibox.dart';
+import 'boxes/streat.dart';
+import 'boxes/waterfront.dart';
 //import 'package:url_launcher/url_launcher.dart';
 
 class Lifeafter5Page extends StatefulWidget {
@@ -25,6 +33,11 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xff121421),
+      appBar: AppBar(
+          title: Image.asset('assets/images/tietlogo3.png'),
+          backgroundColor: Color(0xff1C2031),
+          shadowColor: Colors.black,
+        ) ,
       body: SafeArea(
         child: ListView(
           physics: BouncingScrollPhysics(),
@@ -76,7 +89,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                 children: [
                   SizedBox(width: 35.w,),
                   InkWell(
-                    child: DiscoverCard(
+                    child: Jaggi(
 
                       onTap:() {
                         Navigator.push(context, MaterialPageRoute(builder:(context)=>JaggiPage()));
@@ -129,7 +142,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   SizedBox(width: 35.w,),
-                  DiscoverCard(
+                  Waterfront(
 
                     //  onTap: ()async{
                     //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -156,7 +169,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   SizedBox(width: 35.w,),
-                  DiscoverCard(
+                  Streat(
 
                     //  onTap: ()async{
                     //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -183,7 +196,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   SizedBox(width: 35.w,),
-                  DiscoverCard(
+                  OAT(
 
                     //  onTap: ()async{
                     //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -210,7 +223,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   SizedBox(width: 35.w,),
-                  DiscoverCard(
+                 COS(
 
                     //  onTap: ()async{
                     //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -237,7 +250,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   SizedBox(width: 35.w,),
-                  DiscoverCard(
+                  Aahar(
 
                     //  onTap: ()async{
                     //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -264,7 +277,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   SizedBox(width: 35.w,),
-                  DiscoverCard(
+                  GBlock(
 
                     //  onTap: ()async{
                     //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
