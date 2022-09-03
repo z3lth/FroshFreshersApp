@@ -49,7 +49,7 @@ class SMB extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
       image: DecorationImage(
-      image: NetworkImage('https://i.imgur.com/so3FdJf.png'),
+      image: AssetImage('assets/images/study material button .png'),
       fit: BoxFit.fill,
       ),
       ),
