@@ -49,7 +49,7 @@ final List<Models> snk1Models = [
     name: "Abhimanyu",
     model: " ",
     branch: "COE",
-    imgAddress: "https://i.imgur.com/O0u21jK.jpg",
+    imgAddress: "https://i.imgur.com/q4fJ1cV.jpg",
     modelColor: Color(0xff3F7943),
   ),
 ];
