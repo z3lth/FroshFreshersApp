@@ -23,14 +23,8 @@ dependencies:
   simple_animations: ^4.0.1
   supercharged: ^2.1.1
   font_awesome_flutter: ^9.2.0
-  mapbox_gl: ^0.15.0
   flutter_native_splash: ^2.0.2
   cached_network_image: ^3.2.0
-  shared_preferences: ^2.0.15
-  location: ^4.3.0
-  dio: ^4.0.4
-  flutter_dotenv: ^5.0.2
-  localstorage: ^4.0.0+1
   google_fonts: ^3.0.1
 
 
