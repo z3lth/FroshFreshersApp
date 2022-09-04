@@ -19,6 +19,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:animated_background/animated_background.dart';
 
 import 'boxes/faqb.dart';
+import 'boxes/welcome.dart';
 
 class DiscoverPage extends StatefulWidget {
   const DiscoverPage({
@@ -88,7 +89,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   SizedBox(width: 35.w),
-                  DiscoverCard(
+                  Welcome(
                     tag: "sleepMeditation",
                     onTap: onSleepMeditationTapped,
                     title: "",
