@@ -61,7 +61,7 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Technical Socities",
+                  Text("Technical Societies",
                       textAlign:TextAlign.center,
                       style: GoogleFonts.poppins(
                         textStyle: TextStyle(
