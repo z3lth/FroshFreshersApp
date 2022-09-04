@@ -19,7 +19,7 @@ List<DataModel> dataList = [
   DataModel("Ashish Kakkar", "https://i.imgur.com/UwTlewt.jpg", "COE"),
   DataModel("Daksh Azad", "https://i.imgur.com/NuaXGFe.jpg", "COE"),
   DataModel("Devashish Sharma", "https://i.imgur.com/QJquHGx.jpg", "BioTech"),
-  DataModel("Ishnoor Kohli", "https://i.imgur.com/5Of6vrf.jpg", "COE", "BioTech"),
+  DataModel("Ishnoor Kohli", "https://i.imgur.com/5Of6vrf.jpg", "COE"),
   DataModel("Kautik Bector", "https://i.imgur.com/aDWfvDI.jpg", "MEE"),
   DataModel("Kunwarpreet Luthra", "https://i.imgur.com/M1Ektay.jpg", "MTX"),
   DataModel("Nishtha Bhargav", "https://i.imgur.com/QCzD0zj.jpg", "COE"),
