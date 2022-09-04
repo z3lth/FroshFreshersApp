@@ -1,7 +1,12 @@
-import 'package:flutter/cupertino.dart';
+ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:meditation/SocietyPages/Mudra_page.dart';
+import 'package:meditation/SocietyPages/NOX_page.dart';
+import 'package:meditation/SocietyPages/Paryavaran_page.dart';
+import 'package:meditation/SocietyPages/Saic_Page.dart';
 
 import 'package:meditation/detail_page.dart';
 import 'package:meditation/girlshostel_page.dart';
@@ -30,26 +35,32 @@ class _CulturalSocPageState extends State<CulturalSocPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xff121421),
+      appBar: AppBar(
+          title: Image.asset('assets/images/tietlogo3.png'),
+          backgroundColor: Color(0xff1C2031),
+          shadowColor: Colors.black,
+        ) ,
       body: SafeArea(
         child: ListView(
           physics: BouncingScrollPhysics(),
           children: [
             Padding(
               padding: EdgeInsets.only(
-                left: 70.w,
-                right: 50.w,
+                left: 60.w,
+                right: 1.w,
                 top: 36.h,
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("CULTURAL SOCITIES",
+                  Text("Cultural Societies",
                       textAlign:TextAlign.center,
-                      style: TextStyle(
+                      style: GoogleFonts.poppins(
+                      textStyle: TextStyle(
 
                           color: Colors.white,
                           fontSize: 30.w,
-                          fontWeight: FontWeight.bold)),
+                          fontWeight: FontWeight.bold)),)
                   // InkWell(
                   //   borderRadius: BorderRadius.circular(360),
                   //   onTap: onSearchIconTapped,
@@ -84,12 +95,12 @@ class _CulturalSocPageState extends State<CulturalSocPage> {
                     child: DiscoverCard1(
 
                       onTap:() {
-                        Navigator.push(context, MaterialPageRoute(builder:(context)=>HostelcPage()));
+                        Navigator.push(context, MaterialPageRoute(builder:(context)=>SaicPage()));
                       },
                       title: "SAIC",
-                      subtitle: "380 rooms",
-                      gradientStartColor: Color(0xffFC67A7),
-                      gradientEndColor: Color(0xffF6815B),
+                      subtitle: " ",
+                        gradientStartColor: Color(0xffFF4B5C),
+                        gradientEndColor: Color(0xffF6815B)
                     ),
                   ),
                 ],
@@ -138,93 +149,12 @@ class _CulturalSocPageState extends State<CulturalSocPage> {
                     child: DiscoverCard1(
 
                       onTap:() {
-                        Navigator.push(context, MaterialPageRoute(builder:(context)=>HosteljPage()));
+                        Navigator.push(context, MaterialPageRoute(builder:(context)=>MudraPage()));
                       },
                       title: "MUDRA",
-                      subtitle: "EStablished 1980",
-                      gradientStartColor: Color(0xff13DEA0),
-                      gradientEndColor: Color(0xff06B782),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            SizedBox(height: 10.h),
-
-            SizedBox(
-              height: 121.w,
-
-              child: ListView(
-                physics: BouncingScrollPhysics(),
-                scrollDirection: Axis.horizontal,
-                children: [
-                  SizedBox(width: 35.w,),
-                  InkWell(
-                    child: DiscoverCard1(
-
-                      // onTap:() {
-                      //   Navigator.push(context, MaterialPageRoute(builder:(context)=>HostelcPage()));
-                      // },
-                      title: "NOX",
-                      subtitle: "EStablished 2020",
-                      gradientStartColor: Color(0xffFC67A7),
-                      gradientEndColor: Color(0xffF6815B),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            SizedBox(height: 10.h),
-
-            SizedBox(
-              height: 121.w,
-
-              child: ListView(
-                physics: BouncingScrollPhysics(),
-                scrollDirection: Axis.horizontal,
-                children: [
-                  SizedBox(width: 35.w,),
-                  DiscoverCard1(
-
-                    //  onTap: ()async{
-                    //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-                    //
-                    //   if (!await launchUrl(_url)) {
-                    //     throw 'Could not launch $_url';
-                    //    }
-                    // },
-                    title: "ParyaVaran ",
-                    subtitle: "EStablished 1980",
-                    gradientStartColor: Color(0xffFFD541),
-                    gradientEndColor: Color(0xffF0B31A),
-                  ),
-                ],
-              ),
-            ),
-            SizedBox(height: 10.h),
-
-            SizedBox(
-              height: 121.w,
-
-              child: ListView(
-                physics: BouncingScrollPhysics(),
-                scrollDirection: Axis.horizontal,
-                children: [
-                  SizedBox(width: 35.w,),
-                  InkWell(
-                    child: DiscoverCard1(
-
-                      //  onTap: ()async{
-                      //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-                      //
-                      //   if (!await launchUrl(_url)) {
-                      //     throw 'Could not launch $_url';
-                      //    }
-                      // },
-                      title: "Hostel L",
-                      subtitle: "EStablished 1980",
-                      gradientStartColor: Color(0xffFC67A7),
-                      gradientEndColor: Color(0xffF6815B),
+                      subtitle: " ",
+                      gradientStartColor: Color(0xff056674),
+                      gradientEndColor: Color(0xff66BFBF),
                     ),
                   ),
                 ],
@@ -244,12 +174,12 @@ class _CulturalSocPageState extends State<CulturalSocPage> {
                     child: DiscoverCard1(
 
                       onTap:() {
-                        Navigator.push(context, MaterialPageRoute(builder:(context)=>HostelmPage()));
+                        Navigator.push(context, MaterialPageRoute(builder:(context)=>NOXPage()));
                       },
-                      title: "Hostel M",
-                      subtitle: "EStablished 1980",
-                      gradientStartColor: Color(0xff13DEA0),
-                      gradientEndColor: Color(0xff06B782),
+                      title: "NOX",
+                      subtitle: " ",
+                        gradientStartColor: Color(0xffFF4B5C),
+                        gradientEndColor: Color(0xffF6815B),
                     ),
                   ),
                 ],
@@ -266,6 +196,9 @@ class _CulturalSocPageState extends State<CulturalSocPage> {
                 children: [
                   SizedBox(width: 35.w,),
                   DiscoverCard1(
+                    onTap:() {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>ParyavaranPage()));
+                    },
 
                     //  onTap: ()async{
                     //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -274,14 +207,95 @@ class _CulturalSocPageState extends State<CulturalSocPage> {
                     //     throw 'Could not launch $_url';
                     //    }
                     // },
-                    title: "Hostel O",
-                    subtitle: "EStablished 1980",
-                    gradientStartColor: Color(0xffFC67A7),
-                    gradientEndColor: Color(0xffF6815B),
+                    title: "ParyaVaran ",
+                    subtitle: " ",
+                    gradientStartColor: Color(0xff056674),
+                    gradientEndColor: Color(0xff66BFBF),
                   ),
                 ],
               ),
             ),
+            SizedBox(height: 10.h),
+
+            // SizedBox(
+            //   height: 121.w,
+            //
+            //   child: ListView(
+            //     physics: BouncingScrollPhysics(),
+            //     scrollDirection: Axis.horizontal,
+            //     children: [
+            //       SizedBox(width: 35.w,),
+            //       InkWell(
+            //         child: DiscoverCard1(
+            //
+            //           //  onTap: ()async{
+            //           //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
+            //           //
+            //           //   if (!await launchUrl(_url)) {
+            //           //     throw 'Could not launch $_url';
+            //           //    }
+            //           // },
+            //           title: "Hostel L",
+            //           subtitle: "EStablished 1980",
+            //           gradientStartColor: Color(0xffFC67A7),
+            //           gradientEndColor: Color(0xffF6815B),
+            //         ),
+            //       ),
+            //     ],
+            //   ),
+            // ),
+            // SizedBox(height: 10.h),
+            //
+            // SizedBox(
+            //   height: 121.w,
+            //
+            //   child: ListView(
+            //     physics: BouncingScrollPhysics(),
+            //     scrollDirection: Axis.horizontal,
+            //     children: [
+            //       SizedBox(width: 35.w,),
+            //       InkWell(
+            //         child: DiscoverCard1(
+            //
+            //           onTap:() {
+            //             Navigator.push(context, MaterialPageRoute(builder:(context)=>HostelmPage()));
+            //           },
+            //           title: "Hostel M",
+            //           subtitle: "EStablished 1980",
+            //           gradientStartColor: Color(0xff13DEA0),
+            //           gradientEndColor: Color(0xff06B782),
+            //         ),
+            //       ),
+            //     ],
+            //   ),
+            // ),
+            // SizedBox(height: 10.h),
+            //
+            // SizedBox(
+            //   height: 121.w,
+            //
+            //   child: ListView(
+            //     physics: BouncingScrollPhysics(),
+            //     scrollDirection: Axis.horizontal,
+            //     children: [
+            //       SizedBox(width: 35.w,),
+            //       DiscoverCard1(
+
+                    //  onTap: ()async{
+                    //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
+                    //
+                    //   if (!await launchUrl(_url)) {
+                    //     throw 'Could not launch $_url';
+                    //    }
+                    // },
+            //         title: "Hostel O",
+            //         subtitle: "EStablished 1980",
+            //         gradientStartColor: Color(0xffFC67A7),
+            //         gradientEndColor: Color(0xffF6815B),
+            //       ),
+            //     ],
+            //   ),
+            // ),
             // SizedBox(height: 10.h),
             //
             // SizedBox(
