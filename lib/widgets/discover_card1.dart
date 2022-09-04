@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:meditation/icons.dart';
 import 'package:meditation/widgets/svg_asset.dart';
 
@@ -70,7 +71,7 @@ class DiscoverCard1 extends StatelessWidget {
                           assetName: AssetName.vectorTop),
                     ),
                 Padding(
-                  padding: EdgeInsets.only(left: 24.w, top: 24.h, bottom: 24.h),
+                  padding: EdgeInsets.only(left: 24.w, top: 24.h, bottom: 1.h),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -84,12 +85,13 @@ class DiscoverCard1 extends StatelessWidget {
                               color: Colors.transparent,
                               child: Text(
                                 title!,
-                                style: TextStyle(
+                                style: GoogleFonts.poppins(
+                                textStyle: TextStyle(
                                     fontSize: 22.w,
                                     fontWeight: FontWeight.bold,
                                     color: Colors.white),
                               ),
-                            ),
+                            )),
                           ),
                           SizedBox(
                             height: 5.h,
