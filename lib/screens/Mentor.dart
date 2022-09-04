@@ -5,7 +5,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:meditation/animation/fadeanimation.dart';
 import 'package:meditation/constanst.dart';
 import 'package:meditation/models/Mentor_p.dart';
-import 'package:meditation/detail/detail_screen.dart';
+// import 'package:meditation/detail/detail_screen.dart';
 
 class Mentor extends StatefulWidget {
   const Mentor({Key? key}) : super(key: key);
