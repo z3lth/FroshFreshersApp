@@ -16,7 +16,7 @@ import 'package:meditation/widgets/discover_small_card.dart';
 import 'package:meditation/widgets/profile_page1.dart';
 import 'package:meditation/widgets/svg_asset.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:animated_background/animated_background.dart';
+// import 'package:animated_background/animated_background.dart';
 
 import 'boxes/faqb.dart';
 import 'boxes/welcome.dart';
