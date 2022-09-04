@@ -160,7 +160,7 @@ final List<Models> snk5Models = [
     name: "Harman",
     model: "Khurmi",
     branch: "COPC",
-    imgAddress: "https://i.imgur.com/Fpd5a3E.jpg",
+    imgAddress: "https://i.imgur.com/c4sqLZ7.jpg",
     modelColor: Color(0xffDE0106),
   ),
 
