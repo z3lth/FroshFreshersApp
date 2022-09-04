@@ -43,7 +43,7 @@ class DiscoverCard3 extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
             image: DecorationImage(
               // Import image in pubspec.yaml first
-              image: NetworkImage('https://i.imgur.com/yTWvYaI.jpg'),
+              image: AssetImage('assets/images/ourteam.jpg'),
               colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.5), BlendMode.dstATop),
               // BoxFit.cover scales up the image until it completely covers the screen
               fit: BoxFit.cover,
