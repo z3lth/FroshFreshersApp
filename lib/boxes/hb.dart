@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:meditation/icons.dart';
 import 'package:meditation/widgets/svg_asset.dart';
 
@@ -41,95 +42,110 @@ class HB extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return
-      //    Container(
+      // Container(
       //
-      // constraints: BoxConstraints.expand(),
-      // decoration: BoxDecoration(
-      // image: DecorationImage(
-      // image: AssetImage('assets/images/tech.gif'),
-      // fit: BoxFit.fill,
-      // ),
-      // ),
+      //     constraints: BoxConstraints.expand(),
+      //     decoration: BoxDecoration(
+      //       image: DecorationImage(
+      //         image: AssetImage('assets/images/skb.jpeg'),
+      //         fit: BoxFit.fill,
+      //       ),
+      //     ),
+      //
+      //     child:
+      Container(
 
-      // child:
-      InkWell(
-
-        borderRadius: BorderRadius.circular(20),
-        onTap: onTap ?? () {},
-        child: Ink(
           decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              image: DecorationImage(
+                  image: AssetImage('assets/images/Untitled design.gif'),
+                  fit: BoxFit.cover
+              )
+          ),
+
+          child: InkWell(
+
             borderRadius: BorderRadius.circular(20),
-            gradient: LinearGradient(
-              colors: [
-                gradientStartColor ?? Color(0xff441DFC),
-                gradientEndColor ?? Color(0xff4E81EB),
-              ],
-              begin: Alignment.bottomLeft,
-              end: Alignment.topRight,
-            ),
-          ),
-          child: Stack(
-            children: [
-              Container(
-                height: 125.w,
-                width: 170.w,
-              ),
-              ClipRRect(
+            onTap: onTap ?? () {},
+            child: Ink(
+              decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
-                child: SizedBox(
-                  height: 125.w,
-                  width: 170.w,
-                  child: Stack(
-                    children: [
-                      SizedBox(
-                        height: 132.w,
-                        width: 190.w,
-                        child: SvgAsset(assetName: AssetName.vectorSmallBottom),
-                      ),
-                      SizedBox(
-                        child: SvgAsset(
+                // gradient: LinearGradient(
+                //   colors: [
+                //     gradientStartColor ?? Color(0xff441DFC),
+                //     gradientEndColor ?? Color(0xff4E81EB),
+                //   ],
+                //   begin: Alignment.bottomLeft,
+                //   end: Alignment.topRight,
+                // ),
+              ),
+              child: Stack(
+                children: [
+                  Container(
+                    height: 150.w,
+                    width: 250.w,
+                  ),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(20),
+                    child: SizedBox(
+                      height: 125.w,
+                      width: 170.w,
+                      child: Stack(
+                        children: [
+                          SizedBox(
                             height: 132.w,
-                            width: 200.w,
-                            fit: BoxFit.fitHeight,
-                            assetName: AssetName.vectorSmallTop),
+                            width: 190.w,
+                            // child: SvgAsset(assetName: AssetName.vectorSmallBottom),
+                          ),
+                          // SizedBox(
+                          //   child: SvgAsset(
+                          //       height: 132.w,
+                          //       width: 200.w,
+                          //       fit: BoxFit.fitHeight,
+                          //       assetName: AssetName.vectorSmallTop),
+                          // ),
+                        ],
                       ),
-                    ],
+                    ),
                   ),
-                ),
-              ),
-              SizedBox(
-                height: 120.w,
-                width: 150.w,
-                child: Padding(
-                  padding: EdgeInsets.only(left: 37.w, right: 20.w, top: 45.w, bottom: 30.w),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        title!,
-                        style: TextStyle(
-                            fontSize: 18.w,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white),
+                  SizedBox(
+                    height: 150.w,
+                    width: 250.w,
+                    child: Padding(
+                      // padding: EdgeInsets.only(left: 35.w, right: 20.w, top: 30.w, bottom: 30.w),
+                      padding: EdgeInsets.only(left: 17.w, right: 1.w, top: 80.w, bottom: 1.w),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+
+                            title!,
+                            textAlign: TextAlign.left,
+                            style: GoogleFonts.poppins(
+                              textStyle: TextStyle(
+                                  fontSize: 24.w,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white),
+                            ),
+                          ),
+                          // Row(
+                          //   children: [
+                          //     icon ??
+                          //         SvgAsset(
+                          //           assetName: AssetName.headphone,
+                          //           height: 24.w,
+                          //           width: 24.w,
+                          //         ),
+                          //   ],
+                          // )
+                        ],
                       ),
-                      // Row(
-                      //   children: [
-                      //     icon ??
-                      //         SvgAsset(
-                      //           assetName: AssetName.headphone,
-                      //           height: 24.w,
-                      //           width: 24.w,
-                      //         ),
-                      //   ],
-                      // )
-                    ],
+                    ),
                   ),
-                ),
+                ],
               ),
-            ],
-          ),
-        ),
-      );
+            ),
+          ));
   }
 }
