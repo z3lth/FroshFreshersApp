@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:meditation/SocietyPages/ACM_page.dart';
 import 'package:meditation/SocietyPages/GDSC.dart';
 import 'package:meditation/SocietyPages/BackSlash_page.dart';
@@ -40,14 +41,19 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xff121421),
+      appBar: AppBar(
+        title: Image.asset('assets/images/tietlogo3.png'),
+        backgroundColor: Color(0xff1C2031),
+        shadowColor: Colors.black,
+      ) ,
       body: SafeArea(
         child: ListView(
           physics: BouncingScrollPhysics(),
           children: [
             Padding(
               padding: EdgeInsets.only(
-                left: 70.w,
-                right: 50.w,
+                left: 45.w,
+                right: 1.w,
                 top: 36.h,
               ),
               child: Row(
@@ -55,11 +61,13 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                 children: [
                   Text("Technical Societies",
                       textAlign:TextAlign.center,
-                      style: TextStyle(
+                      style: GoogleFonts.poppins(
+
+                      textStyle: TextStyle(
 
                           color: Colors.white,
                           fontSize: 30.w,
-                          fontWeight: FontWeight.bold)),
+                          fontWeight: FontWeight.bold)),),
                   // InkWell(
                   //   borderRadius: BorderRadius.circular(360),
                   //   onTap: onSearchIconTapped,
@@ -100,7 +108,7 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                       subtitle: ""
 
                       ,
-                      gradientStartColor: Color(0xffFC67A7),
+                      gradientStartColor: Color(0xffFF4B5C),
                       gradientEndColor: Color(0xffF6815B),
                     ),
                   ),
@@ -154,8 +162,8 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                       },
                       title: "Google Developer Student Clubs",
                       subtitle: "GDSC",
-                      gradientStartColor: Color(0xff13DEA0),
-                      gradientEndColor: Color(0xff06B782),
+                      gradientStartColor: Color(0xff056674),
+                      gradientEndColor: Color(0xff66BFBF),
                     ),
                   ),
                 ],
@@ -178,8 +186,8 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                         Navigator.push(context, MaterialPageRoute(builder:(context)=>BackslashPage()));
                       },
                       title: "BackSlash",
-                      subtitle: "EStablished 2020",
-                      gradientStartColor: Color(0xffFC67A7),
+                      subtitle: " ",
+                      gradientStartColor: Color(0xffFF4B5C),
                       gradientEndColor: Color(0xffF6815B),
                     ),
                   ),
@@ -203,8 +211,8 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                     },
                     title: "Thapar ACM Student Chapter ",
                     subtitle: "Association for Computing Machinery",
-                    gradientStartColor: Color(0xffFFD541),
-                    gradientEndColor: Color(0xffF0B31A),
+                    gradientStartColor: Color(0xff056674),
+                    gradientEndColor: Color(0xff66BFBF),
                   ),
                 ],
               ),
@@ -227,7 +235,7 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                       },
                       title: "ISTE",
                       subtitle: "Indian Society for technical Education",
-                      gradientStartColor: Color(0xffFC67A7),
+                      gradientStartColor: Color(0xffFF4B5C),
                       gradientEndColor: Color(0xffF6815B),
                     ),
                   ),
@@ -252,8 +260,8 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                       },
                       title: "CCS",
                       subtitle: "Creative Computing Society",
-                      gradientStartColor: Color(0xff13DEA0),
-                      gradientEndColor: Color(0xff06B782),
+                      gradientStartColor: Color(0xff056674),
+                      gradientEndColor: Color(0xff66BFBF),
                     ),
                   ),
                 ],
@@ -276,7 +284,7 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                     },
                     title: "IETE",
                     subtitle: "Institution of Electronics and Telecommunication Engineers",
-                    gradientStartColor: Color(0xffFC67A7),
+                    gradientStartColor: Color(0xffFF4B5C),
                     gradientEndColor: Color(0xffF6815B),
                   ),
                 ],
@@ -299,8 +307,8 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                     },
                     title: "MLSC",
                     subtitle: "Microsoft Learn Student Chapter",
-                    gradientStartColor: Color(0xffFFD541),
-                    gradientEndColor: Color(0xffF0B31A),
+                    gradientStartColor: Color(0xff056674),
+                    gradientEndColor: Color(0xff66BFBF),
                   ),
                 ],
               ),
@@ -322,7 +330,7 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                     },
                     title: "M.A.R.S",
                     subtitle: "Mechatronics and Robotics Society",
-                    gradientStartColor: Color(0xffFC67A7),
+                    gradientStartColor: Color(0xffFF4B5C),
                     gradientEndColor: Color(0xffF6815B),
                   ),
                 ],
@@ -345,8 +353,8 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                     },
                     title: "Linux",
                     subtitle: "LuG",
-                    gradientStartColor: Color(0xff13DEA0),
-                    gradientEndColor: Color(0xff06B782),
+                    gradientStartColor: Color(0xff056674),
+                    gradientEndColor: Color(0xff66BFBF),
                   ),
                 ],
               ),
