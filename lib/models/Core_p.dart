@@ -11,7 +11,7 @@ class DataModel {
 
 List<DataModel> dataList = [
 
-  DataModel("Raghav Dhingra", "https://i.imgur.com/hAFRmZn.jpg", "MEE"),
+  DataModel("Raghav Dhingra", "https://i.imgur.com/mve5dUV.jpg", "MEE"),
   DataModel("Rishabh Kumar", "https://i.imgur.com/X9VzfnS.jpg", "COE"),
   DataModel("Aditi Pethia", "https://i.imgur.com/rw6pmBo.jpg", "BioTech"),
   DataModel("Anahita Bansal", "https://i.imgur.com/NlMdSkW.jpg", "ELE"),
