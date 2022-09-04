@@ -54,10 +54,11 @@ class TSB extends StatelessWidget {
       //
       //     child:
       Container(
+
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           image: DecorationImage(
-            image: AssetImage('assets/images/tech.gif'),
+            image: AssetImage('assets/images/Untitled design.gif'),
                 fit: BoxFit.cover
           )
         ),
@@ -81,8 +82,8 @@ class TSB extends StatelessWidget {
               child: Stack(
                 children: [
                   Container(
-                    height: 125.w,
-                    width: 170.w,
+                    height: 150.w,
+                    width: 250.w,
                   ),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(20),
@@ -108,10 +109,11 @@ class TSB extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 120.w,
-                    width: 150.w,
+                    height: 150.w,
+                    width: 250.w,
                     child: Padding(
-                      padding: EdgeInsets.only(left: 35.w, right: 20.w, top: 30.w, bottom: 30.w),
+                      // padding: EdgeInsets.only(left: 35.w, right: 20.w, top: 30.w, bottom: 30.w),
+                      padding: EdgeInsets.only(left: 17.w, right: 1.w, top: 65.w, bottom: 1.w),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -119,10 +121,10 @@ class TSB extends StatelessWidget {
                           Text(
 
                             title!,
-                            textAlign: TextAlign.center,
+                            textAlign: TextAlign.left,
                             style: GoogleFonts.poppins(
                             textStyle: TextStyle(
-                                fontSize: 20.w,
+                                fontSize: 24.w,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           ),
