@@ -54,7 +54,7 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
           children: [
             Padding(
               padding: EdgeInsets.only(
-                left: 75.w,
+                left: 45.w,
                 right: 1.w,
                 top: 36.h,
               ),
