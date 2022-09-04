@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:meditation/boxes/csb.dart';
 import 'package:meditation/boxes/ntsb.dart';
 import 'package:meditation/boxes/tsb.dart';
@@ -31,33 +32,44 @@ class SocietiesPage extends StatefulWidget {
 class _SocietiesPageState extends State<SocietiesPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return
+      Scaffold(
         backgroundColor: Color(0xff121421),
         appBar: AppBar(
           title: Image.asset('assets/images/tietlogo3.png'),
           backgroundColor: Color(0xff1C2031),
           shadowColor: Colors.black,
         ) ,
-        body: SafeArea(
+        body:  Container(
+            constraints: BoxConstraints.expand(),
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage('assets/images/bgclubs.jpeg'),
+                  fit: BoxFit.fill),
+            ),
+        child: SafeArea(
           child: ListView(
               physics: BouncingScrollPhysics(),
               children: [
                 Padding(
                   padding: EdgeInsets.only(
-                    left: 25.w,
-                    right: 50.w,
+                    left: 45.w,
+                    right: 1.w,
                     top: 36.h,
                   ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text("Clubs & Societies",
-                          //textAlign:TextAlign.center,
-                          style: TextStyle(
-
-                              color: Colors.white,
-                              fontSize: 34.w,
-                              fontWeight: FontWeight.bold)),
+                          textAlign:TextAlign.center,
+                    // textAlign: TextAlign.center,
+                    style: GoogleFonts.poppins(
+                      textStyle: TextStyle(
+                          fontSize: 33.w,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white),
+                    ),
+                      ),
                       // InkWell(
                       //   borderRadius: BorderRadius.circular(360),
                       //   onTap: onSearchIconTapped,
@@ -85,25 +97,13 @@ class _SocietiesPageState extends State<SocietiesPage> {
                       //shrinkWrap: true,
                       // physics: NeverScrollableScrollPhysics(),
                         children: [
-                          NTSB(
-                            onTap: () {
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>NontechsocPage()));
-                            },
-                            title: "Non-Tech Societies",
-
-                            gradientStartColor: Color(0xff13DEA0),
-                            gradientEndColor: Color(0xff06B782),
-                          ),
-                          SizedBox(
-                            height: 16.h,
-                          ),
                           TSB(
                             onTap: () {
                               Navigator.push(context, MaterialPageRoute(builder: (context)=>TechnicalsocPage()));
 
                             },
 
-                            title: "Tech Societies",
+                            title: "Technical Societies",
 
                             gradientStartColor: Color(0xff13DEA0),
                             gradientEndColor: Color(0xff06B782),
@@ -116,17 +116,31 @@ class _SocietiesPageState extends State<SocietiesPage> {
                             // ),
 
                           ),
-
                           SizedBox(
                             height: 16.h,
                           ),
+
+                          NTSB(
+                            onTap: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>NontechsocPage()));
+                            },
+                            title: "Non-Tech Societies",
+
+                            gradientStartColor: Color(0xff13DEA0),
+                            gradientEndColor: Color(0xff06B782),
+                          ),
+                          SizedBox(
+                            height: 16.h,
+                          ),
+
+
 
                           CSB(
 
                             onTap: () {
                               Navigator.push(context, MaterialPageRoute(builder: (context)=>CulturalSocPage()));
                             },
-                            title: "Cultural Societies",
+                            title: "Cultural \nSocieties",
                             gradientStartColor: Color(0xff13DEA0),
                             gradientEndColor: Color(0xff06B782),
                             icon:    SvgAsset(
@@ -138,9 +152,10 @@ class _SocietiesPageState extends State<SocietiesPage> {
                         ]
                     )
                 )
-              ]
+                ]
           ),
         )
+    )
     );
 
 
