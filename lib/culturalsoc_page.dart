@@ -62,7 +62,7 @@ class _CulturalSocPageState extends State<CulturalSocPage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("CULTURAL SOCITIES",
+                  Text("Cultural Societies",
                       textAlign:TextAlign.center,
                     style: GoogleFonts.poppins(
                         textStyle: TextStyle(
