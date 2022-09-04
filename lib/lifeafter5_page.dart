@@ -2,12 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:meditation/boxes/oat.dart';
 import 'package:meditation/detail_page.dart';
 import 'package:meditation/jaggi_page.dart';
 import 'package:meditation/widgets/category_boxes.dart';
 import 'package:meditation/icons.dart';
 import 'package:meditation/widgets/discover_card.dart';
+import 'package:meditation/widgets/discover_card1.dart';
 import 'package:meditation/widgets/discover_small_card.dart';
 import 'package:meditation/widgets/svg_asset.dart';
 
@@ -44,8 +46,8 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
           children: [
             Padding(
               padding: EdgeInsets.only(
-                left: 70.w,
-                right: 50.w,
+                left: 105.w,
+                right: 1.w,
                 top: 36.h,
               ),
               child: Row(
@@ -53,11 +55,12 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                 children: [
                   Text("Life After 5",
                       textAlign:TextAlign.center,
-                      style: TextStyle(
+                      style: GoogleFonts.poppins(
+                      textStyle: TextStyle(
 
                           color: Colors.white,
                           fontSize: 30.w,
-                          fontWeight: FontWeight.bold)),
+                          fontWeight: FontWeight.bold)),)
                   // InkWell(
                   //   borderRadius: BorderRadius.circular(360),
                   //   onTap: onSearchIconTapped,
@@ -89,14 +92,14 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                 children: [
                   SizedBox(width: 35.w,),
                   InkWell(
-                    child: Jaggi(
+                    child: DiscoverCard1(
 
                       onTap:() {
                         Navigator.push(context, MaterialPageRoute(builder:(context)=>JaggiPage()));
                       },
                       title: "Jaggi",
-                      subtitle: "EStablished 1980",
-                      gradientStartColor: Color(0xffFC67A7),
+                      subtitle: " ",
+                      gradientStartColor: Color(0xffFF4B5C),
                       gradientEndColor: Color(0xffF6815B),
                     ),
                   ),
@@ -142,7 +145,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   SizedBox(width: 35.w,),
-                  Waterfront(
+                  DiscoverCard1(
 
                     //  onTap: ()async{
                     //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -152,9 +155,9 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                     //    }
                     // },
                     title: "Waterfront Cafe",
-                    subtitle: "EStablished 1980",
-                    gradientStartColor: Color(0xff13DEA0),
-                    gradientEndColor: Color(0xff06B782),
+                    subtitle: " ",
+                    gradientStartColor: Color(0xff056674),
+                    gradientEndColor: Color(0xff66BFBF),
                   ),
                 ],
               ),
@@ -169,7 +172,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   SizedBox(width: 35.w,),
-                  Streat(
+                  DiscoverCard1(
 
                     //  onTap: ()async{
                     //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -179,8 +182,8 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                     //    }
                     // },
                     title: "Streat Cafe",
-                    subtitle: "EStablished 2020",
-                    gradientStartColor: Color(0xffFC67A7),
+                    subtitle: " ",
+                    gradientStartColor: Color(0xffFF4B5C),
                     gradientEndColor: Color(0xffF6815B),
                   ),
                 ],
@@ -196,7 +199,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   SizedBox(width: 35.w,),
-                  OAT(
+                  DiscoverCard1(
 
                     //  onTap: ()async{
                     //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -207,8 +210,8 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                     // },
                     title: "OAT ",
                     subtitle: "Open Air Theatre",
-                    gradientStartColor: Color(0xffFFD541),
-                    gradientEndColor: Color(0xffF0B31A),
+                    gradientStartColor: Color(0xff056674),
+                    gradientEndColor: Color(0xff66BFBF),
                   ),
                 ],
               ),
@@ -223,7 +226,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   SizedBox(width: 35.w,),
-                 COS(
+                  DiscoverCard1(
 
                     //  onTap: ()async{
                     //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -234,7 +237,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                     // },
                     title: "COS",
                     subtitle: "Culture Open Theatre and Sports Complex",
-                    gradientStartColor: Color(0xffFC67A7),
+                    gradientStartColor: Color(0xffFF4B5C),
                     gradientEndColor: Color(0xffF6815B),
                   ),
                 ],
@@ -250,7 +253,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   SizedBox(width: 35.w,),
-                  Aahar(
+                  DiscoverCard1(
 
                     //  onTap: ()async{
                     //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -260,9 +263,9 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                     //    }
                     // },
                     title: "AAHAR",
-                    subtitle: "EStablished 1980",
-                    gradientStartColor: Color(0xff13DEA0),
-                    gradientEndColor: Color(0xff06B782),
+                    subtitle: " ",
+                    gradientStartColor: Color(0xff056674),
+                    gradientEndColor: Color(0xff66BFBF),
                   ),
                 ],
               ),
@@ -277,7 +280,7 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   SizedBox(width: 35.w,),
-                  GBlock(
+                  DiscoverCard1(
 
                     //  onTap: ()async{
                     //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
@@ -287,8 +290,8 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                     //    }
                     // },
                     title: "G Block Cafetaria",
-                    subtitle: "Established 1980",
-                    gradientStartColor: Color(0xffFC67A7),
+                    subtitle: " ",
+                    gradientStartColor: Color(0xffFF4B5C),
                     gradientEndColor: Color(0xffF6815B),
                   ),
                 ],
