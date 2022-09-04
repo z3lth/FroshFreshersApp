@@ -2,13 +2,25 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:meditation/SocietyPages/AIChEtiet_page.dart';
 import 'package:meditation/SocietyPages/AIESEC_page.dart';
 import 'package:meditation/SocietyPages/Echoes_page.dart';
+import 'package:meditation/SocietyPages/Econ_page.dart';
+
+import 'package:meditation/SocietyPages/Edc_page.dart';
+import 'package:meditation/SocietyPages/Girlup_page.dart';
 import 'package:meditation/SocietyPages/IICHE_page.dart';
 import 'package:meditation/SocietyPages/LitSoc_page.dart';
+import 'package:meditation/SocietyPages/Markfin_page.dart';
 import 'package:meditation/SocietyPages/Mudra_page.dart';
+import 'package:meditation/SocietyPages/Mun_Page.dart';
 import 'package:meditation/SocietyPages/NOX_page.dart';
+import 'package:meditation/SocietyPages/Paryavaran_page.dart';
+import 'package:meditation/SocietyPages/Pratigya_page.dart';
+import 'package:meditation/SocietyPages/Rotoract_Page.dart';
+import 'package:meditation/SocietyPages/TAAS_page.dart';
+import 'package:meditation/SocietyPages/TEAMUltron_page.dart';
+import 'package:meditation/SocietyPages/TICC_page.dart';
 import 'package:meditation/SocietyPages/TNT_page.dart';
 import 'package:meditation/SocietyPages/ThaparToastmasters_page.dart';
 
@@ -39,32 +51,26 @@ class _NontechsocPageState extends State<NontechsocPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xff121421),
-      appBar: AppBar(
-        title: Image.asset('assets/images/tietlogo3.png'),
-        backgroundColor: Color(0xff1C2031),
-        shadowColor: Colors.black,
-      ) ,
       body: SafeArea(
         child: ListView(
           physics: BouncingScrollPhysics(),
           children: [
             Padding(
               padding: EdgeInsets.only(
-                left: 45.w,
-                right: 1.w,
+                left: 70.w,
+                right: 20.w,
                 top: 36.h,
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Non Tech Societies",
+                  Text("NON TECH SOCITIES",
                       textAlign:TextAlign.center,
-                      style: GoogleFonts.poppins(
-                      textStyle: TextStyle(
+                      style: TextStyle(
 
                           color: Colors.white,
                           fontSize: 30.w,
-                          fontWeight: FontWeight.bold)),)
+                          fontWeight: FontWeight.bold)),
                   // InkWell(
                   //   borderRadius: BorderRadius.circular(360),
                   //   onTap: onSearchIconTapped,
@@ -99,18 +105,18 @@ class _NontechsocPageState extends State<NontechsocPage> {
                     child: DiscoverCard1(
 
                       onTap:() {
-                        Navigator.push(context, MaterialPageRoute(builder:(context)=>TntPage()));
+                        Navigator.push(context, MaterialPageRoute(builder:(context)=>EconPage()));
                       },
-                      title: "Thapar Nautanki Club",
-                      subtitle: "TNT",
-                        gradientStartColor: Color(0xffFF4B5C),
-                        gradientEndColor: Color(0xffF6815B)
+                      title: "ECON",
+                      subtitle: "",
+                      gradientStartColor: Color(0xffFC67A7),
+                      gradientEndColor: Color(0xffF6815B),
                     ),
                   ),
                 ],
               ),
             ),
-            SizedBox(height: 10.h),
+           // SizedBox(height: 10.h),
 
             //Padding(
             // padding:  EdgeInsets.symmetric(horizontal: 28.w),
@@ -141,6 +147,31 @@ class _NontechsocPageState extends State<NontechsocPage> {
 
             // ),
             // ),
+            // SizedBox(
+            //   height: 121.w,
+            //
+            //   child: ListView(
+            //     physics: BouncingScrollPhysics(),
+            //     scrollDirection: Axis.horizontal,
+            //     children: [
+            //       SizedBox(width: 35.w,),
+            //       InkWell(
+            //         child: DiscoverCard1(
+            //
+            //           onTap:() {
+            //             Navigator.push(context, MaterialPageRoute(builder:(context)=>EchoesPage()));
+            //           },
+            //           title: "Echoes",
+            //           subtitle: "Student Panorama of TIET",
+            //           gradientStartColor: Color(0xff13DEA0),
+            //           gradientEndColor: Color(0xff06B782),
+            //         ),
+            //       ),
+            //     ],
+            //   ),
+            // ),
+            SizedBox(height: 10.h),
+
             SizedBox(
               height: 121.w,
 
@@ -153,12 +184,12 @@ class _NontechsocPageState extends State<NontechsocPage> {
                     child: DiscoverCard1(
 
                       onTap:() {
-                        Navigator.push(context, MaterialPageRoute(builder:(context)=>EchoesPage()));
+                        Navigator.push(context, MaterialPageRoute(builder:(context)=>EdcPage()));
                       },
-                      title: "Echoes",
-                      subtitle: " ",
-                      gradientStartColor: Color(0xff056674),
-                      gradientEndColor: Color(0xff66BFBF),
+                      title: "EDC",
+                      subtitle: "Entrepreneurship Development Cell",
+                      gradientStartColor: Color(0xffFC67A7),
+                      gradientEndColor: Color(0xffF6815B),
                     ),
                   ),
                 ],
@@ -178,12 +209,12 @@ class _NontechsocPageState extends State<NontechsocPage> {
                     child: DiscoverCard1(
 
                       onTap:() {
-                        Navigator.push(context, MaterialPageRoute(builder:(context)=>LitsocPage()));
+                        Navigator.push(context, MaterialPageRoute(builder:(context)=>TiccPage()));
                       },
-                      title: "Thapar Literary Socitey",
-                      subtitle: " ",
-                        gradientStartColor: Color(0xffFF4B5C),
-                        gradientEndColor: Color(0xffF6815B)
+                      title: "Thapar Counselling Cell",
+                      subtitle: "",
+                      gradientStartColor: Color(0xffFC67A7),
+                      gradientEndColor: Color(0xffF6815B),
                     ),
                   ),
                 ],
@@ -202,12 +233,12 @@ class _NontechsocPageState extends State<NontechsocPage> {
                   DiscoverCard1(
 
                     onTap:() {
-                      Navigator.push(context, MaterialPageRoute(builder:(context)=>ToastmastersPage()));
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>RotoractPage()));
                     },
-                    title: "ToastMasters ",
+                    title: "Rotoract Club TIET ",
                     subtitle: "",
-                    gradientStartColor: Color(0xff056674),
-                    gradientEndColor: Color(0xff66BFBF),
+                    gradientStartColor: Color(0xffFFD541),
+                    gradientEndColor: Color(0xffF0B31A),
                   ),
                 ],
               ),
@@ -229,9 +260,9 @@ class _NontechsocPageState extends State<NontechsocPage> {
                         Navigator.push(context, MaterialPageRoute(builder:(context)=>AiesecPage()));
                       },
                       title: "AIESEC",
-                      subtitle: " ",
-                        gradientStartColor: Color(0xffFF4B5C),
-                        gradientEndColor: Color(0xffF6815B)
+                      subtitle: "Aiesec in Patiala",
+                      gradientStartColor: Color(0xffFC67A7),
+                      gradientEndColor: Color(0xffF6815B),
                     ),
                   ),
                 ],
@@ -254,9 +285,9 @@ class _NontechsocPageState extends State<NontechsocPage> {
                         Navigator.push(context, MaterialPageRoute(builder:(context)=>IichePage()));
                       },
                       title: "IICHE",
-                      subtitle: " ",
-                      gradientStartColor: Color(0xff056674),
-                      gradientEndColor: Color(0xff66BFBF),
+                      subtitle: "Indian Institute Of Chemical Engineers ",
+                      gradientStartColor: Color(0xff13DEA0),
+                      gradientEndColor: Color(0xff06B782),
                     ),
                   ),
                 ],
@@ -264,239 +295,213 @@ class _NontechsocPageState extends State<NontechsocPage> {
             ),
             SizedBox(height: 10.h),
 
-//             SizedBox(
-//               height: 121.w,
+            SizedBox(
+              height: 121.w,
 
-//               child: ListView(
-//                 physics: BouncingScrollPhysics(),
-//                 scrollDirection: Axis.horizontal,
-//                 children: [
-//                   SizedBox(width: 35.w,),
-//                   DiscoverCard1(
+              child: ListView(
+                physics: BouncingScrollPhysics(),
+                scrollDirection: Axis.horizontal,
+                children: [
+                  SizedBox(width: 35.w,),
+                  DiscoverCard1(
 
-//                     onTap:() {
-//                       Navigator.push(context, MaterialPageRoute(builder:(context)=>MudraPage()));
-//                     },
-//                     title: "Mudra",
-//                     subtitle: "",
-//                       gradientStartColor: Color(0xffFF4B5C),
-//                       gradientEndColor: Color(0xffF6815B)
-//                   ),
-//                 ],
-//               ),
-//             ),
-//             SizedBox(height: 10.h),
+                    onTap:() {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>UltronPage()));
+                    },
+                    title: "Team Ultron Motorsports",
+                    subtitle: "",
+                    gradientStartColor: Color(0xffFC67A7),
+                    gradientEndColor: Color(0xffF6815B),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 10.h),
 
-//             SizedBox(
-//               height: 121.w,
+            SizedBox(
+              height: 121.w,
 
-//               child: ListView(
-//                 physics: BouncingScrollPhysics(),
-//                 scrollDirection: Axis.horizontal,
-//                 children: [
-//                   SizedBox(width: 35.w,),
-//                   DiscoverCard1(
+              child: ListView(
+                physics: BouncingScrollPhysics(),
+                scrollDirection: Axis.horizontal,
+                children: [
+                  SizedBox(width: 35.w,),
+                  DiscoverCard1(
 
-//                     onTap:() {
-//                       Navigator.push(context, MaterialPageRoute(builder:(context)=>NOXPage()));
-//                     },
-//                     title: "NOX",
-//                     subtitle: " ",
-//                     gradientStartColor: Color(0xff056674),
-//                     gradientEndColor: Color(0xff66BFBF),
-//                   ),
-//                 ],
-//               ),
-//             ),
-            // SizedBox(height: 10.h),
-            //
-            // SizedBox(
-            //   height: 121.w,
-            //
-            //   child: ListView(
-            //     physics: BouncingScrollPhysics(),
-            //     scrollDirection: Axis.horizontal,
-            //     children: [
-            //       SizedBox(width: 35.w,),
-            //       DiscoverCard1(
-            //
-            //         //  onTap: ()async{
-            //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-            //         //
-            //         //   if (!await launchUrl(_url)) {
-            //         //     throw 'Could not launch $_url';
-            //         //    }
-            //         // },
-            //         title: "Hostel K",
-            //         subtitle: "EStablished 1980",
-            //         gradientStartColor: Color(0xffFC67A7),
-            //         gradientEndColor: Color(0xffF6815B),
-            //       ),
-            //     ],
-            //   ),
-            // ),
-            // SizedBox(height: 10.h),
-            //
-            // SizedBox(
-            //   height: 121.w,
-            //
-            //   child: ListView(
-            //     physics: BouncingScrollPhysics(),
-            //     scrollDirection: Axis.horizontal,
-            //     children: [
-            //       SizedBox(width: 35.w,),
-            //       DiscoverCard1(
-            //
-            //         //  onTap: ()async{
-            //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-            //         //
-            //         //   if (!await launchUrl(_url)) {
-            //         //     throw 'Could not launch $_url';
-            //         //    }
-            //         // },
-            //         title: "Hostel L",
-            //         subtitle: "EStablished 1980",
-            //         gradientStartColor: Color(0xff13DEA0),
-            //         gradientEndColor: Color(0xff06B782),
-            //       ),
-            //     ],
-            //   ),
-            // ),
-            // SizedBox(height: 10.h),
-            //
-            // SizedBox(
-            //   height: 121.w,
-            //
-            //   child: ListView(
-            //     physics: BouncingScrollPhysics(),
-            //     scrollDirection: Axis.horizontal,
-            //     children: [
-            //       SizedBox(width: 35.w,),
-            //       DiscoverCard1(
-            //
-            //         //  onTap: ()async{
-            //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-            //         //
-            //         //   if (!await launchUrl(_url)) {
-            //         //     throw 'Could not launch $_url';
-            //         //    }
-            //         // },
-            //         title: "Hostel M",
-            //         subtitle: "EStablished 1980",
-            //         gradientStartColor: Color(0xffFC67A7),
-            //         gradientEndColor: Color(0xffF6815B),
-            //       ),
-            //     ],
-            //   ),
-            // ),
-            // SizedBox(height: 10.h),
-            //
-            // SizedBox(
-            //   height: 121.w,
-            //
-            //   child: ListView(
-            //     physics: BouncingScrollPhysics(),
-            //     scrollDirection: Axis.horizontal,
-            //     children: [
-            //       SizedBox(width: 35.w,),
-            //       DiscoverCard1(
-            //
-            //         //  onTap: ()async{
-            //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-            //         //
-            //         //   if (!await launchUrl(_url)) {
-            //         //     throw 'Could not launch $_url';
-            //         //    }
-            //         // },
-            //         title: "Hostel N",
-            //         subtitle: "EStablished 1980",
-            //         gradientStartColor: Color(0xffFFD541),
-            //         gradientEndColor: Color(0xffF0B31A),
-            //       ),
-            //     ],
-            //   ),
-            // ),
-            // SizedBox(height: 10.h),
-            //
-            // SizedBox(
-            //   height: 121.w,
-            //
-            //   child: ListView(
-            //     physics: BouncingScrollPhysics(),
-            //     scrollDirection: Axis.horizontal,
-            //     children: [
-            //       SizedBox(width: 35.w,),
-            //       DiscoverCard1(
-            //
-            //         //  onTap: ()async{
-            //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-            //         //
-            //         //   if (!await launchUrl(_url)) {
-            //         //     throw 'Could not launch $_url';
-            //         //    }
-            //         // },
-            //         title: "Hostel O",
-            //         subtitle: "EStablished 1980",
-            //         gradientStartColor: Color(0xffFC67A7),
-            //         gradientEndColor: Color(0xffF6815B),
-            //       ),
-            //     ],
-            //   ),
-            // ),
-            // SizedBox(height: 10.h),
-            //
-            // SizedBox(
-            //   height: 121.w,
-            //
-            //   child: ListView(
-            //     physics: BouncingScrollPhysics(),
-            //     scrollDirection: Axis.horizontal,
-            //     children: [
-            //       SizedBox(width: 35.w,),
-            //       DiscoverCard1(
-            //
-            //         //  onTap: ()async{
-            //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-            //         //
-            //         //   if (!await launchUrl(_url)) {
-            //         //     throw 'Could not launch $_url';
-            //         //    }
-            //         // },
-            //         title: "Hostel PG",
-            //         subtitle: "EStablished 1980",
-            //         gradientStartColor: Color(0xff13DEA0),
-            //         gradientEndColor: Color(0xff06B782),
-            //       ),
-            //     ],
-            //   ),
-            // ),
-            // SizedBox(height: 10.h),
-            //
-            // SizedBox(
-            //   height: 121.w,
-            //
-            //   child: ListView(
-            //     physics: BouncingScrollPhysics(),
-            //     scrollDirection: Axis.horizontal,
-            //     children: [
-            //       SizedBox(width: 35.w,),
-            //       DiscoverCard1(
-            //
-            //         //  onTap: ()async{
-            //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-            //         //
-            //         //   if (!await launchUrl(_url)) {
-            //         //     throw 'Could not launch $_url';
-            //         //    }
-            //         // },
-            //         title: "Hostel Q",
-            //         subtitle: "EStablished 1980",
-            //         gradientStartColor: Color(0xffFC67A7),
-            //         gradientEndColor: Color(0xffF6815B),
-            //       ),
-            //     ],
-            //   ),
-            // ),
+                    onTap:() {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>TaasPage()));
+                    },
+                    title: "TAAS",
+                    subtitle: "Thapar Amateur Astronomers Society",
+                    gradientStartColor: Color(0xffFFD541),
+                    gradientEndColor: Color(0xffF0B31A),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 10.h),
+
+            SizedBox(
+              height: 121.w,
+
+              child: ListView(
+                physics: BouncingScrollPhysics(),
+                scrollDirection: Axis.horizontal,
+                children: [
+                  SizedBox(width: 35.w,),
+                  DiscoverCard1(
+
+                    onTap:() {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>ParyavaranPage()));
+                    },
+                    title: "ParyaVaran Welfare Society",
+                    subtitle: "",
+                    gradientStartColor: Color(0xffFC67A7),
+                    gradientEndColor: Color(0xffF6815B),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 10.h),
+
+            SizedBox(
+              height: 121.w,
+
+              child: ListView(
+                physics: BouncingScrollPhysics(),
+                scrollDirection: Axis.horizontal,
+                children: [
+                  SizedBox(width: 35.w,),
+                  DiscoverCard1(
+
+                    onTap:() {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>ToastmastersPage()));
+                    },
+                    title: "ToastMasters ",
+                    subtitle: "",
+                    gradientStartColor: Color(0xffFFD541),
+                    gradientEndColor: Color(0xffF0B31A),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 10.h),
+
+            SizedBox(
+              height: 121.w,
+
+              child: ListView(
+                physics: BouncingScrollPhysics(),
+                scrollDirection: Axis.horizontal,
+                children: [
+                  SizedBox(width: 35.w,),
+                  DiscoverCard1(
+
+                    onTap:() {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>MarkfinPage()));
+                    },
+                    title: " Markfin",
+                    subtitle: "",
+                    gradientStartColor: Color(0xffFC67A7),
+                    gradientEndColor: Color(0xffF6815B),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 10.h),
+
+            SizedBox(
+              height: 121.w,
+
+              child: ListView(
+                physics: BouncingScrollPhysics(),
+                scrollDirection: Axis.horizontal,
+                children: [
+                  SizedBox(width: 35.w,),
+                  DiscoverCard1(
+
+                    onTap:() {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>PratigyaPage()));
+                    },
+                    title: "Pratigya ",
+                    subtitle: " ",
+                    gradientStartColor: Color(0xffFFD541),
+                    gradientEndColor: Color(0xffF0B31A),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 10.h),
+
+            SizedBox(
+              height: 121.w,
+
+              child: ListView(
+                physics: BouncingScrollPhysics(),
+                scrollDirection: Axis.horizontal,
+                children: [
+                  SizedBox(width: 35.w,),
+                  DiscoverCard1(
+
+                    onTap:() {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>MunPage()));
+                    },
+                    title: "Thapar MUN",
+                    subtitle: "Model United Nations",
+                    gradientStartColor: Color(0xffFC67A7),
+                    gradientEndColor: Color(0xffF6815B),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 10.h),
+
+            SizedBox(
+              height: 121.w,
+
+              child: ListView(
+                physics: BouncingScrollPhysics(),
+                scrollDirection: Axis.horizontal,
+                children: [
+                  SizedBox(width: 35.w,),
+                  DiscoverCard1(
+
+                    onTap:() {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>AichtietPage()));
+                    },//  onTap: ()async{
+
+                    title: "AIECHE",
+                    subtitle: "American Institute of Chemical Engineers Thapar Chapter",
+                    gradientStartColor: Color(0xff13DEA0),
+                    gradientEndColor: Color(0xff06B782),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 10.h),
+
+            SizedBox(
+              height: 121.w,
+
+              child: ListView(
+                physics: BouncingScrollPhysics(),
+                scrollDirection: Axis.horizontal,
+                children: [
+                  SizedBox(width: 35.w,),
+                  DiscoverCard1(
+
+                    onTap:() {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>GirlupPage()));
+                    },//  onTap: ()async{
+
+                    title: "GirlUpTiet",
+                    subtitle: " ",
+                    gradientStartColor: Color(0xffFC67A7),
+                    gradientEndColor: Color(0xffF6815B),
+                  ),
+                ],
+              ),
+            ),
 
           ],
         ),
