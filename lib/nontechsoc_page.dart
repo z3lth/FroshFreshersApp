@@ -264,50 +264,50 @@ class _NontechsocPageState extends State<NontechsocPage> {
             ),
             SizedBox(height: 10.h),
 
-            SizedBox(
-              height: 121.w,
+//             SizedBox(
+//               height: 121.w,
 
-              child: ListView(
-                physics: BouncingScrollPhysics(),
-                scrollDirection: Axis.horizontal,
-                children: [
-                  SizedBox(width: 35.w,),
-                  DiscoverCard1(
+//               child: ListView(
+//                 physics: BouncingScrollPhysics(),
+//                 scrollDirection: Axis.horizontal,
+//                 children: [
+//                   SizedBox(width: 35.w,),
+//                   DiscoverCard1(
 
-                    onTap:() {
-                      Navigator.push(context, MaterialPageRoute(builder:(context)=>MudraPage()));
-                    },
-                    title: "Mudra",
-                    subtitle: "",
-                      gradientStartColor: Color(0xffFF4B5C),
-                      gradientEndColor: Color(0xffF6815B)
-                  ),
-                ],
-              ),
-            ),
-            SizedBox(height: 10.h),
+//                     onTap:() {
+//                       Navigator.push(context, MaterialPageRoute(builder:(context)=>MudraPage()));
+//                     },
+//                     title: "Mudra",
+//                     subtitle: "",
+//                       gradientStartColor: Color(0xffFF4B5C),
+//                       gradientEndColor: Color(0xffF6815B)
+//                   ),
+//                 ],
+//               ),
+//             ),
+//             SizedBox(height: 10.h),
 
-            SizedBox(
-              height: 121.w,
+//             SizedBox(
+//               height: 121.w,
 
-              child: ListView(
-                physics: BouncingScrollPhysics(),
-                scrollDirection: Axis.horizontal,
-                children: [
-                  SizedBox(width: 35.w,),
-                  DiscoverCard1(
+//               child: ListView(
+//                 physics: BouncingScrollPhysics(),
+//                 scrollDirection: Axis.horizontal,
+//                 children: [
+//                   SizedBox(width: 35.w,),
+//                   DiscoverCard1(
 
-                    onTap:() {
-                      Navigator.push(context, MaterialPageRoute(builder:(context)=>NOXPage()));
-                    },
-                    title: "NOX",
-                    subtitle: " ",
-                    gradientStartColor: Color(0xff056674),
-                    gradientEndColor: Color(0xff66BFBF),
-                  ),
-                ],
-              ),
-            ),
+//                     onTap:() {
+//                       Navigator.push(context, MaterialPageRoute(builder:(context)=>NOXPage()));
+//                     },
+//                     title: "NOX",
+//                     subtitle: " ",
+//                     gradientStartColor: Color(0xff056674),
+//                     gradientEndColor: Color(0xff66BFBF),
+//                   ),
+//                 ],
+//               ),
+//             ),
             // SizedBox(height: 10.h),
             //
             // SizedBox(
