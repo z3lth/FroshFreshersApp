@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:meditation/boxes/cabb.dart';
 // import 'package:meditation/boxes/csb.dart';
 import 'package:meditation/boxes/hb.dart';
@@ -41,8 +42,9 @@ class _StarterPageState extends State<StarterPage> {
               physics: BouncingScrollPhysics(),
               children: [
                 Padding(
-                  padding: EdgeInsets.only(
-                    left: 130.w,
+                  padding:
+                  EdgeInsets.only(
+                    left: 90.w,
                     right: 50.w,
                     top: 36.h,
                   ),
@@ -50,12 +52,15 @@ class _StarterPageState extends State<StarterPage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text("Starter Kit",
-                          //textAlign:TextAlign.center,
-                          style: TextStyle(
+                          textAlign:TextAlign.center,
+                          style: GoogleFonts.poppins(
+                          textStyle: TextStyle(
 
                               color: Colors.white,
                               fontSize: 34.w,
-                              fontWeight: FontWeight.bold)),
+                              fontWeight: FontWeight.bold)
+                          )
+                      ),
                       // InkWell(
                       //   borderRadius: BorderRadius.circular(360),
                       //   onTap: onSearchIconTapped,
@@ -87,7 +92,7 @@ class _StarterPageState extends State<StarterPage> {
                             onTap: (){Navigator.push(context, MaterialPageRoute(builder:(context)=>ProfilePage()));
 
                             },
-                            title: "HOSTELS",
+                            title: "Hostels",
 
                             gradientStartColor: Color(0xff13DEA0),
                             gradientEndColor: Color(0xff06B782),
@@ -120,7 +125,7 @@ class _StarterPageState extends State<StarterPage> {
                               Navigator.push(context, MaterialPageRoute(builder: (context)=>SocietiesPage()));
 
                             },
-                            title: "Clubs & Societies",
+                            title: "Clubs & \nSocieties",
                             gradientStartColor: Color(0xffFFD541),
                             gradientEndColor: Color(0xffF0B31A),
                             icon:    SvgAsset(
