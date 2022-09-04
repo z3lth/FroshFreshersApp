@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:meditation/boxes/lmsb.dart';
 import 'package:meditation/boxes/wkb.dart';
 import 'package:meditation/detail_page.dart';
@@ -37,7 +38,7 @@ class _StudyPageState extends State<StudyPage> {
       constraints: BoxConstraints.expand(),
     decoration: BoxDecoration(
     image: DecorationImage(
-    image: AssetImage('assets/images/studymaterial.gif'),
+    image: AssetImage('assets/images/Untitled design (1).png'),
     fit: BoxFit.cover),
     ),
       child: SafeArea(
@@ -46,8 +47,8 @@ class _StudyPageState extends State<StudyPage> {
           children: [
             Padding(
               padding: EdgeInsets.only(
-                left: 70.w,
-                right: 50.w,
+                left: 65.w,
+                right: 1.w,
                 top: 36.h,
               ),
               child: Row(
@@ -55,11 +56,12 @@ class _StudyPageState extends State<StudyPage> {
                 children: [
                   Text("Study Material",
                       //textAlign:TextAlign.center,
-                      style: TextStyle(
+                      style: GoogleFonts.poppins(
+                      textStyle: TextStyle(
 
                           color: Colors.white,
                           fontSize: 34.w,
-                          fontWeight: FontWeight.bold)),
+                          fontWeight: FontWeight.bold)),)
                   // InkWell(
                   //   borderRadius: BorderRadius.circular(360),
                   //   onTap: onSearchIconTapped,
@@ -101,8 +103,8 @@ class _StudyPageState extends State<StudyPage> {
                     },
                     title: "Timetable",
                     subtitle: "How to read timetable?",
-                    gradientStartColor: Color(0xffFC67A7),
-                    gradientEndColor: Color(0xffF6815B),
+                    gradientStartColor: Color(0xff056674),
+                    gradientEndColor: Color(0xff66BFBF),
                   ),
                 ],
               ),
@@ -124,9 +126,8 @@ class _StudyPageState extends State<StudyPage> {
                       }
                     },
                     title: "LMS",
-
-                    gradientStartColor: Color(0xff13DEA0),
-                    gradientEndColor: Color(0xff06B782),
+                    gradientStartColor: Color(0xffFF4B5C),
+                    gradientEndColor: Color(0xffF6815B),
                   ),
                   WKB(
                     onTap: () async{
@@ -137,13 +138,13 @@ class _StudyPageState extends State<StudyPage> {
                       }
                     },
                     title: "Webkiosk",
-                    gradientStartColor: Color(0xffFFD541),
-                    gradientEndColor: Color(0xffF0B31A),
-                    icon:    SvgAsset(
-                      assetName: AssetName.tape,
-                      height: 24.w,
-                      width: 24.w,
-                    ),
+                    gradientStartColor: Color(0xffFF4B5C),
+        gradientEndColor: Color(0xffF6815B),
+                    // icon:    SvgAsset(
+                    //   assetName: AssetName.tape,
+                    //   height: 24.w,
+                    //   width: 24.w,
+                    // ),
                   ),
 
 
@@ -170,8 +171,8 @@ class _StudyPageState extends State<StudyPage> {
                     title: "Academic "
                         "Block",
                     //subtitle: "How to read timetable?",
-                    gradientStartColor: Color(0xffFC67A7),
-                    gradientEndColor: Color(0xffF6815B),
+                    gradientStartColor: Color(0xff056674),
+                    gradientEndColor: Color(0xff66BFBF),
                   ),
                 ],
               ),
