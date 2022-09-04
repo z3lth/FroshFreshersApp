@@ -2,17 +2,19 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:meditation/SocietyPages/ACM_page.dart';
+import 'package:meditation/SocietyPages/Ashrae_page.dart';
 import 'package:meditation/SocietyPages/GDSC.dart';
 import 'package:meditation/SocietyPages/BackSlash_page.dart';
 import 'package:meditation/SocietyPages/Iete_page.dart';
 import 'package:meditation/SocietyPages/Iste_page.dart';
+import 'package:meditation/SocietyPages/Lead_page.dart';
 import 'package:meditation/SocietyPages/MLSC_page.dart';
 import 'package:meditation/SocietyPages/Owasp_page.dart';
 import 'package:meditation/SocietyPages/Robotics_Page.dart';
 import 'package:meditation/SocietyPages/ccs_page.dart';
 import 'package:meditation/SocietyPages/linux_page.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'package:meditation/detail_page.dart';
 import 'package:meditation/girlshostel_page.dart';
@@ -52,22 +54,21 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
           children: [
             Padding(
               padding: EdgeInsets.only(
-                left: 45.w,
+                left: 75.w,
                 right: 1.w,
                 top: 36.h,
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Technical Societies",
+                  Text("Technical Socities",
                       textAlign:TextAlign.center,
                       style: GoogleFonts.poppins(
+                        textStyle: TextStyle(
 
-                      textStyle: TextStyle(
-
-                          color: Colors.white,
-                          fontSize: 30.w,
-                          fontWeight: FontWeight.bold)),),
+                            color: Colors.white,
+                            fontSize: 30.w,
+                            fontWeight: FontWeight.bold)),)
                   // InkWell(
                   //   borderRadius: BorderRadius.circular(360),
                   //   onTap: onSearchIconTapped,
@@ -108,8 +109,8 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                       subtitle: ""
 
                       ,
-                      gradientStartColor: Color(0xffFF4B5C),
-                      gradientEndColor: Color(0xffF6815B),
+                        gradientStartColor: Color(0xffFF4B5C),
+                        gradientEndColor: Color(0xffF6815B)
                     ),
                   ),
                 ],
@@ -186,9 +187,9 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                         Navigator.push(context, MaterialPageRoute(builder:(context)=>BackslashPage()));
                       },
                       title: "BackSlash",
-                      subtitle: " ",
-                      gradientStartColor: Color(0xffFF4B5C),
-                      gradientEndColor: Color(0xffF6815B),
+                      subtitle: "EStablished 2020",
+                        gradientStartColor: Color(0xffFF4B5C),
+                        gradientEndColor: Color(0xffF6815B)
                     ),
                   ),
                 ],
@@ -235,8 +236,8 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                       },
                       title: "ISTE",
                       subtitle: "Indian Society for technical Education",
-                      gradientStartColor: Color(0xffFF4B5C),
-                      gradientEndColor: Color(0xffF6815B),
+                        gradientStartColor: Color(0xffFF4B5C),
+                        gradientEndColor: Color(0xffF6815B)
                     ),
                   ),
                 ],
@@ -284,8 +285,8 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                     },
                     title: "IETE",
                     subtitle: "Institution of Electronics and Telecommunication Engineers",
-                    gradientStartColor: Color(0xffFF4B5C),
-                    gradientEndColor: Color(0xffF6815B),
+                      gradientStartColor: Color(0xffFF4B5C),
+                      gradientEndColor: Color(0xffF6815B)
                   ),
                 ],
               ),
@@ -330,8 +331,8 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                     },
                     title: "M.A.R.S",
                     subtitle: "Mechatronics and Robotics Society",
-                    gradientStartColor: Color(0xffFF4B5C),
-                    gradientEndColor: Color(0xffF6815B),
+                      gradientStartColor: Color(0xffFF4B5C),
+                      gradientEndColor: Color(0xffF6815B)
                   ),
                 ],
               ),
@@ -359,60 +360,52 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                 ],
               ),
             ),
-            // SizedBox(height: 10.h),
-            //
-            // SizedBox(
-            //   height: 121.w,
-            //
-            //   child: ListView(
-            //     physics: BouncingScrollPhysics(),
-            //     scrollDirection: Axis.horizontal,
-            //     children: [
-            //       SizedBox(width: 35.w,),
-            //       DiscoverCard1(
-            //
-            //         //  onTap: ()async{
-            //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-            //         //
-            //         //   if (!await launchUrl(_url)) {
-            //         //     throw 'Could not launch $_url';
-            //         //    }
-            //         // },
-            //         title: "Hostel M",
-            //         subtitle: "EStablished 1980",
-            //         gradientStartColor: Color(0xffFC67A7),
-            //         gradientEndColor: Color(0xffF6815B),
-            //       ),
-            //     ],
-            //   ),
-            // ),
-            // SizedBox(height: 10.h),
-            //
-            // SizedBox(
-            //   height: 121.w,
-            //
-            //   child: ListView(
-            //     physics: BouncingScrollPhysics(),
-            //     scrollDirection: Axis.horizontal,
-            //     children: [
-            //       SizedBox(width: 35.w,),
-            //       DiscoverCard1(
-            //
-            //         //  onTap: ()async{
-            //         //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-            //         //
-            //         //   if (!await launchUrl(_url)) {
-            //         //     throw 'Could not launch $_url';
-            //         //    }
-            //         // },
-            //         title: "Hostel N",
-            //         subtitle: "EStablished 1980",
-            //         gradientStartColor: Color(0xffFFD541),
-            //         gradientEndColor: Color(0xffF0B31A),
-            //       ),
-            //     ],
-            //   ),
-            // ),
+            SizedBox(height: 10.h),
+
+            SizedBox(
+              height: 121.w,
+
+              child: ListView(
+                physics: BouncingScrollPhysics(),
+                scrollDirection: Axis.horizontal,
+                children: [
+                  SizedBox(width: 35.w,),
+                  DiscoverCard1(
+
+                    onTap:() {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>AshraePage()));
+                    },
+                    title: "Ashrae",
+                    subtitle: "",
+                      gradientStartColor: Color(0xffFF4B5C),
+                      gradientEndColor: Color(0xffF6815B)
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 10.h),
+
+            SizedBox(
+              height: 121.w,
+
+              child: ListView(
+                physics: BouncingScrollPhysics(),
+                scrollDirection: Axis.horizontal,
+                children: [
+                  SizedBox(width: 35.w,),
+                  DiscoverCard1(
+
+                    onTap:() {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>LeadPage()));
+                    },
+                    title: "LEAD",
+                    subtitle: "EStablished 1980",
+                    gradientStartColor: Color(0xff056674),
+                    gradientEndColor: Color(0xff66BFBF),
+                  ),
+                ],
+              ),
+            ),
             // SizedBox(height: 10.h),
             //
             // SizedBox(
