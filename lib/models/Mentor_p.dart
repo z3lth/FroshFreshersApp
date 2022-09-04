@@ -232,7 +232,7 @@ final List<Models> snk5Models = [
     name: "Khushi Singh",
     model: " ",
     branch: "ECE",
-    imgAddress: " ",
+    imgAddress: "https://i.imgur.com/UFyh30F.png",
     modelColor: Color(0xff3F7943),
   ),
 
