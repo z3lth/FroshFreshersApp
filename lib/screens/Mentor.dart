@@ -164,10 +164,10 @@ class _MentorState extends State<Mentor> {
                 SizedBox(
                   height: 5,
                 ),
-                lastCategoriesWidget25(width, height),
-                SizedBox(
-                  height: 5,
-                ),
+                // lastCategoriesWidget25(width, height),
+                // SizedBox(
+                //   height: 5,
+                // ),
                 // lastCategoriesWidget15(width, height),
                 // SizedBox(
                 //   height: 5,
@@ -221,7 +221,7 @@ class _MentorState extends State<Mentor> {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(10),
                             child: Image(
-                            image: AssetImage(model.imgAddress),
+                            image: NetworkImage(model.imgAddress),
                               fit: BoxFit.fill,
 
 
@@ -314,7 +314,7 @@ class _MentorState extends State<Mentor> {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(10),
                            child: Image(
-                            image: AssetImage(model.imgAddress),
+                            image:NetworkImage(model.imgAddress),
                             fit: BoxFit.fill,
                           ),
                           ),
@@ -404,7 +404,7 @@ class _MentorState extends State<Mentor> {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(10),
                           child: Image(
-                            image: AssetImage(model.imgAddress),
+                            image: NetworkImage(model.imgAddress),
                             fit: BoxFit.fill,
                           ),
                         ),
@@ -494,7 +494,7 @@ class _MentorState extends State<Mentor> {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(10),
                           child: Image(
-                            image: AssetImage(model.imgAddress),
+                            image: NetworkImage(model.imgAddress),
                             fit: BoxFit.fill,
                           ),
                         ),
@@ -583,7 +583,7 @@ class _MentorState extends State<Mentor> {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(10),
                           child: Image(
-                            image: AssetImage(model.imgAddress),
+                            image: NetworkImage(model.imgAddress),
                             fit: BoxFit.fill,
                           ),
                         ),
@@ -672,7 +672,7 @@ class _MentorState extends State<Mentor> {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(10),
                           child: Image(
-                            image: AssetImage(model.imgAddress),
+                            image: NetworkImage(model.imgAddress),
                             fit: BoxFit.fill,
                           ),
                         ),
@@ -761,7 +761,7 @@ class _MentorState extends State<Mentor> {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(10),
                           child: Image(
-                            image: AssetImage(model.imgAddress),
+                            image: NetworkImage(model.imgAddress),
                             fit: BoxFit.fill,
                           ),
                         ),
@@ -850,7 +850,7 @@ class _MentorState extends State<Mentor> {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(10),
                           child: Image(
-                            image: AssetImage(model.imgAddress),
+                            image: NetworkImage(model.imgAddress),
                               fit: BoxFit.fill,
                           ),
                         ),
@@ -938,7 +938,7 @@ class _MentorState extends State<Mentor> {
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(10),
                             child: Image(
-                              image: AssetImage(model.imgAddress),
+                              image: NetworkImage(model.imgAddress),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -1025,7 +1025,7 @@ class _MentorState extends State<Mentor> {
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(10),
                             child: Image(
-                              image: AssetImage(model.imgAddress),
+                              image: NetworkImage(model.imgAddress),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -1112,7 +1112,7 @@ class _MentorState extends State<Mentor> {
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(10),
                             child: Image(
-                              image: AssetImage(model.imgAddress),
+                              image: NetworkImage(model.imgAddress),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -1200,7 +1200,7 @@ class _MentorState extends State<Mentor> {
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(10),
                             child: Image(
-                              image: AssetImage(model.imgAddress),
+                              image: NetworkImage(model.imgAddress),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -1288,7 +1288,7 @@ class _MentorState extends State<Mentor> {
                               borderRadius: BorderRadius.circular(10),
                             child: Image(
 
-                              image: AssetImage(model.imgAddress),
+                              image: NetworkImage(model.imgAddress),
                               fit: BoxFit.fill,
 
 
@@ -1380,7 +1380,7 @@ class _MentorState extends State<Mentor> {
                             child:ClipRRect(
                               borderRadius: BorderRadius.circular(10),
                             child: Image(
-                              image: AssetImage(model.imgAddress),
+                              image: NetworkImage(model.imgAddress),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -1471,7 +1471,7 @@ class _MentorState extends State<Mentor> {
                             child: Image(
                               height: 100,
                               width: width/5,
-                              image: AssetImage(model.imgAddress),
+                              image: NetworkImage(model.imgAddress),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -1560,7 +1560,7 @@ class _MentorState extends State<Mentor> {
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(10),
                             child: Image(
-                              image: AssetImage(model.imgAddress),
+                              image: NetworkImage(model.imgAddress),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -1649,7 +1649,7 @@ class _MentorState extends State<Mentor> {
                             child:ClipRRect(
                               borderRadius: BorderRadius.circular(10),
                             child: Image(
-                              image: AssetImage(model.imgAddress),
+                              image: NetworkImage(model.imgAddress),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -1737,7 +1737,7 @@ class _MentorState extends State<Mentor> {
                             child:ClipRRect(
                               borderRadius: BorderRadius.circular(10),
                             child: Image(
-                              image: AssetImage(model.imgAddress),
+                              image: NetworkImage(model.imgAddress),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -1825,7 +1825,7 @@ class _MentorState extends State<Mentor> {
                             child:ClipRRect(
                               borderRadius: BorderRadius.circular(10),
                             child: Image(
-                              image: AssetImage(model.imgAddress),
+                              image: NetworkImage(model.imgAddress),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -1913,7 +1913,7 @@ class _MentorState extends State<Mentor> {
                             child:ClipRRect(
                               borderRadius: BorderRadius.circular(10),
                             child: Image(
-                              image: AssetImage(model.imgAddress),
+                              image: NetworkImage(model.imgAddress),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -2001,7 +2001,7 @@ class _MentorState extends State<Mentor> {
                             child:ClipRRect(
                               borderRadius: BorderRadius.circular(10),
                             child: Image(
-                              image: AssetImage(model.imgAddress),
+                              image: NetworkImage(model.imgAddress),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -2089,7 +2089,7 @@ class _MentorState extends State<Mentor> {
                             child:ClipRRect(
                               borderRadius: BorderRadius.circular(10),
                             child: Image(
-                              image: AssetImage(model.imgAddress),
+                              image: NetworkImage(model.imgAddress),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -2177,7 +2177,7 @@ class _MentorState extends State<Mentor> {
                             child:ClipRRect(
                               borderRadius: BorderRadius.circular(10),
                             child: Image(
-                              image: AssetImage(model.imgAddress),
+                              image: NetworkImage(model.imgAddress),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -2266,7 +2266,7 @@ class _MentorState extends State<Mentor> {
                             child:ClipRRect(
                               borderRadius: BorderRadius.circular(10),
                             child: Image(
-                              image: AssetImage(model.imgAddress),
+                              image: NetworkImage(model.imgAddress),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -2354,7 +2354,7 @@ class _MentorState extends State<Mentor> {
                             child:ClipRRect(
                               borderRadius: BorderRadius.circular(10),
                             child: Image(
-                              image: AssetImage(model.imgAddress),
+                              image: NetworkImage(model.imgAddress),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -2407,96 +2407,96 @@ class _MentorState extends State<Mentor> {
             );
           }),
     );
-  } lastCategoriesWidget25(width, height) {
-    return Container(
-      width: width,
-      height: height/4,
-      child: ListView.builder(
-          itemCount:2,
-          scrollDirection: Axis.horizontal,
-          itemBuilder: (ctx, index) {
-            Models model = snk25Models[index];
-
-            return GestureDetector(
-
-              child: Container(
-                margin: EdgeInsets.all(10),
-                width: width / 2.24,
-                height: height / 4.3,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: Color.fromRGBO(141, 147, 171, 1),
-                ),
-                child: Stack(
-                  children: [
-                    Positioned(
-                      top: 15,
-                      left: 15,
-                      child: FadeAnimation(
-                        delay: 1.5,
-
-                          child: Container(
-                            width: width / 2.7,
-                            height: height / 7.5,
-
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(10),
-
-                            child: Image(
-                              image: AssetImage(model.imgAddress),
-                              fit: BoxFit.fill,
-
-                            ),
-                            ),
-                          ),
-
-                      ),
-                    ),
-                    Positioned(
-                      top: 135,
-                      left: 45,
-                      child: FadeAnimation(
-                        delay: 2,
-                        child: Container(
-                          width: width / 4,
-                          height: height / 42,
-                          child: FittedBox(
-                            child: Text(
-                              "${model.name} ${model.model}",
-                              style: TextStyle(
-                                color: darkTextColor,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    Positioned(
-                      top: 150,
-                      left: 45,
-                      child: FadeAnimation(
-                        delay: 2.2,
-                        child: Container(
-                          width: width / 4,
-                          height: height / 42,
-                          child: FittedBox(
-                            child: Text(
-                              "${model.branch}",
-                              style: TextStyle(
-                                color: darkTextColor,
-                                fontWeight: FontWeight.w500,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    )
-                  ],
-                ),
-              ),
-            );
-          }),
-    );
+  // } lastCategoriesWidget25(width, height) {
+  //   return Container(
+  //     width: width,
+  //     height: height/4,
+  //     child: ListView.builder(
+  //         itemCount:2,
+  //         scrollDirection: Axis.horizontal,
+  //         itemBuilder: (ctx, index) {
+  //           Models model = snk25Models[index];
+  //
+  //           return GestureDetector(
+  //
+  //             child: Container(
+  //               margin: EdgeInsets.all(10),
+  //               width: width / 2.24,
+  //               height: height / 4.3,
+  //               decoration: BoxDecoration(
+  //                 borderRadius: BorderRadius.circular(10),
+  //                 color: Color.fromRGBO(141, 147, 171, 1),
+  //               ),
+  //               child: Stack(
+  //                 children: [
+  //                   Positioned(
+  //                     top: 15,
+  //                     left: 15,
+  //                     child: FadeAnimation(
+  //                       delay: 1.5,
+  //
+  //                         child: Container(
+  //                           width: width / 2.7,
+  //                           height: height / 7.5,
+  //
+  //                           child: ClipRRect(
+  //                             borderRadius: BorderRadius.circular(10),
+  //
+  //                           child: Image(
+  //                             image: NetworkImage(model.imgAddress),
+  //                             fit: BoxFit.fill,
+  //
+  //                           ),
+  //                           ),
+  //                         ),
+  //
+  //                     ),
+  //                   ),
+  //                   Positioned(
+  //                     top: 135,
+  //                     left: 45,
+  //                     child: FadeAnimation(
+  //                       delay: 2,
+  //                       child: Container(
+  //                         width: width / 4,
+  //                         height: height / 42,
+  //                         child: FittedBox(
+  //                           child: Text(
+  //                             "${model.name} ${model.model}",
+  //                             style: TextStyle(
+  //                               color: darkTextColor,
+  //                               fontWeight: FontWeight.bold,
+  //                             ),
+  //                           ),
+  //                         ),
+  //                       ),
+  //                     ),
+  //                   ),
+  //                   Positioned(
+  //                     top: 150,
+  //                     left: 45,
+  //                     child: FadeAnimation(
+  //                       delay: 2.2,
+  //                       child: Container(
+  //                         width: width / 4,
+  //                         height: height / 42,
+  //                         child: FittedBox(
+  //                           child: Text(
+  //                             "${model.branch}",
+  //                             style: TextStyle(
+  //                               color: darkTextColor,
+  //                               fontWeight: FontWeight.w500,
+  //                             ),
+  //                           ),
+  //                         ),
+  //                       ),
+  //                     ),
+  //                   )
+  //                 ],
+  //               ),
+  //             ),
+  //           );
+  //         }),
+  //   );
   }
 }
