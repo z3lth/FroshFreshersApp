@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:meditation/SocietyPages/AIESEC_page.dart';
 import 'package:meditation/SocietyPages/Echoes_page.dart';
 import 'package:meditation/SocietyPages/IICHE_page.dart';
@@ -38,26 +39,32 @@ class _NontechsocPageState extends State<NontechsocPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xff121421),
+      appBar: AppBar(
+        title: Image.asset('assets/images/tietlogo3.png'),
+        backgroundColor: Color(0xff1C2031),
+        shadowColor: Colors.black,
+      ) ,
       body: SafeArea(
         child: ListView(
           physics: BouncingScrollPhysics(),
           children: [
             Padding(
               padding: EdgeInsets.only(
-                left: 70.w,
-                right: 20.w,
+                left: 45.w,
+                right: 1.w,
                 top: 36.h,
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("NON TECH SOCITIES",
+                  Text("Non Tech Societies",
                       textAlign:TextAlign.center,
-                      style: TextStyle(
+                      style: GoogleFonts.poppins(
+                      textStyle: TextStyle(
 
                           color: Colors.white,
                           fontSize: 30.w,
-                          fontWeight: FontWeight.bold)),
+                          fontWeight: FontWeight.bold)),)
                   // InkWell(
                   //   borderRadius: BorderRadius.circular(360),
                   //   onTap: onSearchIconTapped,
@@ -96,8 +103,8 @@ class _NontechsocPageState extends State<NontechsocPage> {
                       },
                       title: "Thapar Nautanki Club",
                       subtitle: "TNT",
-                      gradientStartColor: Color(0xffFC67A7),
-                      gradientEndColor: Color(0xffF6815B),
+                        gradientStartColor: Color(0xffFF4B5C),
+                        gradientEndColor: Color(0xffF6815B)
                     ),
                   ),
                 ],
@@ -149,9 +156,9 @@ class _NontechsocPageState extends State<NontechsocPage> {
                         Navigator.push(context, MaterialPageRoute(builder:(context)=>EchoesPage()));
                       },
                       title: "Echoes",
-                      subtitle: "EStablished 1980",
-                      gradientStartColor: Color(0xff13DEA0),
-                      gradientEndColor: Color(0xff06B782),
+                      subtitle: " ",
+                      gradientStartColor: Color(0xff056674),
+                      gradientEndColor: Color(0xff66BFBF),
                     ),
                   ),
                 ],
@@ -173,10 +180,10 @@ class _NontechsocPageState extends State<NontechsocPage> {
                       onTap:() {
                         Navigator.push(context, MaterialPageRoute(builder:(context)=>LitsocPage()));
                       },
-                      title: "Thapar Literally Socitey",
-                      subtitle: "EStablished 2020",
-                      gradientStartColor: Color(0xffFC67A7),
-                      gradientEndColor: Color(0xffF6815B),
+                      title: "Thapar Literary Socitey",
+                      subtitle: " ",
+                        gradientStartColor: Color(0xffFF4B5C),
+                        gradientEndColor: Color(0xffF6815B)
                     ),
                   ),
                 ],
@@ -199,8 +206,8 @@ class _NontechsocPageState extends State<NontechsocPage> {
                     },
                     title: "ToastMasters ",
                     subtitle: "",
-                    gradientStartColor: Color(0xffFFD541),
-                    gradientEndColor: Color(0xffF0B31A),
+                    gradientStartColor: Color(0xff056674),
+                    gradientEndColor: Color(0xff66BFBF),
                   ),
                 ],
               ),
@@ -222,9 +229,9 @@ class _NontechsocPageState extends State<NontechsocPage> {
                         Navigator.push(context, MaterialPageRoute(builder:(context)=>AiesecPage()));
                       },
                       title: "AIESEC",
-                      subtitle: "Aiesec in Patiala",
-                      gradientStartColor: Color(0xffFC67A7),
-                      gradientEndColor: Color(0xffF6815B),
+                      subtitle: " ",
+                        gradientStartColor: Color(0xffFF4B5C),
+                        gradientEndColor: Color(0xffF6815B)
                     ),
                   ),
                 ],
@@ -247,9 +254,9 @@ class _NontechsocPageState extends State<NontechsocPage> {
                         Navigator.push(context, MaterialPageRoute(builder:(context)=>IichePage()));
                       },
                       title: "IICHE",
-                      subtitle: "EStablished 1980",
-                      gradientStartColor: Color(0xff13DEA0),
-                      gradientEndColor: Color(0xff06B782),
+                      subtitle: " ",
+                      gradientStartColor: Color(0xff056674),
+                      gradientEndColor: Color(0xff66BFBF),
                     ),
                   ),
                 ],
@@ -272,8 +279,8 @@ class _NontechsocPageState extends State<NontechsocPage> {
                     },
                     title: "Mudra",
                     subtitle: "",
-                    gradientStartColor: Color(0xffFC67A7),
-                    gradientEndColor: Color(0xffF6815B),
+                      gradientStartColor: Color(0xffFF4B5C),
+                      gradientEndColor: Color(0xffF6815B)
                   ),
                 ],
               ),
@@ -294,9 +301,9 @@ class _NontechsocPageState extends State<NontechsocPage> {
                       Navigator.push(context, MaterialPageRoute(builder:(context)=>NOXPage()));
                     },
                     title: "NOX",
-                    subtitle: "Dance Society",
-                    gradientStartColor: Color(0xffFFD541),
-                    gradientEndColor: Color(0xffF0B31A),
+                    subtitle: " ",
+                    gradientStartColor: Color(0xff056674),
+                    gradientEndColor: Color(0xff66BFBF),
                   ),
                 ],
               ),
