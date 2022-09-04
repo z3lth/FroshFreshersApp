@@ -72,8 +72,8 @@ class _GalleryPageState extends State<GalleryPage> {
                             },
                             title: "Faculty",
 
-                            gradientStartColor: Color(0xff13DEA0),
-                            gradientEndColor: Color(0xff06B782),
+                              gradientStartColor: Color(0xffFF4B5C),
+                            gradientEndColor: Color(0xffF6815B),
                           ),
                           SizedBox(
                             height: 16.h,
@@ -84,8 +84,8 @@ class _GalleryPageState extends State<GalleryPage> {
 
                             },
                             title: "Core",
-                            gradientStartColor: Color(0xffFFD541),
-                            gradientEndColor: Color(0xffF0B31A),
+                             gradientStartColor: Color(0xff056674),
+                            gradientEndColor: Color(0xff66BFBF),
                             icon:    SvgAsset(
                               assetName: AssetName.tape,
                               height: 24.w,
@@ -103,8 +103,8 @@ class _GalleryPageState extends State<GalleryPage> {
                               Navigator.push(context, MaterialPageRoute(builder: (context)=>Mentor()));
                             },
                             title: "Mentors",
-                            gradientStartColor: Color(0xff13DEA0),
-                            gradientEndColor: Color(0xff06B782),
+                             gradientStartColor: Color(0xffFF4B5C),
+                            gradientEndColor: Color(0xffF6815B),
                             icon:    SvgAsset(
                               assetName: AssetName.tape,
                               height: 24.w,
