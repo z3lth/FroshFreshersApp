@@ -7,14 +7,16 @@ import 'package:meditation/home_page.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:page_transition/page_transition.dart';
 
-import 'package:shared_preferences/shared_preferences.dart';
+// import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:flutter_dotenv/flutter_dotenv.dart';
+// import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-late SharedPreferences sharedPreferences;
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  sharedPreferences = await SharedPreferences.getInstance();
+// late SharedPreferences sharedPreferences;
+void main() 
+//   async 
+{
+//   WidgetsFlutterBinding.ensureInitialized();
+//   sharedPreferences = await SharedPreferences.getInstance();
 
   runApp(const MyApp());
 }
