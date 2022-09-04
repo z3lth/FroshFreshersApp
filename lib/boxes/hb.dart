@@ -58,7 +58,7 @@ class HB extends StatelessWidget {
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               image: DecorationImage(
-                  image: AssetImage('assets/images/Untitled design.gif'),
+                  image: NetworkImage('https://i.imgur.com/U39IvZf.gifv'),
                   fit: BoxFit.cover
               )
           ),
