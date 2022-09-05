@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(MaterialApp(
-  home: GblockcafePage(),
+  home:   AaharPage(),
 ));
 
 
-class GblockcafePage extends StatefulWidget {
+class AaharPage extends StatefulWidget {
   @override
-  _GblockcafePageState createState() => _GblockcafePageState();
+  _AaharPageState createState() => _AaharPageState();
 }
-class _GblockcafePageState extends State<GblockcafePage>
+class _AaharPageState extends State<AaharPage>
 {
   final double coverHeight = 280;
   final double profileHeight = 144;
@@ -42,7 +42,7 @@ class _GblockcafePageState extends State<GblockcafePage>
     child: Padding(
       padding: const EdgeInsets.all(8.0),
       child:   Image(
-        image: NetworkImage('https://i.imgur.com/5inuyT7.jpg'),
+        image: NetworkImage('https://i.imgur.com/8ORIezj.jpg'),
       ),
     ),
 
@@ -57,7 +57,7 @@ class _GblockcafePageState extends State<GblockcafePage>
     child: Column(
       children: [
         Text(
-          'G-BLOCK',
+          'AAHAR',
 
 
           textAlign: TextAlign.center,
@@ -66,32 +66,13 @@ class _GblockcafePageState extends State<GblockcafePage>
           ),
         ),
 
-        Text('1.Canteen: The canteen provides multi-cuisine food and soft drinks for the students to enjoy at moderate prices.',
+        Text('This is situated close to H block. It is famous for its mouth-watering shakes.',
           textAlign: TextAlign.center,
           style: GoogleFonts.poppins(
             textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 14.0,),
           ),
         ),
-        Text('2.Patiala shahi roll: This shop has a roll for all your cravings, be it vegetarian or non-vegetarian.',
-          textAlign: TextAlign.center,
-          style: GoogleFonts.poppins(
-            textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 14.0,),
-          ),
-        ),
-
-        Text(' 3. Food hut: This shop has all the relishing food items answering your hunger anytime. ',
-          textAlign: TextAlign.center,
-          style: GoogleFonts.poppins(
-            textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 14.0,),
-          ),
-        ),
-        Text(' 4. JP Foods: This place is famous for its mouth-watering variety of non-vegetarian dishes. ',
-          textAlign: TextAlign.center,
-          style: GoogleFonts.poppins(
-            textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 14.0,),
-          ),
-        ),
-        ],
+       ],
     ),
 
   );
