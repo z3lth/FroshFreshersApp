@@ -130,8 +130,9 @@ class _WednesdayPageState extends State<WednesdayPage> {
                     //    }
                     // },
                     title: "Address of the director & the deputy director",
-                    gradientStartColor: Color(0xffFC67A7),
+                    gradientStartColor: Color(0xffFF4B5C),
                     gradientEndColor: Color(0xffF6815B),
+
                   ),
                 ],
               ),
@@ -199,8 +200,8 @@ class _WednesdayPageState extends State<WednesdayPage> {
                     //    }
                     // },
                     title: "Address by FROSH Faculty advisors & HOUSE OF FROSH",
-                    gradientStartColor: Color(0xff13DEA0),
-                    gradientEndColor: Color(0xff06B782),
+                    gradientStartColor: Color(0xff056674),
+                    gradientEndColor: Color(0xff66BFBF),
                   ),
                 ],
               ),
