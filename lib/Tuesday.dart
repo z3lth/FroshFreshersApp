@@ -131,7 +131,7 @@ class _TuesdayPageState extends State<TuesdayPage> {
                     //    }
                     // },
                     title: "Address of the director & the deputy director",
-                    gradientStartColor: Color(0xffFC67A7),
+                    gradientStartColor: Color(0xffFF4B5C),
                     gradientEndColor: Color(0xffF6815B),
                   ),
                 ],
@@ -201,8 +201,8 @@ class _TuesdayPageState extends State<TuesdayPage> {
                     //    }
                     // },
                     title: "Address by FROSH Faculty advisors & HOUSE OF FROSH",
-                    gradientStartColor: Color(0xff13DEA0),
-                    gradientEndColor: Color(0xff06B782),
+                    gradientStartColor: Color(0xff056674),
+                    gradientEndColor: Color(0xff66BFBF),
                   ),
                 ],
               ),
@@ -269,8 +269,8 @@ class _TuesdayPageState extends State<TuesdayPage> {
                     //    }
                     // },
                     title: "Intro for Students by the DoAA",
-                    gradientStartColor: Color(0xffFFD541),
-                    gradientEndColor: Color(0xffF0B31A),
+                    gradientStartColor: Color(0xffFF4B5C),
+                    gradientEndColor: Color(0xffF6815B),
                   ),
                 ],
               ),
