@@ -52,7 +52,13 @@ class _HostelaPageState extends State<HostelaPage>
     );
   }
   Widget buildCoverImage() => Container(
-    color: Color(0xff6379c9) ,
+    constraints: BoxConstraints.expand(),
+      decoration: BoxDecoration(
+        image: DecorationImage(
+            image: AssetImage('assets/images/bgclubs.jpeg'),
+            fit: BoxFit.fill),
+      ),
+//     color: Color(0xff6379c9) ,
     child: Cube(
       onSceneCreated: (Scene scene) {
         scene.world.add(jet);
