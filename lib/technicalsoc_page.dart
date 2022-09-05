@@ -18,10 +18,10 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'package:meditation/detail_page.dart';
 import 'package:meditation/girlshostel_page.dart';
-import 'package:meditation/hostelc_page.dart';
+// import 'package:meditation/hostelc_page.dart';
 import 'package:meditation/hostelh_page.dart';
 import 'package:meditation/hostelj_page.dart';
-import 'package:meditation/hostelm_page.dart';
+// import 'package:meditation/hostelm_page.dart';
 import 'package:meditation/widgets/category_boxes.dart';
 import 'package:meditation/icons.dart';
 import 'package:meditation/widgets/discover_card1.dart';
