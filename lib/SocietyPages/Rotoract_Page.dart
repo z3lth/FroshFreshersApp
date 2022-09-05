@@ -76,7 +76,7 @@ class RotoractPage extends StatelessWidget {
               // theWidth is the width of the frostedglass
                 theWidth: 350.0,
                 // theHeight is the height of the frostedglass
-                theHeight: 600.0,
+                theHeight: 623.0,
                 // theChild is the child of the frostedglass
 
 
@@ -87,9 +87,9 @@ class RotoractPage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children:[
                         // YAHA PAR NETWORK IMAGE DALEGI
-                        Image.asset('assets/pics/echoesc.png',
-                            width: 400,
-                            height: 100,
+                        Image.asset('assets/pics/Rotaract.png',
+                            width: 300,
+                            height: 300,
                             fit:BoxFit.fill
                         ),
                         SizedBox(height: 10.h),
@@ -105,7 +105,7 @@ class RotoractPage extends StatelessWidget {
                         Text('Rotaract is an International Organisation recognized by prestigious institutions. Rotaract is not only limited to social welfare. Instead, domains including vocational skills, soft skills, marketing, and finance skills are all tangible in this club. Each member gets an opportunity to lead and coordinate projects and is awarded resume-worthy certificates for their work. ',
 
                           style: GoogleFonts.poppins(
-                            textStyle: TextStyle(color: Colors.white, letterSpacing: .5,fontSize: 15.0,),
+                            textStyle: TextStyle(color: Colors.white, letterSpacing: .5,fontSize: 13.0,),
                           ),
                         ),
                         Text('',

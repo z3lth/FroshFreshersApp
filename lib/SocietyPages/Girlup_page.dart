@@ -76,7 +76,7 @@ class GirlupPage extends StatelessWidget {
               // theWidth is the width of the frostedglass
                 theWidth: 350.0,
                 // theHeight is the height of the frostedglass
-                theHeight: 600.0,
+                theHeight: 620.0,
                 // theChild is the child of the frostedglass
 
 

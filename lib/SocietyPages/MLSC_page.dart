@@ -76,7 +76,7 @@ class MlscPage extends StatelessWidget {
               // theWidth is the width of the frostedglass
                 theWidth: 350.0,
                 // theHeight is the height of the frostedglass
-                theHeight: 630.0,
+                theHeight: 610.0,
                 // theChild is the child of the frostedglass
 
 
@@ -88,7 +88,7 @@ class MlscPage extends StatelessWidget {
                       children:[
                         Image.asset('assets/pics/mlsc.png',
                             width: 260,
-                            height: 250,
+                            height: 240,
                             fit:BoxFit.fill
                         ),
                         SizedBox(height: 10.h),
@@ -110,9 +110,9 @@ class MlscPage extends StatelessWidget {
                         Text('',
 
 
-                          style: TextStyle(color: Colors.white, fontSize: 20.0,), textAlign: TextAlign.center,),
+                          style: TextStyle(color: Colors.white, fontSize: 17.0,), textAlign: TextAlign.center,),
 
-                        SizedBox(height: 7.h),
+                        SizedBox(height: 6.h),
                         Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [

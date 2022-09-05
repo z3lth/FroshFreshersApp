@@ -87,7 +87,7 @@ class LeadPage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children:[
                         // YAHA PAR NETWORK IMAGE DALEGI
-                        Image.asset('assets/pics/echoesc.png',
+                        Image.asset('assets/pics/Lead.png',
                             width: 400,
                             height: 100,
                             fit:BoxFit.fill

@@ -76,7 +76,7 @@ class EdcPage extends StatelessWidget {
               // theWidth is the width of the frostedglass
                 theWidth: 350.0,
                 // theHeight is the height of the frostedglass
-                theHeight: 600.0,
+                theHeight: 620.0,
                 // theChild is the child of the frostedglass
 
 
@@ -88,7 +88,7 @@ class EdcPage extends StatelessWidget {
                       children:[
                         Image.asset('assets/pics/EDC.png',
                             width: 300,
-                            height: 200,
+                            height: 230,
                             fit:BoxFit.fill
                         ),
                         SizedBox(height: 10.h),

@@ -88,7 +88,7 @@ class LinuxPage extends StatelessWidget {
                       children:[
                         Image.asset('assets/pics/LUG.png',
                             width: 400,
-                            height: 100,
+                            height: 200,
                             fit:BoxFit.fill
                         ),
                         SizedBox(height: 10.h),

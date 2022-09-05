@@ -76,7 +76,7 @@ class MovieClubPage extends StatelessWidget {
               // theWidth is the width of the frostedglass
                 theWidth: 350.0,
                 // theHeight is the height of the frostedglass
-                theHeight: 600.0,
+                theHeight: 650.0,
                 // theChild is the child of the frostedglass
 
 
@@ -86,9 +86,9 @@ class MovieClubPage extends StatelessWidget {
 
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children:[
-                        Image.asset('assets/pics/echoesc.png',
-                            width: 400,
-                            height: 100,
+                        Image.asset('assets/pics/tmc.png',
+                            width: 210,
+                            height: 210,
                             fit:BoxFit.fill
                         ),
                         SizedBox(height: 10.h),

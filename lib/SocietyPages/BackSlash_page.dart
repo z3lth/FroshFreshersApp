@@ -40,9 +40,9 @@ class BackslashPage extends StatelessWidget {
         centerTitle: true,
       title: Text('BACKSLASH',
       textAlign:TextAlign.center,
-      style: GoogleFonts.montserrat(
-        textStyle: TextStyle(color: Colors.blue, letterSpacing: .5,
-        fontWeight: FontWeight.w600),
+      style: GoogleFonts.poppins(
+        textStyle: TextStyle(color: Colors.white, letterSpacing: .5,
+        fontWeight: FontWeight.w700),
       ),
       ),
       backgroundColor: Color(0xff1C2031),
@@ -75,7 +75,7 @@ class BackslashPage extends StatelessWidget {
               // theWidth is the width of the frostedglass
                 theWidth: 350.0,
                 // theHeight is the height of the frostedglass
-                theHeight: 500.0,
+                theHeight: 600.0,
                 // theChild is the child of the frostedglass
 
 
@@ -102,7 +102,7 @@ class BackslashPage extends StatelessWidget {
 
                         Text('Not your ordinary tech society. We organize hackathons, cryptic hunts, gaming nights with a touch our very own GenZ aesthetic. Chill, Vibe and grow with us and with everyone in this community. ',
 
-                            style: GoogleFonts.ubuntu(
+                            style: GoogleFonts.poppins(
                               textStyle: TextStyle(color: Colors.white, letterSpacing: .5,fontSize: 20.0,),
                             ),
                         ),
@@ -129,30 +129,30 @@ class BackslashPage extends StatelessWidget {
                                 height: 35,
                               ),
                               TextButton(onPressed: ()async{
-                                final Uri _url = Uri.parse('https://www.instagram.com/froshtiet/');
+                                final Uri _url = Uri.parse('https://www.instagram.com/backslashtiet/');
 
                                 if (!await launchUrl(_url)) {
                                   throw 'Could not launch $_url';
                                 }
                               }, child:
-                              Text('/froshtiet',style: TextStyle(color: Colors.white54, fontSize: 20.0,), textAlign: TextAlign.center, ),)]),
+                              Text('/backslashtiet',style: TextStyle(color: Colors.white54, fontSize: 20.0,), textAlign: TextAlign.center, ),)]),
 
                         Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               //
-                              Image.asset('assets/pics/youtube.png',
+                              Image.asset('assets/pics/web.png',
                                 width: 35,
                                 height: 35,
                               ),
                               TextButton(onPressed: ()async{
-                                final Uri _url = Uri.parse('https://www.youtube.com/c/FroshTIET');
+                                final Uri _url = Uri.parse('http://backslashdb.in/');
 
                                 if (!await launchUrl(_url)) {
                                   throw 'Could not launch $_url';
                                 }
                               }, child:
-                              Text('/froshtiet',style: TextStyle(color: Colors.white54, fontSize: 20.0,), textAlign: TextAlign.center, ),)]),
+                              Text('/backslashtiet',style: TextStyle(color: Colors.white54, fontSize: 20.0,), textAlign: TextAlign.center, ),)]),
 
                         // Row(
                         //     mainAxisAlignment: MainAxisAlignment.center,

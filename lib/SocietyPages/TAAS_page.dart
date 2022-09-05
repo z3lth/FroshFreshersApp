@@ -86,9 +86,9 @@ class TaasPage extends StatelessWidget {
 
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children:[
-                        Image.asset('assets/pics/echoesc.png',
-                            width: 400,
-                            height: 100,
+                        Image.asset('assets/pics/taas.png',
+                            width: 240,
+                            height: 240,
                             fit:BoxFit.fill
                         ),
                         SizedBox(height: 10.h),

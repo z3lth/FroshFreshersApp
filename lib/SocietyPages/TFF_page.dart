@@ -76,7 +76,7 @@ class TffPage extends StatelessWidget {
               // theWidth is the width of the frostedglass
                 theWidth: 350.0,
                 // theHeight is the height of the frostedglass
-                theHeight: 600.0,
+                theHeight: 643.0,
                 // theChild is the child of the frostedglass
 
 
@@ -86,9 +86,9 @@ class TffPage extends StatelessWidget {
 
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children:[
-                        Image.asset('assets/pics/echoesc.png',
-                            width: 400,
-                            height: 100,
+                        Image.asset('assets/pics/Tff.png',
+                            width: 300,
+                            height: 200,
                             fit:BoxFit.fill
                         ),
                         SizedBox(height: 10.h),
@@ -143,29 +143,29 @@ class TffPage extends StatelessWidget {
                               ),
                               )]),
 
-                        Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              //
-                              Image.asset('assets/pics/web.png',
-                                width: 35,
-                                height: 35,
-                              ),
-                              TextButton(onPressed: ()async{
-                                final Uri _url = Uri.parse(' ');
-
-                                if (!await launchUrl(_url)) {
-                                  throw 'Could not launch $_url';
-                                }
-                              }, child:
-                              Text('/tff',
-                                style: GoogleFonts.poppins(
-                                  textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
-                                ),
-                              ),
-                              )
-                            ]
-                        ),
+                        // Row(
+                        //     mainAxisAlignment: MainAxisAlignment.center,
+                        //     children: [
+                        //       //
+                        //       Image.asset('assets/pics/web.png',
+                        //         width: 35,
+                        //         height: 35,
+                        //       ),
+                        //       TextButton(onPressed: ()async{
+                        //         final Uri _url = Uri.parse(' ');
+                        //
+                        //         if (!await launchUrl(_url)) {
+                        //           throw 'Could not launch $_url';
+                        //         }
+                        //       }, child:
+                        //       Text('/tff',
+                        //         style: GoogleFonts.poppins(
+                        //           textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
+                        //         ),
+                        //       ),
+                        //       )
+                        //     ]
+                        // ),
 
                         // Row(
                         //     mainAxisAlignment: MainAxisAlignment.center,

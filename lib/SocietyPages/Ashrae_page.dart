@@ -86,9 +86,9 @@ class AshraePage extends StatelessWidget {
 
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children:[
-                        Image.asset('assets/pics/echoesc.png',
-                            width: 400,
-                            height: 100,
+                        Image.asset('assets/pics/ashrae.png',
+                            width: 300,
+                            height: 250,
                             fit:BoxFit.fill
                         ),
                         SizedBox(height: 10.h),
@@ -152,7 +152,7 @@ class AshraePage extends StatelessWidget {
                                 height: 35,
                               ),
                               TextButton(onPressed: ()async{
-                                final Uri _url = Uri.parse('www.ashrae.org/');
+                                final Uri _url = Uri.parse('https://www.ashrae.org/');
 
                                 if (!await launchUrl(_url)) {
                                   throw 'Could not launch $_url';

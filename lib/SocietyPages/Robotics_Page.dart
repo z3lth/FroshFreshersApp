@@ -76,7 +76,7 @@ class RoboticsPage extends StatelessWidget {
               // theWidth is the width of the frostedglass
                 theWidth: 350.0,
                 // theHeight is the height of the frostedglass
-                theHeight: 630.0,
+                theHeight: 620.0,
                 // theChild is the child of the frostedglass
 
 
@@ -88,8 +88,8 @@ class RoboticsPage extends StatelessWidget {
                       children:[
                         // YAHA PAR NETWORK IMAGE DALEGI
                         Image.asset('assets/pics/mars.png',
-                            width: 270,
-                            height: 280,
+                            width: 240,
+                            height: 260,
                             fit:BoxFit.fill
                         ),
                         SizedBox(height: 10.h),

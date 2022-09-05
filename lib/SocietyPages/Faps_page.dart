@@ -39,7 +39,7 @@ class FapsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('ECHOES',
+        title: Text('FAPS',
           textAlign:TextAlign.center,
           style: GoogleFonts.poppins(
             textStyle: TextStyle(color: Colors.white, letterSpacing: .5,
@@ -87,9 +87,9 @@ class FapsPage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children:[
                         // YAHA PAR NETWORK IMAGE DALEGI
-                        Image.asset('assets/pics/echoesc.png',
-                            width: 400,
-                            height: 100,
+                        Image.asset('assets/pics/faps.png',
+                            width: 280,
+                            height: 140,
                             fit:BoxFit.fill
                         ),
                         SizedBox(height: 10.h),

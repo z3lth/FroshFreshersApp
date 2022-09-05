@@ -88,7 +88,7 @@ class EconPage extends StatelessWidget {
                       children:[
                         Image.asset('assets/pics/Econ.png',
                             width: 400,
-                            height: 100,
+                            height: 200,
                             fit:BoxFit.fill
                         ),
                         SizedBox(height: 10.h),
@@ -101,7 +101,7 @@ class EconPage extends StatelessWidget {
                         //   //   'facebook.com/froshtiet         ',
                         //   style: TextStyle(color: Colors.white54, fontSize: 30.0,fontFamily: 'Roboto',fontWeight: FontWeight.bold,), textAlign: TextAlign.center,)
 
-                        Text('Echoes is the official student broadcast media and journalism club of TIET. We publish the official student editorial, organize on-ground coverage of the ongoings around the campus, editorials and provide a platform to students to diversify their creative minds and dynamic personalities on campus through lens, pen and everything in between. ',
+                        Text('A club that transpires to extend financial wisdom and furnish plethora of opportunities, aiming to impart an insight on stock markets, auctions and immeasurably more through thrilling events and fests',
 
                           style: GoogleFonts.poppins(
                             textStyle: TextStyle(color: Colors.white, letterSpacing: .5,fontSize: 15.0,),
@@ -130,13 +130,13 @@ class EconPage extends StatelessWidget {
                                 height: 35,
                               ),
                               TextButton(onPressed: ()async{
-                                final Uri _url = Uri.parse('https://www.instagram.com/froshtiet/');
+                                final Uri _url = Uri.parse('https://www.instagram.com/econ_tiet/?hl=en');
 
                                 if (!await launchUrl(_url)) {
                                   throw 'Could not launch $_url';
                                 }
                               }, child:
-                              Text('/froshtiet',
+                              Text('/ECONtiet',
                                 style: GoogleFonts.poppins(
                                   textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
                                 ),
@@ -152,13 +152,13 @@ class EconPage extends StatelessWidget {
                                 height: 35,
                               ),
                               TextButton(onPressed: ()async{
-                                final Uri _url = Uri.parse('http://echoes-tiet.com/');
+                                final Uri _url = Uri.parse('https://sites.google.com/view/econclub/');
 
                                 if (!await launchUrl(_url)) {
                                   throw 'Could not launch $_url';
                                 }
                               }, child:
-                              Text('/froshtiet',
+                              Text('/ECONtiet',
                                 style: GoogleFonts.poppins(
                                   textStyle: TextStyle(color: Colors.white54, letterSpacing: .5,fontSize: 20.0,),
                                 ),

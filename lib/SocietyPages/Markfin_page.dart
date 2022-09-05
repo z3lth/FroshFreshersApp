@@ -86,7 +86,7 @@ class MarkfinPage extends StatelessWidget {
 
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children:[
-                        Image.asset('assets/pics/marfin.png',
+                        Image.asset('assets/pics/markfin.png',
                             width: 250,
                             height: 250,
                             fit:BoxFit.fill

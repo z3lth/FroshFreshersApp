@@ -42,7 +42,7 @@ class ParyavaranPage extends StatelessWidget {
         title: Text('PARYAVARAN WELFARE SOCIETY',
           textAlign:TextAlign.center,
           style: GoogleFonts.poppins(
-            textStyle: TextStyle(color: Colors.white, letterSpacing: .4,
+            textStyle: TextStyle(color: Colors.white, letterSpacing: .4,fontSize: 15,
                 fontWeight: FontWeight.w700),
           ),
         ),
@@ -87,7 +87,7 @@ class ParyavaranPage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children:[
                         // YAHA PAR NETWORK IMAGE DALEGI
-                        Image.asset('assets/pics/echoesc.png',
+                        Image.asset('assets/pics/PWS.png',
                             width: 400,
                             height: 200,
                             fit:BoxFit.fill
@@ -105,7 +105,7 @@ class ParyavaranPage extends StatelessWidget {
                         Text(' Paryavaran Welfare Society endeavors to maintain biodiversity and conserve energy resources, alongwith overseeing the issues related to living beings in our surroundings.While others are still scuffling with technology for space excavations, not botheringmuch about the planets quality, we along with that are doing our little bit to make it morehabitable by increasing awareness through our events.' ,
 
                           style: GoogleFonts.poppins(
-                            textStyle: TextStyle(color: Colors.white, letterSpacing: .5,fontSize: 15.0,),
+                            textStyle: TextStyle(color: Colors.white, letterSpacing: .5,fontSize: 13.0,),
                           ),
                         ),
                         Text('',

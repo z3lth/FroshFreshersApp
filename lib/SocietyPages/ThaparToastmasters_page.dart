@@ -42,7 +42,7 @@ class ToastmastersPage extends StatelessWidget {
         title: Text('THAPAR TOASTMASTERS CLUBS',
           textAlign:TextAlign.center,
           style: GoogleFonts.poppins(
-            textStyle: TextStyle(color: Colors.white, letterSpacing: .5,
+            textStyle: TextStyle(color: Colors.white, letterSpacing: .5,fontSize: 16,
                 fontWeight: FontWeight.w700),
           ),
         ),
@@ -76,7 +76,7 @@ class ToastmastersPage extends StatelessWidget {
               // theWidth is the width of the frostedglass
                 theWidth: 350.0,
                 // theHeight is the height of the frostedglass
-                theHeight: 626.0,
+                theHeight: 623.0,
                 // theChild is the child of the frostedglass
 
 

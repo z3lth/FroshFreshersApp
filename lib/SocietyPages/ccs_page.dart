@@ -76,7 +76,7 @@ class CcsPage extends StatelessWidget {
               // theWidth is the width of the frostedglass
                 theWidth: 350.0,
                 // theHeight is the height of the frostedglass
-                theHeight: 600.0,
+                theHeight: 622.0,
                 // theChild is the child of the frostedglass
 
 
@@ -88,7 +88,7 @@ class CcsPage extends StatelessWidget {
                       children:[
                         Image.asset('assets/pics/ccs.png',
                             width: 400,
-                            height: 100,
+                            height: 200,
                             fit:BoxFit.fill
                         ),
                         SizedBox(height: 10.h),

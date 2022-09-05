@@ -86,7 +86,7 @@ class TiccPage extends StatelessWidget {
 
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children:[
-                        Image.asset('assets/pics/echoesc.png',
+                        Image.asset('assets/pics/ticc.png',
                             width: 400,
                             height: 100,
                             fit:BoxFit.fill

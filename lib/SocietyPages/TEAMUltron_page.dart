@@ -42,7 +42,7 @@ class UltronPage extends StatelessWidget {
         title: Text('TEAM ULTRON MOTORSPORTS',
           textAlign:TextAlign.center,
           style: GoogleFonts.poppins(
-            textStyle: TextStyle(color: Colors.white, letterSpacing: .5,
+            textStyle: TextStyle(color: Colors.white, letterSpacing: .5,fontSize: 15,
                 fontWeight: FontWeight.w700),
           ),
         ),
@@ -76,7 +76,7 @@ class UltronPage extends StatelessWidget {
               // theWidth is the width of the frostedglass
                 theWidth: 350.0,
                 // theHeight is the height of the frostedglass
-                theHeight: 600.0,
+                theHeight: 623.0,
                 // theChild is the child of the frostedglass
 
 
@@ -86,9 +86,9 @@ class UltronPage extends StatelessWidget {
 
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children:[
-                        Image.asset('assets/pics/echoesc.png',
-                            width: 400,
-                            height: 100,
+                        Image.asset('assets/pics/ultron.png',
+                            width: 300,
+                            height: 250,
                             fit:BoxFit.fill
                         ),
                         SizedBox(height: 10.h),
