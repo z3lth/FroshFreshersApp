@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:meditation/icons.dart';
 import 'package:meditation/widgets/svg_asset.dart';
 
@@ -13,52 +14,32 @@ class LMSB extends StatelessWidget {
   final double? width;
   final Widget? vectorBottom;
   final Widget? vectorTop;
-  final double? borderRadius;
-  final Widget? icon;
-  final Function()? onTap;
-  final Widget? child;
-  // final Widget? image;
-  // final Decoration? decoration;
+  final Function? onTap;
+  final String? tag;
   const LMSB(
       {Key? key,
-        this.title,
-        this.subtitle,
-        this.gradientStartColor,
-        this.gradientEndColor,
-        this.height,
-        this.width,
-        this.vectorBottom,
-        this.vectorTop,
-        this.borderRadius,
-        this.icon,
-        this.onTap,
-        // this.decoration,
-        this.child,
-        // this.image,
-      })
+      this.title,
+      this.subtitle,
+      this.gradientStartColor,
+      this.gradientEndColor,
+      this.height,
+      this.width,
+      this.vectorBottom,
+      this.vectorTop,
+      this.onTap,
+      this.tag})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return
-      //    Container(
-      //
-      // constraints: BoxConstraints.expand(),
-      // decoration: BoxDecoration(
-      // image: DecorationImage(
-      // image: AssetImage('assets/images/tech.gif'),
-      // fit: BoxFit.fill,
-      // ),
-      // ),
-
-      // child:
-      InkWell(
-
-        borderRadius: BorderRadius.circular(20),
-        onTap: onTap ?? () {},
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: () => onTap!(),
+        borderRadius: BorderRadius.circular(26),
         child: Ink(
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
+            borderRadius: BorderRadius.circular(26),
             gradient: LinearGradient(
               colors: [
                 gradientStartColor ?? Color(0xff441DFC),
@@ -68,68 +49,87 @@ class LMSB extends StatelessWidget {
               end: Alignment.topRight,
             ),
           ),
-          child: Stack(
-            children: [
-              Container(
-                height: 125.w,
-                width: 170.w,
-              ),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: SizedBox(
-                  height: 125.w,
-                  width: 170.w,
-                  child: Stack(
-                    children: [
-                      SizedBox(
-                        height: 132.w,
-                        width: 190.w,
-                        child: SvgAsset(assetName: AssetName.vectorSmallBottom),
-                      ),
-                      SizedBox(
-                        child: SvgAsset(
-                            height: 132.w,
-                            width: 200.w,
-                            fit: BoxFit.fitHeight,
-                            assetName: AssetName.vectorSmallTop),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 120.w,
-                width: 150.w,
-                child: Padding(
-                  padding: EdgeInsets.only(left: 37.w, right: 20.w, top: 45.w, bottom: 30.w),
+          child: Container(
+            height: 5.w,
+            width: 320.w,
+            child: Stack(
+              children: [
+                vectorBottom ??
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(26),
+                      child: SvgAsset(
+                          height: 176.w,
+                          width: 305.w,
+                          assetName: AssetName.vectorBottom),
+                    ),
+                vectorTop ??
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(26),
+                      child: SvgAsset(
+                          height: 176.w,
+                          width: 305.w,
+                          assetName: AssetName.vectorTop),
+                    ),
+                Padding(
+                  padding: EdgeInsets.only(left: 24.w, top: 24.h, bottom: 1.h),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
-                        title!,
-                        style: TextStyle(
-                            fontSize: 18.w,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Hero(
+                            tag: tag ?? '',
+                            child: Material(
+                              color: Colors.transparent,
+                              child: Text(
+                                title!,
+                                style: GoogleFonts.poppins(
+                                textStyle: TextStyle(
+                                    fontSize: 22.w,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              ),
+                            )),
+                          ),
+                          SizedBox(
+                            height: 5.h,
+                          ),
+                          subtitle != null
+                              ? Text(
+                                  subtitle!,
+                                  style: TextStyle(
+                                      fontSize: 16.w,
+                                      fontWeight: FontWeight.w300,
+                                      color: Colors.white),
+                                )
+                              : Container(),
+                        ],
                       ),
                       // Row(
                       //   children: [
-                      //     icon ??
-                      //         SvgAsset(
-                      //           assetName: AssetName.headphone,
-                      //           height: 24.w,
-                      //           width: 24.w,
-                      //         ),
+                      //     SvgAsset(
+                      //       assetName: AssetName.headphone,
+                      //       height: 24.w,
+                      //       width: 24.w,
+                      //     ),
+                      //     SizedBox(width: 24.w),
+                      //     SvgAsset(
+                      //       assetName: AssetName.tape,
+                      //       height: 24.w,
+                      //       width: 24.w,
+                      //     ),
                       //   ],
                       // )
                     ],
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
-      );
+      ),
+    );
   }
 }
