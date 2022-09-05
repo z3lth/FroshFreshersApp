@@ -130,8 +130,9 @@ class _ThrusdayPageState extends State<ThrusdayPage> {
                     //    }
                     // },
                     title: "Address of the director & the deputy director",
-                    gradientStartColor: Color(0xffFC67A7),
+                    gradientStartColor: Color(0xffFF4B5C),
                     gradientEndColor: Color(0xffF6815B),
+
                   ),
                 ],
               ),
