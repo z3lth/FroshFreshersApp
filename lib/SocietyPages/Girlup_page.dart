@@ -15,8 +15,8 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../frostedglass.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class EchoesPage extends StatelessWidget {
-  const EchoesPage({Key? key}) : super(key: key);
+class GirlupPage extends StatelessWidget {
+  const GirlupPage({Key? key}) : super(key: key);
 
 //   @override
 //   Widget build(BuildContext context) {
