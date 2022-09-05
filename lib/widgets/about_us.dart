@@ -11,6 +11,7 @@ import 'package:meditation/icons.dart';
 import 'package:meditation/widgets/discover_card3.dart';
 import 'package:meditation/widgets/svg_asset.dart';
 import 'package:url_launcher/url_launcher.dart';
+import '../boxes/otb.dart';
 import '../frostedglass.dart';
 
 class AboutusPage extends StatelessWidget {
@@ -147,14 +148,15 @@ class AboutusPage extends StatelessWidget {
 
         //SizedBox(width: 350.w,),
             SizedBox(height: 10.h),
-        DiscoverCard3(
+        OTB(
 
           onTap: (){
             Navigator.push(context, MaterialPageRoute(builder: (context)=>GalleryPage()));
 
           },
           title: "Our Team",
-
+          gradientStartColor: Color(0xff056674),
+          gradientEndColor: Color(0xff66BFBF),
           //subtitle: "How to read timetable?",
          // gradientStartColor: Color(0xffFC67A7),
           //gradientEndColor: Color(0xffF6815B),
