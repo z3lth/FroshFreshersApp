@@ -32,7 +32,7 @@ class _ProfilePageState extends State<ProfilePage> {
           length: 2,
           child: Scaffold(
             appBar: AppBar(
-              backgroundColor: Color(0xffadc178),
+              backgroundColor: Color(0xff1C2031),
               shadowColor: Colors.black,
 
 
