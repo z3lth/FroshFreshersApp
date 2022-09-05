@@ -126,8 +126,8 @@ class _StudyPageState extends State<StudyPage> {
                       }
                     },
                     title: "LMS",
-                    gradientStartColor: Color(0xffFF4B5C),
-                    gradientEndColor: Color(0xffF6815B),
+                     gradientStartColor: Color(0xffFF4B5C),
+                            gradientEndColor: Color(0xffF6815B),
                   ),
                   WKB(
                     onTap: () async{
@@ -138,8 +138,8 @@ class _StudyPageState extends State<StudyPage> {
                       }
                     },
                     title: "Webkiosk",
-                    gradientStartColor: Color(0xffFF4B5C),
-        gradientEndColor: Color(0xffF6815B),
+                     gradientStartColor: Color(0xffFF4B5C),
+                            gradientEndColor: Color(0xffF6815B),
                     // icon:    SvgAsset(
                     //   assetName: AssetName.tape,
                     //   height: 24.w,
