@@ -161,8 +161,8 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                       onTap:() {
                         Navigator.push(context, MaterialPageRoute(builder:(context)=>GdscPage()));
                       },
-                      title: "Google Developer Student Clubs",
-                      subtitle: "GDSC",
+                      title: "GDSC",
+                      subtitle: "Google Developer Student Clubs",
                       gradientStartColor: Color(0xff056674),
                       gradientEndColor: Color(0xff66BFBF),
                     ),
@@ -399,7 +399,7 @@ class _TechnicalsocPageState extends State<TechnicalsocPage> {
                       Navigator.push(context, MaterialPageRoute(builder:(context)=>LeadPage()));
                     },
                     title: "LEAD",
-                    subtitle: "EStablished 1980",
+                    subtitle: "",
                     gradientStartColor: Color(0xff056674),
                     gradientEndColor: Color(0xff66BFBF),
                   ),
