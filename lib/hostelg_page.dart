@@ -31,7 +31,12 @@ class _HostelgPageState extends State<HostelgPage>
   Widget build(BuildContext context) {
     final bottom = coverHeight+280;
     return Scaffold(
-      backgroundColor: Color(0xff1C203) ,
+     backgroundColor: Color(0xff121421),
+      appBar: AppBar(
+          title: Image.asset('assets/images/tietlogo3.png'),
+          backgroundColor: Color(0xff1C2031),
+          shadowColor: Colors.black,
+        ) ,
       body: Stack(
         clipBehavior: Clip.none,
         alignment :Alignment.center,
