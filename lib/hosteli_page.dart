@@ -30,12 +30,7 @@ class _HosteliPageState extends State<HosteliPage>
   Widget build(BuildContext context) {
     final bottom = coverHeight+380;
     return Scaffold(
-      backgroundColor: Color(0xff121421),
-      appBar: AppBar(
-          title: Image.asset('assets/images/tietlogo3.png'),
-          backgroundColor: Color(0xff1C2031),
-          shadowColor: Colors.black,
-        ) ,
+      backgroundColor: Color(0xff1C203) ,
       body: Stack(
         clipBehavior: Clip.none,
         alignment :Alignment.center,
@@ -52,13 +47,7 @@ class _HosteliPageState extends State<HosteliPage>
     );
   }
   Widget buildCoverImage() => Container(
-//     color: Color(0xff6379c9) ,
-    constraints: BoxConstraints.expand(),
-      decoration: BoxDecoration(
-        image: DecorationImage(
-            image: AssetImage('assets/images/bgclubs.jpeg'),
-            fit: BoxFit.fill),
-      ),
+    color: Color(0xff6379c9) ,
     child: Cube(
       onSceneCreated: (Scene scene) {
         scene.world.add(jet);
