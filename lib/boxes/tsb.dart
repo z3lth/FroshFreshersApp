@@ -58,7 +58,7 @@ class TSB extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           image: DecorationImage(
-            image: NetworkImage('https://i.imgur.com/U39IvZf.gifv'),
+            image: AssetImage('assets/images/tech.gif'),
                 fit: BoxFit.cover
           )
         ),
